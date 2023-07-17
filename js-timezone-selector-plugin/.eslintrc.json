@@ -4,14 +4,16 @@
         "es2021": true
     },
     "extends": [
-        "airbnb"
+        "airbnb",
+        "plugin:jsx-a11y/recommended"
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "jsx-a11y"
     ],
     "rules": {
     }
