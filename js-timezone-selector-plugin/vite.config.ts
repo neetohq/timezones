@@ -22,5 +22,18 @@ export default defineConfig({
     target: "modules",
     minify: "terser",
   },
-  plugins: []
+  esbuild: {
+    jsxFactory: 'h',
+    jsxFragment: 'Fragment'
+  },
+  plugins: [],
+  css: {
+    preprocessorOptions: {
+      postcss: {
+        plugins: [
+          require('tailwindcss'),
+        ],
+      },
+    },
+  },
 });
