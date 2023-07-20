@@ -1,18 +1,20 @@
+import { render } from "htm/preact"
 import NeetoTimezoneSelect from "./NeetoTimezoneSelect";
+
 import Selector from "./selector";
+import './styles.css';
 
 class Plugin {
   element: Element;
-  
+
   constructor(element: Element) {
     this.element = element
     this.render()
   }
 
   render() {
-    const selector = Selector();
 
-    this.element.appendChild(selector)
+    render(Selector(), this.element);
   }
 }
 
