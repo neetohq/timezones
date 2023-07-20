@@ -14,9 +14,9 @@ export default defineConfig({
     emptyOutDir: true,
 
     lib: {
-      entry: path.resolve(__dirname, "./src/main.ts"),
+      entry: path.resolve(__dirname, "./src/main.tsx"),
       formats: ["iife"],
-      name: "timezone-selector-plugin",
+      name: "timezone_selector_plugin",
       fileName: () => `embed.js`,
     },
     target: "modules",
