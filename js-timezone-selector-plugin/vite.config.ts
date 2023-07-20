@@ -31,7 +31,7 @@ export default defineConfig({
     preprocessorOptions: {
       postcss: {
         plugins: [
-          require('tailwindcss'),
+          'tailwindcss',
         ],
       },
     },
