@@ -14,7 +14,7 @@ class Plugin {
 
   render() {
 
-    render(Selector(), document.body);
+    render(Selector(), this.element);
   }
 }
 
