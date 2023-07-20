@@ -1,4 +1,4 @@
-import { render } from "https://esm.sh/preact@10.16.0"
+import { render } from "htm/preact"
 import NeetoTimezoneSelect from "./NeetoTimezoneSelect";
 
 import Selector from "./selector";

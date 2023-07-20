@@ -1,4 +1,4 @@
-import { h, render } from 'https://esm.sh/preact@10.16.0';
+import { h, render } from 'htm/preact';
 
 import { filterTimezones, createContainerForUpdatedOptions } from './utils';
 import { createOptionButton, handleSelect } from '../utils';

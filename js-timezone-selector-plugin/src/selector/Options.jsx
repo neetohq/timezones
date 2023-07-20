@@ -1,4 +1,4 @@
-import { h } from 'https://esm.sh/preact@10.16.0';
+import { h } from 'htm/preact';
 import { DUMMY_TIMEZONES } from './constants';
 import { createOptionButton, handleSelect } from './utils';
 
