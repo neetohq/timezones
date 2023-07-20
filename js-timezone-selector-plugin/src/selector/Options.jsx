@@ -2,7 +2,7 @@ import { h } from 'htm/preact';
 import { DUMMY_TIMEZONES } from './constants';
 import { createOptionButton, handleSelect } from './utils';
 
-function Options() {
+const Options = () => {
   return (
     <div id="selectTimezoneOptions">
       <div className="flex flex-col">

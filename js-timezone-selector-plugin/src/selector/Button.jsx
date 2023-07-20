@@ -1,7 +1,7 @@
 import { h } from 'htm/preact';
 import { DUMMY_TIMEZONES } from './constants';
 
-function Button() {
+const Button = () => {
   const handleClick = () => {
     const optionsContainer = document.getElementById('optionsContainer');
     optionsContainer.classList.toggle('hidden');

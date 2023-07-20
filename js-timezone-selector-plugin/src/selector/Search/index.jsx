@@ -3,7 +3,7 @@ import { h, render } from 'htm/preact';
 import { filterTimezones, createContainerForUpdatedOptions } from './utils';
 import { createOptionButton, handleSelect } from '../utils';
 
-function Search() {
+const Search = () => {
   const handleInputChange = (event) => {
     const inputValue = event.target.value.toLowerCase();
 
