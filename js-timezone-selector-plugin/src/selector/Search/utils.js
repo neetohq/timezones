@@ -1,13 +1,21 @@
-import { DUMMY_TIMEZONES } from '../constants';
+import { groupedOptions } from '../utils';
 
 export const filterTimezones = (inputValue) => {
   if (inputValue === '') {
-    return DUMMY_TIMEZONES;
+    return groupedOptions;
   }
 
-  return DUMMY_TIMEZONES.filter(
-    (timezone) => timezone.toLowerCase().includes(inputValue),
-  );
+  const filteredOptions = groupedOptions.map((group) => {
+    const key = Object.keys(group)[0];
+    const element = group[key]
+      .filter(
+        (timezone) => timezone.toLowerCase().includes(inputValue.toLowerCase()),
+      );
+
+    return element.length > 0 ? { [key]: element } : null;
+  });
+
+  return filteredOptions.filter((group) => group !== null);
 };
 
 export const createContainerForUpdatedOptions = () => {

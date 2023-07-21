@@ -1,7 +1,7 @@
 import { h, render } from 'htm/preact';
 
 import { filterTimezones, createContainerForUpdatedOptions } from './utils';
-import { createOptionButton, handleSelect } from '../utils';
+import { createGroupedOptionButton } from '../utils';
 
 function Search() {
   const handleInputChange = (event) => {
@@ -15,17 +15,9 @@ function Search() {
     const updatedOptionsContainer = createContainerForUpdatedOptions();
     optionsContainer.innerHTML = '';
 
-    const buttons = [];
+    const filteredGroupedOptions = createGroupedOptionButton(updatedTimezones);
 
-    updatedTimezones.forEach((timezone, index) => {
-      const button = createOptionButton({
-        onClick: handleSelect, key: index, value: timezone, timezone, label: timezone,
-      });
-
-      buttons.push(button);
-    });
-
-    render(buttons, updatedOptionsContainer);
+    render(filteredGroupedOptions, updatedOptionsContainer);
 
     optionsContainer.innerHTML = '';
     optionsContainer.appendChild(updatedOptionsContainer);

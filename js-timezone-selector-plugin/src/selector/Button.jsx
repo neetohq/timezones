@@ -1,5 +1,5 @@
 import { h } from 'htm/preact';
-import { DUMMY_TIMEZONES } from './constants';
+import { DEFAULT_VALUE } from './utils';
 
 function Button() {
   const handleClick = () => {
@@ -13,7 +13,7 @@ function Button() {
       id="selectTimezone"
     >
       <button onClick={handleClick} id="changeTimezoneButton" className="w-full text-xs">
-        {DUMMY_TIMEZONES[0]}
+        {DEFAULT_VALUE}
       </button>
     </div>
   );
