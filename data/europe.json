@@ -1,0 +1,172 @@
+[
+  {
+    "utc": [
+      "Europe/Belgrade",
+      "Europe/Bratislava",
+      "Europe/Budapest",
+      "Europe/Ljubljana",
+      "Europe/Podgorica",
+      "Europe/Prague",
+      "Europe/Tirane"
+    ],
+    "abbr": "CEDT",
+    "label": "(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague",
+    "value": "Central Europe Standard Time Belgrade Bratislava Budapest Ljubljana Podgorica Prague Tirane"
+  },
+  {
+    "utc": [
+      "Europe/Sarajevo",
+      "Europe/Skopje",
+      "Europe/Warsaw",
+      "Europe/Zagreb"
+    ],
+    "abbr": "CEDT",
+    "label": "(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb",
+    "value": "Central European Standard Time Sarajevo Skopje Warsaw Zagreb"
+  },
+  {
+    "utc": [
+      "Europe/London",
+      "Europe/Isle_of_Man",
+      "Europe/Guernsey",
+      "Europe/Jersey"
+    ],
+    "abbr": "GMT",
+    "label": "(GMT) Edinburgh, London",
+    "value": "GMT Standard Time Isle of_Man Guernsey Jersey London"
+  },
+    {
+    "utc": [
+      "Atlantic/Canary",
+      "Atlantic/Faeroe",
+      "Atlantic/Madeira",
+      "Europe/Dublin",
+      "Europe/Lisbon"
+    ],
+    "abbr": "GDT",
+    "label": "(GMT) Dublin, Lisbon",
+    "value": "GMT Standard Time Canary Faeroe Madeira Dublin Lisbon"
+  },
+    {
+    "utc": [
+      "Arctic/Longyearbyen",
+      "Europe/Amsterdam",
+      "Europe/Andorra",
+      "Europe/Berlin",
+      "Europe/Busingen",
+      "Europe/Gibraltar",
+      "Europe/Luxembourg",
+      "Europe/Malta",
+      "Europe/Monaco",
+      "Europe/Oslo",
+      "Europe/Rome",
+      "Europe/San_Marino",
+      "Europe/Stockholm",
+      "Europe/Vaduz",
+      "Europe/Vatican",
+      "Europe/Vienna",
+      "Europe/Zurich"
+    ],
+    "abbr": "WEDT",
+    "label": "(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna",
+    "value": "W. Europe Standard Time Longyearbyen Amsterdam Andorra Berlin Busingen Gibraltar Luxembourg Malta Monaco Oslo Rome San Marino Stockholm Vaduz Vatican Vienna Zurich"
+  },
+  {
+    "utc": [
+      "Africa/Ceuta",
+      "Europe/Brussels",
+      "Europe/Copenhagen",
+      "Europe/Madrid",
+      "Europe/Paris"
+    ],
+    "abbr": "RDT",
+    "label": "(GMT+01:00) Brussels, Copenhagen, Madrid, Paris",
+    "value": "Romance Standard Time Ceuta Brussels Copenhagen Madrid Paris"
+  },
+  {
+    "utc": [
+      "Asia/Nicosia",
+      "Europe/Athens",
+      "Europe/Bucharest",
+      "Europe/Chisinau"
+    ],
+    "abbr": "GDT",
+    "label": "(GMT+02:00) Athens, Bucharest",
+    "value": "GTB Standard Time Nicosia Athens Bucharest Chisinau"
+  },
+    {
+    "utc": [
+      "Asia/Nicosia",
+      "Europe/Athens",
+      "Europe/Bucharest",
+      "Europe/Chisinau",
+      "Europe/Helsinki",
+      "Europe/Kiev",
+      "Europe/Mariehamn",
+      "Europe/Nicosia",
+      "Europe/Riga",
+      "Europe/Sofia",
+      "Europe/Tallinn",
+      "Europe/Uzhgorod",
+      "Europe/Vilnius",
+      "Europe/Zaporozhye"
+    ],
+    "abbr": "EEDT",
+    "label": "(GMT+02:00) E. Europe",
+    "value": "E. Europe Standard Time Nicosia Athens Bucharest Chisinau Helsinki Kiev Mariehamn Nicosia Riga Sofia Tallinn Uzhgorod Vilnius Zaporozhye"
+  },
+    {
+    "utc": [
+      "Europe/Helsinki",
+      "Europe/Kiev",
+      "Europe/Mariehamn",
+      "Europe/Riga",
+      "Europe/Sofia",
+      "Europe/Tallinn",
+      "Europe/Uzhgorod",
+      "Europe/Vilnius",
+      "Europe/Zaporozhye"
+    ],
+    "abbr": "FDT",
+    "label": "(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius",
+    "value": "FLE Standard Time Helsinki Kiev Mariehamn Riga Sofia Tallinn Uzhgorod Vilnius Zaporozhye"
+  },
+    {
+    "utc": [
+      "Europe/Istanbul"
+    ],
+    "abbr": "TDT",
+    "label": "(GMT+03:00) Istanbul",
+    "value": "Turkey Standard Time Istanbul"
+  },
+  {
+    "utc": [
+      "Europe/Kaliningrad"
+    ],
+    "abbr": "KST",
+    "label": "(GMT+02:00) Kaliningrad",
+    "value": "Kaliningrad Standard Time Kaliningrad"
+  },
+  {
+    "utc": [
+      "Europe/Kirov",
+      "Europe/Moscow",
+      "Europe/Simferopol",
+      "Europe/Volgograd",
+      "Europe/Minsk"
+    ],
+    "abbr": "MSK",
+    "label": "(GMT+03:00) Moscow, St. Petersburg, Volgograd, Minsk",
+    "value": "Moscow Standard Time Kirov Moscow Simferopol Volgograd Minsk"
+  },
+  {
+    "utc": [
+      "Europe/Astrakhan",
+      "Europe/Samara",
+      "Europe/Ulyanovsk"
+    ],
+    "abbr": "SAMT",
+    "label": "(GMT+04:00) Samara, Ulyanovsk, Saratov",
+    "value": "Samara Time Astrakhan Samara Ulyanovsk"
+  }
+]
