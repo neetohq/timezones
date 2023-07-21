@@ -79,29 +79,6 @@
   },
   {
     "utc": [
-      "America/New_York",
-      "America/Detroit",
-      "America/Havana",
-      "America/Indiana/Petersburg",
-      "America/Indiana/Vincennes",
-      "America/Indiana/Winamac",
-      "America/Iqaluit",
-      "America/Kentucky/Monticello",
-      "America/Louisville",
-      "America/Montreal",
-      "America/Nassau",
-      "America/Nipigon",
-      "America/Pangnirtung",
-      "America/Port-au-Prince",
-      "America/Thunder_Bay",
-      "America/Toronto"
-    ],
-    "abbr": "EST",
-    "label": "(GMT-05:00) Eastern Time (US & Canada)",
-    "value": "Eastern Standard Time Detroit Havana Petersburg Vincennes Winamac Iqaluit Monticello Louisville Montreal Nassau New York Nipigon Pangnirtung Port-au-Prince Thunder_Bay Toronto"
-  },
-  {
-    "utc": [
       "America/Chihuahua",
       "America/Mazatlan"
     ],
@@ -176,5 +153,87 @@
     "abbr": "ESAST",
     "label": "(GMT-03:00) Brasilia",
     "value": "E. South America Standard Time Sao Paulo"
+  },
+  {
+    "utc": [
+      "America/Danmarkshavn",
+      "Etc/GMT"
+    ],
+    "abbr": "UTC",
+    "label": "(GMT) Coordinated Universal Time",
+    "value": "UTC Danmarkshavn GMT"
+  },
+  {
+    "utc": [
+      "America/Bahia"
+    ],
+    "abbr": "BST",
+    "label": "(GMT-03:00) Salvador",
+    "value": "Bahia Standard Time Bahia"
+  },
+  {
+    "utc": [
+      "America/Araguaina",
+      "America/Belem",
+      "America/Cayenne",
+      "America/Fortaleza",
+      "America/Maceio",
+      "America/Paramaribo",
+      "America/Recife",
+      "America/Santarem",
+      "Antarctica/Rothera",
+      "Atlantic/Stanley",
+      "Etc/GMT+3"
+    ],
+    "abbr": "SEST",
+    "label": "(GMT-03:00) Cayenne, Fortaleza",
+    "value": "SA Eastern Standard Time Araguaina Belem Cayenne Fortaleza Maceio Paramaribo Recife Santarem Rothera Stanley GMT+3"
+  },
+  {
+    "utc": [
+      "America/Anguilla",
+      "America/Antigua",
+      "America/Aruba",
+      "America/Barbados",
+      "America/Blanc-Sablon",
+      "America/Boa_Vista",
+      "America/Curacao",
+      "America/Dominica",
+      "America/Grand_Turk",
+      "America/Grenada",
+      "America/Guadeloupe",
+      "America/Guyana",
+      "America/Kralendijk",
+      "America/La_Paz",
+      "America/Lower_Princes",
+      "America/Manaus",
+      "America/Marigot",
+      "America/Martinique",
+      "America/Montserrat",
+      "America/Port_of_Spain",
+      "America/Porto_Velho",
+      "America/Puerto_Rico",
+      "America/Santo_Domingo",
+      "America/St_Barthelemy",
+      "America/St_Kitts",
+      "America/St_Lucia",
+      "America/St_Thomas",
+      "America/St_Vincent",
+      "America/Tortola",
+      "Etc/GMT+4"
+    ],
+    "abbr": "SWST",
+    "label": "(GMT-04:00) Georgetown, La Paz, Manaus, San Juan",
+    "value": "SA Western Standard Time Anguilla Antigua Aruba Barbados Blanc-Sablon Boa Vista Curacao Dominica Grand_Turk Grenada Guadeloupe Guyana Kralendijk La_Paz Lower_Princes Manaus Marigot Martinique Montserrat Port_of_Spain Porto_Velho Puerto_Rico Santo_Domingo St_Barthelemy St_Kitts St_Lucia St_Thomas St_Vincent Tortola GMT+4"
+  },
+  {
+    "utc": [
+      "America/Indiana/Marengo",
+      "America/Indiana/Vevay",
+      "America/Indianapolis"
+    ],
+    "abbr": "UEDT",
+    "label": "(GMT-05:00) Indiana (East)",
+    "value": "US Eastern Standard Time Marengo Vevay Indianapolis"
   }
 ]

@@ -35,5 +35,94 @@
     "abbr": "NST",
     "label": "(GMT+01:00) Windhoek",
     "value": "Namibia Standard Time Windhoek"
+  },
+  {
+    "utc": [
+      "Africa/Blantyre",
+      "Africa/Bujumbura",
+      "Africa/Gaborone",
+      "Africa/Harare",
+      "Africa/Johannesburg",
+      "Africa/Kigali",
+      "Africa/Lubumbashi",
+      "Africa/Lusaka",
+      "Africa/Maputo",
+      "Africa/Maseru",
+      "Africa/Mbabane",
+      "Etc/GMT-2"
+    ],
+    "abbr": "SAST",
+    "label": "(GMT+02:00) Harare, Pretoria",
+    "value": "South Africa Standard Time Blantyre Bujumbura Gaborone Harare Johannesburg Kigali Lubumbashi Lusaka Maputo Maseru Mbabane GMT-2"
+  },
+  {
+    "utc": [
+      "Africa/Tripoli"
+    ],
+    "abbr": "LST",
+    "label": "(GMT+02:00) Tripoli",
+    "value": "Libya Standard Time Tripoli"
+  },
+  {
+    "utc": [
+      "Africa/Addis_Ababa",
+      "Africa/Asmera",
+      "Africa/Dar_es_Salaam",
+      "Africa/Djibouti",
+      "Africa/Juba",
+      "Africa/Kampala",
+      "Africa/Khartoum",
+      "Africa/Mogadishu",
+      "Africa/Nairobi",
+      "Antarctica/Syowa",
+      "Etc/GMT-3",
+      "Indian/Antananarivo",
+      "Indian/Comoro",
+      "Indian/Mayotte"
+    ],
+    "abbr": "EAST",
+    "label": "(GMT+03:00) Nairobi",
+    "value": "E. Africa Standard Time Addis Ababa Asmera Dar_es_Salaam Djibouti Juba Kampala Khartoum Mogadishu Nairobi Syowa GMT-3 Antananarivo Comoro Mayotte"
+  },
+  {
+    "utc": [
+      "Africa/Abidjan",
+      "Africa/Accra",
+      "Africa/Bamako",
+      "Africa/Banjul",
+      "Africa/Bissau",
+      "Africa/Conakry",
+      "Africa/Dakar",
+      "Africa/Freetown",
+      "Africa/Lome",
+      "Africa/Monrovia",
+      "Africa/Nouakchott",
+      "Africa/Ouagadougou",
+      "Africa/Sao_Tome",
+      "Atlantic/Reykjavik",
+      "Atlantic/St_Helena"
+    ],
+    "abbr": "GST",
+    "label": "(GMT) Monrovia, Reykjavik",
+    "value": "Greenwich Standard Time Abidjan Accra Bamako Banjul Bissau Conakry Dakar Freetown Lome Monrovia Nouakchott Ouagadougou Sao Tome Reykjavik St_Helena"
+  },
+  {
+    "utc": [
+      "Africa/Casablanca",
+      "Africa/El_Aaiun"
+    ],
+    "abbr": "MDT",
+    "label": "(GMT) Casablanca",
+    "value": "Morocco Standard Time Casablanca El Aaiun"
+  },
+  {
+    "utc": [
+      "Indian/Mahe",
+      "Indian/Mauritius",
+      "Indian/Reunion"
+    ],
+    "abbr": "MST",
+    "label": "(GMT+04:00) Port Louis",
+    "value": "Mauritius Standard Time Mahe Mauritius Reunion"
   }
 ]

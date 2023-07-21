@@ -315,5 +315,25 @@
     "abbr": "KDT",
     "label": "(GMT+12:00) Petropavlovsk-Kamchatsky - Old",
     "value": "Kamchatka Standard Time Kamchatka"
+  },
+  {
+    "utc": [
+      "Asia/Sakhalin",
+      "Asia/Ust-Nera",
+      "Asia/Vladivostok"
+    ],
+    "abbr": "VST",
+    "label": "(GMT+11:00) Vladivostok",
+    "value": "Vladivostok Standard Time Sakhalin Ust-Nera Vladivostok"
+  },
+  {
+    "utc": [
+      "Asia/Chita",
+      "Asia/Khandyga",
+      "Asia/Yakutsk"
+    ],
+    "abbr": "YST",
+    "label": "(GMT+09:00) Yakutsk",
+    "value": "Yakutsk Standard Time Chita Khandyga Yakutsk"
   }
 ]
