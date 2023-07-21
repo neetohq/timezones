@@ -1,0 +1,55 @@
+[
+  {
+    "utc": [
+      "Antarctica/Casey",
+      "Australia/Perth"
+    ],
+    "abbr": "WAST",
+    "label": "(GMT+08:00) Perth",
+    "value": "W. Australia Standard Time Casey Perth"
+  },
+  {
+    "utc": [
+      "Australia/Adelaide",
+      "Australia/Broken_Hill"
+    ],
+    "abbr": "CAST",
+    "label": "(GMT+09:30) Adelaide",
+    "value": "Cen. Australia Standard Time Adelaide Broken Hill"
+  },
+  {
+    "utc": [
+      "Australia/Darwin"
+    ],
+    "abbr": "ACST",
+    "label": "(GMT+09:30) Darwin",
+    "value": "AUS Central Standard Time Darwin"
+  },
+  {
+    "utc": [
+      "Australia/Brisbane",
+      "Australia/Lindeman"
+    ],
+    "abbr": "EAST",
+    "label": "(GMT+10:00) Brisbane",
+    "value": "E. Australia Standard Time Brisbane Lindeman"
+  },
+  {
+    "utc": [
+      "Australia/Melbourne",
+      "Australia/Sydney"
+    ],
+    "abbr": "AEST",
+    "label": "(GMT+10:00) Canberra, Melbourne, Sydney",
+    "value": "AUS Eastern Standard Time Melbourne Sydney"
+  },
+  {
+    "utc": [
+      "Australia/Currie",
+      "Australia/Hobart"
+    ],
+    "abbr": "TST",
+    "label": "(GMT+10:00) Hobart",
+    "value": "Tasmania Standard Time Currie Hobart"
+  }
+]
