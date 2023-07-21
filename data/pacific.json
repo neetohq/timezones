@@ -12,18 +12,6 @@
   },
   {
     "utc": [
-      "Etc/GMT+10",
-      "Pacific/Honolulu",
-      "Pacific/Johnston",
-      "Pacific/Rarotonga",
-      "Pacific/Tahiti"
-    ],
-    "abbr": "HST",
-    "label": "(GMT-10:00) Hawaii",
-    "value": "Hawaiian Standard Time GMT+10 Honolulu Johnston Rarotonga Tahiti"
-  },
-  {
-    "utc": [
       "Pacific/Apia"
     ],
     "abbr": "SST",
@@ -100,4 +88,12 @@
     "label": "(GMT+13:00) Nuku'alofa",
     "value": "Tonga Standard Time GMT-13 Enderbury Fakaofo Tongatapu"
   },
+  {
+    "utc": [
+      "Etc/GMT+12"
+    ],
+    "abbr": "DST",
+    "label": "(GMT-12:00) International Date Line West",
+    "value": "Dateline Standard Time GMT+12"
+  }
 ]
