@@ -1,0 +1,39 @@
+[
+  {
+    "utc": [
+      "Africa/Cairo"
+    ],
+    "abbr": "EST",
+    "label": "(GMT+02:00) Cairo",
+    "value": "Egypt Standard Time Cairo"
+  },
+  {
+    "utc": [
+      "Africa/Algiers",
+      "Africa/Bangui",
+      "Africa/Brazzaville",
+      "Africa/Douala",
+      "Africa/Kinshasa",
+      "Africa/Lagos",
+      "Africa/Libreville",
+      "Africa/Luanda",
+      "Africa/Malabo",
+      "Africa/Ndjamena",
+      "Africa/Niamey",
+      "Africa/Porto-Novo",
+      "Africa/Tunis",
+      "Etc/GMT-1"
+    ],
+    "abbr": "WCAST",
+    "label": "(GMT+01:00) West Central Africa",
+    "value": "W. Central Africa Standard Time Algiers Bangui Brazzaville Douala Kinshasa Lagos Libreville Luanda Malabo Ndjamena Niamey Porto-Novo Tunis GMT-1"
+  },
+  {
+    "utc": [
+      "Africa/Windhoek"
+    ],
+    "abbr": "NST",
+    "label": "(GMT+01:00) Windhoek",
+    "value": "Namibia Standard Time Windhoek"
+  }
+]
