@@ -1,0 +1,103 @@
+[
+  {
+    "utc": [
+      "Etc/GMT+11",
+      "Pacific/Midway",
+      "Pacific/Niue",
+      "Pacific/Pago_Pago"
+    ],
+    "abbr": "U",
+    "label": "(GMT-11:00) Coordinated Universal Time-11",
+    "value": "UTC-11 GMT+11 Midway Niue Pago Pago"
+  },
+  {
+    "utc": [
+      "Etc/GMT+10",
+      "Pacific/Honolulu",
+      "Pacific/Johnston",
+      "Pacific/Rarotonga",
+      "Pacific/Tahiti"
+    ],
+    "abbr": "HST",
+    "label": "(GMT-10:00) Hawaii",
+    "value": "Hawaiian Standard Time GMT+10 Honolulu Johnston Rarotonga Tahiti"
+  },
+  {
+    "utc": [
+      "Pacific/Apia"
+    ],
+    "abbr": "SST",
+    "label": "(GMT+13:00) Samoa",
+    "value": "Samoa Standard Time Apia"
+  },
+  {
+    "utc": [
+      "Antarctica/McMurdo",
+      "Pacific/Auckland"
+    ],
+    "abbr": "NZST",
+    "label": "(GMT+12:00) Auckland, Wellington",
+    "value": "New Zealand Standard Time McMurdo Auckland"
+  },
+  {
+    "utc": [
+      "Pacific/Fiji"
+    ],
+    "abbr": "FST",
+    "label": "(GMT+12:00) Fiji",
+    "value": "Fiji Standard Time Fiji"
+  },
+  {
+    "utc": [
+      "Etc/GMT-12",
+      "Pacific/Funafuti",
+      "Pacific/Kwajalein",
+      "Pacific/Majuro",
+      "Pacific/Nauru",
+      "Pacific/Tarawa",
+      "Pacific/Wake",
+      "Pacific/Wallis"
+    ],
+    "abbr": "U",
+    "label": "(GMT+12:00) Coordinated Universal Time+12",
+    "value": "UTC+12 GMT-12 Funafuti Kwajalein Majuro Nauru Tarawa Wake Wallis"
+  },
+  {
+    "utc": [
+      "Antarctica/DumontDUrville",
+      "Etc/GMT-10",
+      "Pacific/Guam",
+      "Pacific/Port_Moresby",
+      "Pacific/Saipan",
+      "Pacific/Truk"
+    ],
+    "abbr": "WPST",
+    "label": "(GMT+10:00) Guam, Port Moresby",
+    "value": "West Pacific Standard Time DumontDUrville GMT-10 Guam Port Moresby Saipan Truk"
+  },
+  {
+    "utc": [
+      "Antarctica/Macquarie",
+      "Etc/GMT-11",
+      "Pacific/Efate",
+      "Pacific/Guadalcanal",
+      "Pacific/Kosrae",
+      "Pacific/Noumea",
+      "Pacific/Ponape"
+    ],
+    "abbr": "CPST",
+    "label": "(GMT+11:00) Solomon Is., New Caledonia",
+    "value": "Central Pacific Standard Time Macquarie GMT-11 Efate Guadalcanal Kosrae Noumea Ponape"
+  },
+  {
+    "utc": [
+      "Etc/GMT-13",
+      "Pacific/Enderbury",
+      "Pacific/Fakaofo",
+      "Pacific/Tongatapu"
+    ],
+    "abbr": "TST",
+    "label": "(GMT+13:00) Nuku'alofa",
+    "value": "Tonga Standard Time GMT-13 Enderbury Fakaofo Tongatapu"
+  },
+]
