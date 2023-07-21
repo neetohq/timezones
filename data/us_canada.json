@@ -1,0 +1,102 @@
+[
+  {
+    "utc": [
+      "America/Los_Angeles",
+      "America/Tijuana",
+      "America/Vancouver",
+      "PST8PDT"
+    ],
+    "abbr": "PST",
+    "label": "(GMT-08:00) Pacific Standard Time (US & Canada)",
+    "value": "Pacific Standard Time Los Angeles Tijuana Vancouver PST8PDT"
+  },
+  {
+    "utc": [
+      "America/Creston",
+      "America/Dawson",
+      "America/Dawson_Creek",
+      "America/Hermosillo",
+      "America/Phoenix",
+      "America/Whitehorse",
+      "Etc/GMT+7"
+    ],
+    "abbr": "UMST",
+    "label": "(GMT-07:00) Mountain Time (US & Canada)",
+    "value": "US Mountain Standard Time Creston Dawson Dawson Creek Hermosillo Phoenix Whitehorse GMT+7"
+  },
+  {
+    "utc": [
+      "America/Chicago",
+      "America/Indiana/Knox",
+      "America/Indiana/Tell_City",
+      "America/Matamoros",
+      "America/Menominee",
+      "America/North_Dakota/Beulah",
+      "America/North_Dakota/Center",
+      "America/North_Dakota/New_Salem",
+      "America/Rainy_River",
+      "America/Rankin_Inlet",
+      "America/Resolute",
+      "America/Winnipeg",
+      "CST6CDT"
+    ],
+    "abbr": "CDT",
+    "label": "(GMT-06:00) Central Time (US & Canada)",
+    "value": "Central Standard Time Chicago Knox Tell City Matamoros Menominee Beulah Center New_Salem Rainy_River Rankin_Inlet Resolute Winnipeg CST6CDT"
+  },
+  {
+    "utc": [
+      "America/New_York",
+      "America/Detroit",
+      "America/Havana",
+      "America/Indiana/Petersburg",
+      "America/Indiana/Vincennes",
+      "America/Indiana/Winamac",
+      "America/Iqaluit",
+      "America/Kentucky/Monticello",
+      "America/Louisville",
+      "America/Montreal",
+      "America/Nassau",
+      "America/Nipigon",
+      "America/Pangnirtung",
+      "America/Port-au-Prince",
+      "America/Thunder_Bay",
+      "America/Toronto"
+    ],
+    "abbr": "EST",
+    "label": "(GMT-05:00) Eastern Time (US & Canada)",
+    "value": "Eastern Standard Time Detroit Havana Petersburg Vincennes Winamac Iqaluit Monticello Louisville Montreal Nassau New York Nipigon Pangnirtung Port-au-Prince Thunder_Bay Toronto"
+  },
+  {
+    "utc": [
+      "America/Anchorage",
+      "America/Juneau",
+      "America/Nome",
+      "America/Sitka",
+      "America/Yakutat"
+    ],
+    "abbr": "AKDT",
+    "label": "(GMT-09:00) Alaska",
+    "value": "Alaskan Standard Time Anchorage Juneau Nome Sitka Yakutat"
+  },
+  {
+    "utc": [
+      "America/St_Johns"
+    ],
+    "abbr": "NDT",
+    "label": "(GMT-03:30) Newfoundland",
+    "value": "Newfoundland Standard Time St Johns"
+  },
+  {
+    "utc": [
+      "Etc/GMT+10",
+      "Pacific/Honolulu",
+      "Pacific/Johnston",
+      "Pacific/Rarotonga",
+      "Pacific/Tahiti"
+    ],
+    "abbr": "HST",
+    "label": "(GMT-10:00) Hawaii",
+    "value": "Hawaiian Standard Time GMT+10 Honolulu Johnston Rarotonga Tahiti"
+  }
+]
