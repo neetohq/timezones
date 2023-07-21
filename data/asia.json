@@ -1,0 +1,319 @@
+[
+  {
+    "utc": [
+      "Asia/Kolkata",
+      "Asia/Calcutta"
+    ],
+    "abbr": "IST",
+    "label": "(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi",
+    "value": "India Standard Time Kolkata Calcutta"
+  },
+  {
+    "utc": [
+      "Asia/Beirut"
+    ],
+    "abbr": "MEDT",
+    "label": "(GMT+02:00) Beirut",
+    "value": "Middle East Standard Time Beirut"
+  },
+  {
+    "utc": [
+      "Asia/Damascus"
+    ],
+    "abbr": "SDT",
+    "label": "(GMT+02:00) Damascus",
+    "value": "Syria Standard Time Damascus"
+  },
+  {
+    "utc": [
+      "Asia/Jerusalem"
+    ],
+    "abbr": "JDT",
+    "label": "(GMT+02:00) Jerusalem",
+    "value": "Israel Standard Time Jerusalem"
+  },
+    {
+    "utc": [
+      "Asia/Amman"
+    ],
+    "abbr": "JST",
+    "label": "(GMT+03:00) Amman",
+    "value": "Jordan Standard Time Amman"
+  },
+  {
+    "utc": [
+      "Asia/Baghdad"
+    ],
+    "abbr": "AST",
+    "label": "(GMT+03:00) Baghdad",
+    "value": "Arabic Standard Time Baghdad"
+  },
+  {
+    "utc": [
+      "Asia/Aden",
+      "Asia/Bahrain",
+      "Asia/Kuwait",
+      "Asia/Qatar",
+      "Asia/Riyadh"
+    ],
+    "abbr": "AST",
+    "label": "(GMT+03:00) Kuwait, Riyadh",
+    "value": "Arab Standard Time Aden Bahrain Kuwait Qatar Riyadh"
+  },
+  {
+    "utc": [
+      "Asia/Tehran"
+    ],
+    "abbr": "IDT",
+    "label": "(GMT+03:30) Tehran",
+    "value": "Iran Standard Time Tehran"
+  },
+  {
+    "utc": [
+      "Asia/Dubai",
+      "Asia/Muscat",
+      "Etc/GMT-4"
+    ],
+    "abbr": "AST",
+    "label": "(GMT+04:00) Abu Dhabi, Muscat",
+    "value": "Arabian Standard Time Dubai Muscat GMT-4"
+  },
+  {
+    "utc": [
+      "Asia/Baku"
+    ],
+    "abbr": "ADT",
+    "label": "(GMT+04:00) Baku",
+    "value": "Azerbaijan Standard Time Baku"
+  },
+  {
+    "utc": [
+      "Asia/Tbilisi"
+    ],
+    "abbr": "GET",
+    "label": "(GMT+04:00) Tbilisi",
+    "value": "Georgian Standard Time Tbilisi"
+  },
+  {
+    "utc": [
+      "Asia/Yerevan"
+    ],
+    "abbr": "CST",
+    "label": "(GMT+04:00) Yerevan",
+    "value": "Caucasus Standard Time Yerevan"
+  },
+  {
+    "utc": [
+      "Asia/Kabul"
+    ],
+    "abbr": "AST",
+    "label": "(GMT+04:30) Kabul",
+    "value": "Afghanistan Standard Time Kabul"
+  },
+  {
+    "utc": [
+      "Antarctica/Mawson",
+      "Asia/Aqtau",
+      "Asia/Aqtobe",
+      "Asia/Ashgabat",
+      "Asia/Dushanbe",
+      "Asia/Oral",
+      "Asia/Samarkand",
+      "Asia/Tashkent",
+      "Etc/GMT-5",
+      "Indian/Kerguelen",
+      "Indian/Maldives"
+    ],
+    "abbr": "WAST",
+    "label": "(GMT+05:00) Ashgabat, Tashkent",
+    "value": "West Asia Standard Time Mawson Aqtau Aqtobe Ashgabat Dushanbe Oral Samarkand Tashkent GMT-5 Kerguelen Maldives"
+  },
+  {
+    "utc": [
+      "Asia/Yekaterinburg"
+    ],
+    "abbr": "YEKT",
+    "label": "(GMT+05:00) Yekaterinburg",
+    "value": "Yekaterinburg Time Yekaterinburg"
+  },
+  {
+    "utc": [
+      "Asia/Karachi"
+    ],
+    "abbr": "PKT",
+    "label": "(GMT+05:00) Islamabad, Karachi",
+    "value": "Pakistan Standard Time Karachi"
+  },
+  {
+    "utc": [
+      "Asia/Colombo"
+    ],
+    "abbr": "SLST",
+    "label": "(GMT+05:30) Sri Jayawardenepura",
+    "value": "Sri Lanka Standard Time Colombo"
+  },
+  {
+    "utc": [
+      "Asia/Kathmandu"
+    ],
+    "abbr": "NST",
+    "label": "(GMT+05:45) Kathmandu",
+    "value": "Nepal Standard Time Kathmandu"
+  },
+  {
+    "utc": [
+      "Antarctica/Vostok",
+      "Asia/Almaty",
+      "Asia/Bishkek",
+      "Asia/Qyzylorda",
+      "Asia/Urumqi",
+      "Etc/GMT-6",
+      "Indian/Chagos"
+    ],
+    "abbr": "CAST",
+    "label": "(GMT+06:00) Nur-Sultan (Astana)",
+    "value": "Central Asia Standard Time Vostok Almaty Bishkek Qyzylorda Urumqi GMT-6 Chagos"
+  },
+  {
+    "utc": [
+      "Asia/Dhaka",
+      "Asia/Thimphu"
+    ],
+    "abbr": "BST",
+    "label": "(GMT+06:00) Dhaka",
+    "value": "Bangladesh Standard Time Dhaka Thimphu"
+  },
+  {
+    "utc": [
+      "Asia/Rangoon",
+      "Indian/Cocos"
+    ],
+    "abbr": "MST",
+    "label": "(GMT+06:30) Yangon (Rangoon)",
+    "value": "Myanmar Standard Time Rangoon Cocos"
+  },
+  {
+    "utc": [
+      "Antarctica/Davis",
+      "Asia/Bangkok",
+      "Asia/Hovd",
+      "Asia/Jakarta",
+      "Asia/Phnom_Penh",
+      "Asia/Pontianak",
+      "Asia/Saigon",
+      "Asia/Vientiane",
+      "Etc/GMT-7",
+      "Indian/Christmas"
+    ],
+    "abbr": "SAST",
+    "label": "(GMT+07:00) Bangkok, Hanoi, Jakarta",
+    "value": "SE Asia Standard Time Davis Bangkok Hovd Jakarta Phnom Penh Pontianak Saigon Vientiane GMT-7 Christmas"
+  },
+  {
+    "utc": [
+      "Asia/Novokuznetsk",
+      "Asia/Novosibirsk",
+      "Asia/Omsk"
+    ],
+    "abbr": "NCAST",
+    "label": "(GMT+07:00) Novosibirsk",
+    "value": "N. Central Asia Standard Time Novokuznetsk Novosibirsk Omsk"
+  },
+  {
+    "utc": [
+      "Asia/Hong_Kong",
+      "Asia/Macau",
+      "Asia/Shanghai"
+    ],
+    "abbr": "CST",
+    "label": "(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi",
+    "value": "China Standard Time Hong Kong Macau Shanghai"
+  },
+  {
+    "utc": [
+      "Asia/Krasnoyarsk"
+    ],
+    "abbr": "NAST",
+    "label": "(GMT+08:00) Krasnoyarsk",
+    "value": "North Asia Standard Time Krasnoyarsk"
+  },
+  {
+    "utc": [
+      "Asia/Brunei",
+      "Asia/Kuala_Lumpur",
+      "Asia/Kuching",
+      "Asia/Makassar",
+      "Asia/Manila",
+      "Asia/Singapore",
+      "Etc/GMT-8"
+    ],
+    "abbr": "MPST",
+    "label": "(GMT+08:00) Kuala Lumpur, Singapore",
+    "value": "Singapore Standard Time Brunei Kuala Lumpur Kuching Makassar Manila Singapore GMT-8"
+  },
+  {
+    "utc": [
+      "Asia/Taipei"
+    ],
+    "abbr": "TST",
+    "label": "(GMT+08:00) Taipei",
+    "value": "Taipei Standard Time Taipei"
+  },
+  {
+    "utc": [
+      "Asia/Choibalsan",
+      "Asia/Ulaanbaatar"
+    ],
+    "abbr": "UST",
+    "label": "(GMT+08:00) Ulaanbaatar",
+    "value": "Ulaanbaatar Standard Time Choibalsan Ulaanbaatar"
+  },
+  {
+    "utc": [
+      "Asia/Irkutsk"
+    ],
+    "abbr": "NAEST",
+    "label": "(GMT+08:00) Irkutsk",
+    "value": "North Asia East Standard Time Irkutsk"
+  },
+  {
+    "utc": [
+      "Asia/Dili",
+      "Asia/Jayapura",
+      "Asia/Tokyo",
+      "Etc/GMT-9",
+      "Pacific/Palau"
+    ],
+    "abbr": "JST",
+    "label": "(GMT+09:00) Osaka, Sapporo, Tokyo",
+    "value": "Japan Standard Time Dili Jayapura Tokyo GMT-9 Palau"
+  },
+  {
+    "utc": [
+      "Asia/Pyongyang",
+      "Asia/Seoul"
+    ],
+    "abbr": "KST",
+    "label": "(GMT+09:00) Seoul",
+    "value": "Korea Standard Time Pyongyang Seoul"
+  },
+  {
+    "utc": [
+      "Asia/Anadyr",
+      "Asia/Kamchatka",
+      "Asia/Magadan",
+      "Asia/Srednekolymsk"
+    ],
+    "abbr": "MST",
+    "label": "(GMT+12:00) Magadan",
+    "value": "Magadan Standard Time Anadyr Kamchatka Magadan Srednekolymsk"
+  },
+  {
+    "utc": [
+      "Asia/Kamchatka"
+    ],
+    "abbr": "KDT",
+    "label": "(GMT+12:00) Petropavlovsk-Kamchatsky - Old",
+    "value": "Kamchatka Standard Time Kamchatka"
+  }
+]
