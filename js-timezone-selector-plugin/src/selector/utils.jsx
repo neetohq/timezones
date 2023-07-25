@@ -12,6 +12,7 @@ import UsCanada from '../../../data/us_canada.json';
 export const handleSelect = (e) => {
   const changeTimezoneButton = document.getElementById('changeTimezoneButton');
   changeTimezoneButton.innerHTML = e.target.innerHTML;
+  changeTimezoneButton.value = e.target.value;
 
   const optionsContainer = document.getElementById('optionsContainer');
   optionsContainer.classList.toggle('hidden');
