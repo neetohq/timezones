@@ -15,7 +15,7 @@ const Selector = () => {
   addOutsideClickListener();
 
   return (
-    <div class="flex flex-col p-4 w-64" id="timezoneSelector">
+    <div class="flex flex-col p-4 w-72" id="timezoneSelector">
       <Button />
       <OptionsContainer />
     </div>
