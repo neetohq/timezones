@@ -58,4 +58,15 @@ export const groupedOptions = [
   { Pacific },
 ];
 
-export const DEFAULT_VALUE = groupedOptions[2].Asia[0];
+const allTimezones = groupedOptions.reduce((accumulator, currentValue) => {
+  const key = Object.keys(currentValue)[0];
+  return [...accumulator, ...currentValue[key]];
+}, []);
+
+const findBrowserTimezone = () => {
+  const browserTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+  return allTimezones.find((timezone) => timezone.utc.includes(browserTimezone));
+};
+
+export const DEFAULT_VALUE = findBrowserTimezone() || allTimezones[0];
