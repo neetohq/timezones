@@ -1,15 +1,18 @@
 import { h } from 'htm/preact';
 
-import {
-  DUMMY_TIMEZONES_ASIA,
-  DUMMY_TIMEZONES_AUSTRALIA,
-  DUMMY_TIMEZONES_EUROPE,
-  DUMMY_TIMEZONES_USA_CANADA,
-} from './constants';
+import Africa from '../../../data/africa.json';
+import America from '../../../data/america.json';
+import Asia from '../../../data/asia.json';
+import Atlantic from '../../../data/atlantic.json';
+import Australia from '../../../data/australia.json';
+import Europe from '../../../data/europe.json';
+import Pacific from '../../../data/pacific.json';
+import UsCanada from '../../../data/us_canada.json';
 
 export const handleSelect = (e) => {
   const changeTimezoneButton = document.getElementById('changeTimezoneButton');
-  changeTimezoneButton.innerHTML = e.target.value;
+  changeTimezoneButton.innerHTML = e.target.innerHTML;
+  changeTimezoneButton.value = e.target.value;
 
   const optionsContainer = document.getElementById('optionsContainer');
   optionsContainer.classList.toggle('hidden');
@@ -32,7 +35,11 @@ export const createGroupedOptionButton = (group) => (
         <div className="flex flex-col p-4 border-b" key={groupIndex}>
           <span className="px-4 text-base font-bold uppercase">{key}</span>
           {element.map((timezone, index) => createOptionButton({
-            onClick: handleSelect, key: index, value: timezone, timezone, label: timezone,
+            onClick: handleSelect,
+            key: index,
+            value: timezone.value,
+            timezone: timezone.label,
+            label: timezone.label,
           }))}
         </div>
       );
@@ -41,10 +48,14 @@ export const createGroupedOptionButton = (group) => (
 );
 
 export const groupedOptions = [
-  { ASIA: DUMMY_TIMEZONES_ASIA },
-  { EUROPE: DUMMY_TIMEZONES_EUROPE },
-  { 'USA/CANADA': DUMMY_TIMEZONES_USA_CANADA },
-  { AUSTRALIA: DUMMY_TIMEZONES_AUSTRALIA },
+  { Africa },
+  { America },
+  { Asia },
+  { Atlantic },
+  { Australia },
+  { Europe },
+  { Pacific },
+  { 'US/Canada': UsCanada },
 ];
 
-export const DEFAULT_VALUE = groupedOptions[0].ASIA[0];
+export const DEFAULT_VALUE = groupedOptions[2].Asia[0];
