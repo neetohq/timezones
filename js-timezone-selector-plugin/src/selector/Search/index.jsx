@@ -27,9 +27,9 @@ function Search() {
     <input
       id="searchbox"
       type="text"
-      placeholder="Filter timezones"
+      placeholder="Search"
       onInput={handleInputChange}
-      className="px-2 py-1 border rounded"
+      className="px-2 py-2 m-2 border rounded"
     />
   );
 }

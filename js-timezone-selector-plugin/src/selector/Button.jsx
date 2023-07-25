@@ -5,6 +5,11 @@ function Button() {
   const handleClick = () => {
     const optionsContainer = document.getElementById('optionsContainer');
     optionsContainer.classList.toggle('hidden');
+
+    if (!optionsContainer.classList.contains('hidden')) {
+      const searchbox = document.getElementById('searchbox');
+      searchbox.focus();
+    }
   };
 
   return (

@@ -5,7 +5,7 @@ import {
 
 function Options() {
   return (
-    <div id="selectTimezoneOptions">
+    <div id="selectTimezoneOptions" className="h-64 overflow-y-scroll">
       <div className="flex flex-col">
         {createGroupedOptionButton(groupedOptions)}
       </div>
