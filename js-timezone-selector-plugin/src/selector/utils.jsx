@@ -48,14 +48,14 @@ export const createGroupedOptionButton = (group) => (
 );
 
 export const groupedOptions = [
-  { Africa },
+  { 'US/Canada': UsCanada },
   { America },
   { Asia },
+  { Africa },
   { Atlantic },
   { Australia },
   { Europe },
   { Pacific },
-  { 'US/Canada': UsCanada },
 ];
 
 export const DEFAULT_VALUE = groupedOptions[2].Asia[0];
