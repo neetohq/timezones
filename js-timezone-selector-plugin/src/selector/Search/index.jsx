@@ -3,7 +3,7 @@ import { h, render } from 'htm/preact';
 import { filterTimezones, createContainerForUpdatedOptions } from './utils';
 import { createGroupedOptionButton } from '../utils';
 
-function Search() {
+function Search({ selectedValue, setSelectedValue }) {
   const handleInputChange = (event) => {
     const inputValue = event.target.value.toLowerCase();
 
@@ -15,7 +15,7 @@ function Search() {
     const updatedOptionsContainer = createContainerForUpdatedOptions();
     optionsContainer.innerHTML = '';
 
-    const filteredGroupedOptions = createGroupedOptionButton(updatedTimezones);
+    const filteredGroupedOptions = createGroupedOptionButton(updatedTimezones, selectedValue, setSelectedValue);
 
     render(filteredGroupedOptions, updatedOptionsContainer);
 

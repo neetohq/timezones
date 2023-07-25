@@ -9,44 +9,6 @@ import Europe from '../../../data/europe.json';
 import Pacific from '../../../data/pacific.json';
 import UsCanada from '../../../data/us_canada.json';
 
-export const handleSelect = (e) => {
-  const changeTimezoneButton = document.getElementById('changeTimezoneButton');
-  changeTimezoneButton.innerHTML = e.target.innerHTML;
-  changeTimezoneButton.value = e.target.value;
-
-  const optionsContainer = document.getElementById('optionsContainer');
-  optionsContainer.classList.toggle('hidden');
-};
-
-export const createOptionButton = ({
-  key, value, onClick, label,
-}) => (
-  <button onClick={onClick} className="px-4 py-4 text-xs hover:bg-slate-100" key={key} value={value}>
-    {label}
-  </button>
-);
-
-export const createGroupedOptionButton = (group) => (
-  <div>
-    {group.map((groupItem, groupIndex) => {
-      const key = Object.keys(groupItem)[0];
-      const element = groupItem[key];
-      return (
-        <div className="flex flex-col p-4 pb-0" key={groupIndex}>
-          <span className="text-xs font-bold uppercase">{key}</span>
-          {element.map((timezone, index) => createOptionButton({
-            onClick: handleSelect,
-            key: index,
-            value: timezone.value,
-            timezone: timezone.label,
-            label: timezone.label,
-          }))}
-        </div>
-      );
-    })}
-  </div>
-);
-
 export const groupedOptions = [
   { 'US/Canada': UsCanada },
   { America },
@@ -58,7 +20,7 @@ export const groupedOptions = [
   { Pacific },
 ];
 
-const allTimezones = groupedOptions.reduce((accumulator, currentValue) => {
+export const allTimezones = groupedOptions.reduce((accumulator, currentValue) => {
   const key = Object.keys(currentValue)[0];
   return [...accumulator, ...currentValue[key]];
 }, []);
@@ -70,3 +32,49 @@ const findBrowserTimezone = () => {
 };
 
 export const DEFAULT_VALUE = findBrowserTimezone() || allTimezones[0];
+
+export const handleSelect = (e, setSelectedValue) => {
+  const selectedTimezone = allTimezones.find((timezone) => timezone?.value === e?.target?.value);
+  setSelectedValue(selectedTimezone);
+
+  const changeTimezoneButton = document.getElementById('changeTimezoneButton');
+  changeTimezoneButton.innerHTML = e.target.innerHTML;
+  changeTimezoneButton.value = e.target.value;
+
+  const optionsContainer = document.getElementById('optionsContainer');
+  optionsContainer.classList.toggle('hidden');
+};
+
+export const createOptionButton = ({
+  key, value, onClick, label, selected,
+}) => (
+  <button onClick={onClick} className={`px-4 py-4 text-xs hover:bg-slate-100 ${selected ? 'bg-blue-300' : ''}`} key={key} value={value}>
+    {label}
+  </button>
+);
+
+export const createGroupedOptionButton = (
+  group,
+  selectedValue,
+  setSelectedValue,
+) => (
+  <div>
+    {group.map((groupItem, groupIndex) => {
+      const key = Object.keys(groupItem)[0];
+      const element = groupItem[key];
+      return (
+        <div className="flex flex-col p-4 pb-0" key={groupIndex}>
+          <span className="text-xs font-bold uppercase">{key}</span>
+          {element.map((timezone, index) => createOptionButton({
+            onClick: (event) => handleSelect(event, setSelectedValue),
+            key: index,
+            value: timezone.value,
+            timezone: timezone.label,
+            label: timezone.label,
+            selected: selectedValue.value === timezone.value,
+          }))}
+        </div>
+      );
+    })}
+  </div>
+);
