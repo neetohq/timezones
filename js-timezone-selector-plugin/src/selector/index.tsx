@@ -7,11 +7,12 @@ import { DEFAULT_VALUE } from './utils';
 
 const Selector = () => {
   const [selectedValue, setSelectedValue] = useState(DEFAULT_VALUE);
+  const [showOptions, setShowOptions] = useState(false);
 
   const addOutsideClickListener = () => {
     window.addEventListener('click', function (e) {
       if (!(document.getElementById('timezoneSelector').contains(e.target))) {
-        document.getElementById("optionsContainer")?.classList?.add("hidden");
+        setShowOptions(false)
       }
     });
   };
@@ -20,8 +21,10 @@ const Selector = () => {
 
   return (
     <div class="flex flex-col p-4 w-96" id="timezoneSelector">
-      <Button selectedValue={selectedValue} />
-      <OptionsContainer selectedValue={selectedValue} setSelectedValue={setSelectedValue} />
+      <Button showOptions={showOptions} setShowOptions={setShowOptions} selectedValue={selectedValue} />
+      {showOptions === true &&
+        (<OptionsContainer selectedValue={selectedValue} setSelectedValue={setSelectedValue} />)
+      }
     </div>
   )
 }

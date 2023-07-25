@@ -1,15 +1,18 @@
 import { h } from 'htm/preact';
+import { useEffect } from 'preact/hooks';
 
-function Button({ selectedValue }) {
+function Button({ selectedValue, showOptions, setShowOptions }) {
   const handleClick = () => {
-    const optionsContainer = document.getElementById('optionsContainer');
-    optionsContainer.classList.toggle('hidden');
+    setShowOptions((showOptions) => !showOptions);
+  };
 
-    if (!optionsContainer.classList.contains('hidden')) {
+  useEffect(() => {
+    if (showOptions) {
       const searchbox = document.getElementById('searchbox');
+
       searchbox.focus();
     }
-  };
+  }, [showOptions]);
 
   return (
     <div
