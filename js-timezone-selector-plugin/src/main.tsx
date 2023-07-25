@@ -1,4 +1,4 @@
-import { render } from "htm/preact"
+import { h, render } from "htm/preact"
 import NeetoTimezoneSelect from "./NeetoTimezoneSelect";
 
 import Selector from "./selector";
@@ -14,7 +14,7 @@ class Plugin {
 
   render() {
 
-    render(Selector(), this.element);
+    render(<Selector />, this.element);
   }
 }
 
