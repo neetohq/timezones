@@ -1,14 +1,15 @@
 import { h } from 'htm/preact';
-import {
-  allTimezones,
-  createGroupedOptionButton, groupedOptions,
-} from './utils';
 
-function Options({ selectedValue, setSelectedValue }) {
+import {
+  createGroupedOptionButton,
+} from './utils';
+import { filterTimezones } from './Search/utils';
+
+function Options({ searchInput, selectedValue, setSelectedValue }) {
   return (
     <div id="selectTimezoneOptions" className="h-64 overflow-y-scroll">
       <div className="flex flex-col">
-        {createGroupedOptionButton(groupedOptions, selectedValue, setSelectedValue)}
+        {createGroupedOptionButton(filterTimezones(searchInput), selectedValue, setSelectedValue)}
       </div>
     </div>
   );

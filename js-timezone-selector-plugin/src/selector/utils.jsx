@@ -37,10 +37,6 @@ export const handleSelect = (e, setSelectedValue) => {
   const selectedTimezone = allTimezones.find((timezone) => timezone?.value === e?.target?.value);
   setSelectedValue(selectedTimezone);
 
-  const changeTimezoneButton = document.getElementById('changeTimezoneButton');
-  changeTimezoneButton.innerHTML = e.target.innerHTML;
-  changeTimezoneButton.value = e.target.value;
-
   const optionsContainer = document.getElementById('optionsContainer');
   optionsContainer.classList.toggle('hidden');
 };
