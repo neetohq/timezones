@@ -32,8 +32,8 @@ export const createGroupedOptionButton = (group) => (
       const key = Object.keys(groupItem)[0];
       const element = groupItem[key];
       return (
-        <div className="flex flex-col p-4 border-b" key={groupIndex}>
-          <span className="px-4 text-base font-bold uppercase">{key}</span>
+        <div className="flex flex-col p-4 pb-0" key={groupIndex}>
+          <span className="text-xs font-bold uppercase">{key}</span>
           {element.map((timezone, index) => createOptionButton({
             onClick: handleSelect,
             key: index,
