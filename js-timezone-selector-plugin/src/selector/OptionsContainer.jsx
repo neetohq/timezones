@@ -4,7 +4,7 @@ import { useState } from 'preact/hooks';
 import Search from './Search';
 import Options from './Options';
 
-function OptionsContainer({ selectedValue, setSelectedValue }) {
+function OptionsContainer({ selectedValue, setSelectedValue, setShowOptions }) {
   const [searchInput, setSearchInput] = useState('');
 
   return (
@@ -13,7 +13,7 @@ function OptionsContainer({ selectedValue, setSelectedValue }) {
         searchInput={searchInput}
         setSearchInput={setSearchInput}
       />
-      <Options searchInput={searchInput} selectedValue={selectedValue} setSelectedValue={setSelectedValue} />
+      <Options searchInput={searchInput} selectedValue={selectedValue} setSelectedValue={setSelectedValue} setShowOptions={setShowOptions} />
     </div>
   );
 }
