@@ -36,18 +36,38 @@ export const DEFAULT_VALUE = findBrowserTimezone() || allTimezones[0];
 export const valueToId = (value) => `option-${value.replaceAll(' ', '_').toLowerCase()}`;
 
 export const createOptionButton = ({
-  key, value, onClick, label, selected,
+  key, value, onClick, label, selected, currentTime,
 }) => (
   <button
     id={valueToId(value)}
     onClick={onClick}
-    className={`px-4 py-4 text-xs hover:bg-slate-100 ${selected ? 'bg-blue-300' : ''}`}
+    className={`flex items-center justify-between px-4 py-4 text-xs hover:bg-slate-100 ${selected ? 'bg-blue-300' : ''}`}
     key={key}
     value={value}
   >
-    {label}
+    <div className="flex items-center w-3/4 space-x-4 truncate pointer-events-none line-clamp-2">
+      <div>{label}</div>
+    </div>
+    <div className="text-right truncate pointer-events-none line-clamp-2">
+      {currentTime}
+    </div>
   </button>
 );
+
+export const getCurrentTimeInTimezone = (timezone) => {
+  const currentTimeInUTC = new Date();
+
+  const options = {
+    timeZone: timezone,
+    hour12: true,
+    hour: 'numeric',
+    minute: 'numeric',
+  };
+
+  const currentTimeInTimezone = currentTimeInUTC.toLocaleString('en-US', options);
+
+  return currentTimeInTimezone;
+};
 
 export const createGroupedOptionButton = (
   group,
@@ -68,6 +88,7 @@ export const createGroupedOptionButton = (
             timezone: timezone.label,
             label: timezone.label,
             selected: selectedValue.value === timezone.value,
+            currentTime: getCurrentTimeInTimezone(timezone.utc[0]),
           }))}
         </div>
       );

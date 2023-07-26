@@ -20,7 +20,7 @@ const Selector = () => {
   addOutsideClickListener();
 
   return (
-    <div class="flex flex-col p-4 w-96" id="timezoneSelector">
+    <div class="flex flex-col p-4" id="timezoneSelector">
       <Button showOptions={showOptions} setShowOptions={setShowOptions} selectedValue={selectedValue} />
       {showOptions === true &&
         (<OptionsContainer selectedValue={selectedValue} setSelectedValue={setSelectedValue} setShowOptions={setShowOptions} />)
