@@ -9,7 +9,7 @@ import { filterTimezones } from './Search/utils';
 function Options({ searchInput, selectedValue, setSelectedValue }) {
   useEffect(() => {
     const selectedElement = document.getElementById(`option-${selectedValue?.value}`);
-    selectedElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    selectedElement.scrollIntoView({ behavior: 'auto', block: 'center' });
   }, []);
 
   return (
