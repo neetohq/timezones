@@ -2,13 +2,13 @@ import { h } from 'htm/preact';
 import { useEffect } from 'preact/hooks';
 
 import {
-  createGroupedOptionButton,
+  createGroupedOptionButton, valueToId,
 } from './utils';
 import { filterTimezones } from './Search/utils';
 
 function Options({ searchInput, selectedValue, setSelectedValue }) {
   useEffect(() => {
-    const selectedElement = document.getElementById(`option-${selectedValue?.value}`);
+    const selectedElement = document.getElementById(valueToId(selectedValue?.value));
     selectedElement.scrollIntoView({ behavior: 'auto', block: 'center' });
   }, []);
 
