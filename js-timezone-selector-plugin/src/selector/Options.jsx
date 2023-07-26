@@ -1,4 +1,5 @@
 import { h } from 'htm/preact';
+import { useEffect } from 'preact/hooks';
 
 import {
   createGroupedOptionButton,
@@ -6,6 +7,11 @@ import {
 import { filterTimezones } from './Search/utils';
 
 function Options({ searchInput, selectedValue, setSelectedValue }) {
+  useEffect(() => {
+    const selectedElement = document.getElementById(`option-${selectedValue?.value}`);
+    selectedElement.scrollIntoView({ behavior: 'auto', block: 'center' });
+  }, []);
+
   return (
     <div id="selectTimezoneOptions" className="h-64 overflow-y-scroll">
       <div className="flex flex-col">

@@ -44,7 +44,7 @@ export const handleSelect = (e, setSelectedValue) => {
 export const createOptionButton = ({
   key, value, onClick, label, selected,
 }) => (
-  <button onClick={onClick} className={`px-4 py-4 text-xs hover:bg-slate-100 ${selected ? 'bg-blue-300' : ''}`} key={key} value={value}>
+  <button id={`option-${value}`} onClick={onClick} className={`px-4 py-4 text-xs hover:bg-slate-100 ${selected ? 'bg-blue-300' : ''}`} key={key} value={value}>
     {label}
   </button>
 );
