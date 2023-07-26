@@ -33,14 +33,6 @@ const findBrowserTimezone = () => {
 
 export const DEFAULT_VALUE = findBrowserTimezone() || allTimezones[0];
 
-export const handleSelect = (e, setSelectedValue) => {
-  const selectedTimezone = allTimezones.find((timezone) => timezone?.value === e?.target?.value);
-  setSelectedValue(selectedTimezone);
-
-  const optionsContainer = document.getElementById('optionsContainer');
-  optionsContainer.classList.toggle('hidden');
-};
-
 export const valueToId = (value) => `option-${value.replaceAll(' ', '_').toLowerCase()}`;
 
 export const createOptionButton = ({
@@ -60,7 +52,7 @@ export const createOptionButton = ({
 export const createGroupedOptionButton = (
   group,
   selectedValue,
-  setSelectedValue,
+  handleSelect,
 ) => (
   <div>
     {group.map((groupItem, groupIndex) => {
@@ -70,7 +62,7 @@ export const createGroupedOptionButton = (
         <div className="flex flex-col p-4 pb-0" key={groupIndex}>
           <span className="text-xs font-bold uppercase">{key}</span>
           {element.map((timezone, index) => createOptionButton({
-            onClick: (event) => handleSelect(event, setSelectedValue),
+            onClick: handleSelect,
             key: index,
             value: timezone.value,
             timezone: timezone.label,
