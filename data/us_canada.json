@@ -7,7 +7,7 @@
       "PST8PDT"
     ],
     "abbr": "PST",
-    "label": "(GMT-08:00) Pacific Standard Time (US & Canada)",
+    "label": "Pacific Standard Time (US & Canada)",
     "value": "Pacific Standard Time Los Angeles Tijuana Vancouver PST8PDT"
   },
   {
@@ -21,7 +21,7 @@
       "Etc/GMT+7"
     ],
     "abbr": "UMST",
-    "label": "(GMT-07:00) Mountain Time (US & Canada)",
+    "label": "Mountain Time (US & Canada)",
     "value": "US Mountain Standard Time Creston Dawson Dawson Creek Hermosillo Phoenix Whitehorse GMT+7"
   },
   {
@@ -41,7 +41,7 @@
       "CST6CDT"
     ],
     "abbr": "CDT",
-    "label": "(GMT-06:00) Central Time (US & Canada)",
+    "label": "Central Time (US & Canada)",
     "value": "Central Standard Time Chicago Knox Tell City Matamoros Menominee Beulah Center New_Salem Rainy_River Rankin_Inlet Resolute Winnipeg CST6CDT"
   },
   {
@@ -64,7 +64,7 @@
       "America/Toronto"
     ],
     "abbr": "EST",
-    "label": "(GMT-05:00) Eastern Time (US & Canada)",
+    "label": "Eastern Time (US & Canada)",
     "value": "Eastern Standard Time Detroit Havana Petersburg Vincennes Winamac Iqaluit Monticello Louisville Montreal Nassau New York Nipigon Pangnirtung Port-au-Prince Thunder_Bay Toronto"
   },
   {
@@ -76,7 +76,7 @@
       "America/Yakutat"
     ],
     "abbr": "AKDT",
-    "label": "(GMT-09:00) Alaska",
+    "label": "Alaska",
     "value": "Alaskan Standard Time Anchorage Juneau Nome Sitka Yakutat"
   },
   {
@@ -84,7 +84,7 @@
       "America/St_Johns"
     ],
     "abbr": "NDT",
-    "label": "(GMT-03:30) Newfoundland",
+    "label": "Newfoundland",
     "value": "Newfoundland Standard Time St Johns"
   },
   {
@@ -96,7 +96,7 @@
       "Pacific/Tahiti"
     ],
     "abbr": "HST",
-    "label": "(GMT-10:00) Hawaii",
+    "label": "Hawaii",
     "value": "Hawaiian Standard Time GMT+10 Honolulu Johnston Rarotonga Tahiti"
   }
 ]

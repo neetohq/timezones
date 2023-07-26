@@ -7,7 +7,7 @@
       "Pacific/Pago_Pago"
     ],
     "abbr": "U",
-    "label": "(GMT-11:00) Coordinated Universal Time-11",
+    "label": "Coordinated Universal Time-11",
     "value": "UTC-11 GMT+11 Midway Niue Pago Pago"
   },
   {
@@ -15,7 +15,7 @@
       "Pacific/Apia"
     ],
     "abbr": "SST",
-    "label": "(GMT+13:00) Samoa",
+    "label": "Samoa",
     "value": "Samoa Standard Time Apia"
   },
   {
@@ -24,7 +24,7 @@
       "Pacific/Auckland"
     ],
     "abbr": "NZST",
-    "label": "(GMT+12:00) Auckland, Wellington",
+    "label": "Auckland, Wellington",
     "value": "New Zealand Standard Time McMurdo Auckland"
   },
   {
@@ -32,7 +32,7 @@
       "Pacific/Fiji"
     ],
     "abbr": "FST",
-    "label": "(GMT+12:00) Fiji",
+    "label": "Fiji",
     "value": "Fiji Standard Time Fiji"
   },
   {
@@ -47,7 +47,7 @@
       "Pacific/Wallis"
     ],
     "abbr": "U",
-    "label": "(GMT+12:00) Coordinated Universal Time+12",
+    "label": "Coordinated Universal Time+12",
     "value": "UTC+12 GMT-12 Funafuti Kwajalein Majuro Nauru Tarawa Wake Wallis"
   },
   {
@@ -60,7 +60,7 @@
       "Pacific/Truk"
     ],
     "abbr": "WPST",
-    "label": "(GMT+10:00) Guam, Port Moresby",
+    "label": "Guam, Port Moresby",
     "value": "West Pacific Standard Time DumontDUrville GMT-10 Guam Port Moresby Saipan Truk"
   },
   {
@@ -74,7 +74,7 @@
       "Pacific/Ponape"
     ],
     "abbr": "CPST",
-    "label": "(GMT+11:00) Solomon Is., New Caledonia",
+    "label": "Solomon Is., New Caledonia",
     "value": "Central Pacific Standard Time Macquarie GMT-11 Efate Guadalcanal Kosrae Noumea Ponape"
   },
   {
@@ -85,7 +85,7 @@
       "Pacific/Tongatapu"
     ],
     "abbr": "TST",
-    "label": "(GMT+13:00) Nuku'alofa",
+    "label": "Nuku'alofa",
     "value": "Tonga Standard Time GMT-13 Enderbury Fakaofo Tongatapu"
   },
   {
@@ -93,7 +93,7 @@
       "Etc/GMT+12"
     ],
     "abbr": "DST",
-    "label": "(GMT-12:00) International Date Line West",
+    "label": "International Date Line West",
     "value": "Dateline Standard Time GMT+12"
   }
 ]
