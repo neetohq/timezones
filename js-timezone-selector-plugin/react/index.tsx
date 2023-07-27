@@ -1,6 +1,6 @@
-import React, { useCallback, useEffect } from 'react'
+import React, { useCallback } from 'react'
 
-import * as TimezoneComponent from "../js-timezone-selector-plugin/";
+import NeetoTimezoneSelect from "../src/selector";
 
 const NeetoTimezoneSelector = (options = {}) => {
 
@@ -13,7 +13,7 @@ const NeetoTimezoneSelector = (options = {}) => {
 
 
   return (
-    <div id="element" />
+    <div id="element" ref={ref}></div>
   )
 }
 
