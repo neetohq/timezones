@@ -14,8 +14,8 @@ export default defineConfig({
     emptyOutDir: true,
 
     lib: {
-      entry: path.resolve(__dirname, "./src/main.tsx"),
-      formats: ["iife", "es"],
+      entry: [path.resolve(__dirname, "./src/main.tsx"), path.resolve(__dirname, "./react/index.tsx")],
+      formats: ["es"],
       name: "NeetoTimezoneSelector",
       fileName: (format) => `index.${format}.js`,
     },

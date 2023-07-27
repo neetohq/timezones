@@ -6,6 +6,10 @@
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": "./dist/index.es.js",
+    "./react": "./dist/index.es2.js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build"
