@@ -7,14 +7,16 @@ import './styles.css';
 class Plugin {
   element: Element;
 
-  constructor(element: Element) {
+  constructor(element: Element, options: any) {
     this.element = element
+    this.options = options;
+
     this.render()
   }
 
   render() {
 
-    render(<Selector />, this.element);
+    render(<Selector {...this.options} />, this.element);
   }
 }
 
