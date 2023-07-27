@@ -1,11 +1,11 @@
 import { h } from 'preact';
-import { useState } from 'preact/hooks';
+import { useEffect, useState } from 'preact/hooks';
 
 import Button from "./Button";
 import OptionsContainer from "./OptionsContainer";
 import { DEFAULT_VALUE } from './utils';
 
-const Selector = ({ className = "", position = "bottom" }) => {
+const Selector = ({ className = "", position = "bottom", onChange = (selectedValue) => { } }) => {
   const [selectedValue, setSelectedValue] = useState(DEFAULT_VALUE);
   const [showOptions, setShowOptions] = useState(false);
   const top = position === "top";
@@ -20,6 +20,10 @@ const Selector = ({ className = "", position = "bottom" }) => {
 
 
   addOutsideClickListener();
+
+  useEffect(() => {
+    onChange(selectedValue);
+  }, [selectedValue])
 
   return (
     <div className={`flex flex-col p-4 relative w-full ${className}`} id="timezoneSelector">
