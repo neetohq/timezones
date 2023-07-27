@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react'
 
-import NeetoTimezoneSelect from "../src/selector";
+import NeetoTimezoneSelect from "../src/main";
 
 const NeetoTimezoneSelector = (options = {}) => {
 
