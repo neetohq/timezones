@@ -15,9 +15,9 @@ export default defineConfig({
 
     lib: {
       entry: path.resolve(__dirname, "./src/main.tsx"),
-      formats: ["iife"],
+      formats: ["iife", "es"],
       name: "NeetoTimezoneSelector",
-      fileName: () => `embed.js`,
+      fileName: (format) => `index.${format}.js`,
     },
     target: "modules",
     minify: "terser",
