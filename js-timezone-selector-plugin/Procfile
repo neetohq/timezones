@@ -1,2 +1,2 @@
 release: pnpm -v
-web: pnpm dev
+web: pnpm run dev
