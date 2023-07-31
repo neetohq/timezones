@@ -1,2 +1,2 @@
-release: yarn -v
+release: pnpm -v
 web: vite dev
