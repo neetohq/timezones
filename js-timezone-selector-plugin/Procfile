@@ -1,2 +1,2 @@
 release: pnpm -v
-web: vite dev
+web: pnpm dev
