@@ -5,8 +5,8 @@
       "Asia/Calcutta"
     ],
     "abbr": "IST",
-    "label": "Chennai, Kolkata, Mumbai, New Delhi",
-    "value": "India Standard Time Kolkata Calcutta"
+    "label": "Indian Standard Time",
+    "value": "India Standard Time Kolkata Calcutta Chennai Mumbai New Delhi"
   },
   {
     "utc": [

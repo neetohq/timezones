@@ -26,14 +26,14 @@ const Selector = ({ className = "", position = "bottom", onChange = (selectedVal
   }, [selectedValue])
 
   return (
-    <div className={`flex flex-col p-4 relative w-full ${className}`} id="timezoneSelector">
+    <div className={`flex flex-col relative w-full z-40 ${className}`} id="timezoneSelector">
       <Button showOptions={showOptions} setShowOptions={setShowOptions} selectedValue={selectedValue} />
       {showOptions === true && (
         <OptionsContainer
           selectedValue={selectedValue}
           setSelectedValue={setSelectedValue}
           setShowOptions={setShowOptions}
-          className={`absolute ${top ? 'bottom-4' : 'top-4'} left-2 right-2`}
+          className={`absolute ${top ? 'bottom-16' : 'top-16'}`}
         />
       )}
     </div>

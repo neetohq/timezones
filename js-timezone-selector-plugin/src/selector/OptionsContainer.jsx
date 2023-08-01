@@ -11,7 +11,7 @@ function OptionsContainer({
 
   return (
     <div
-      className={`w-full p-4 flex flex-col text-gray-700 bg-white border border-gray-300 rounded shadow ${className}`}
+      className={`w-full px-2 py-4 flex flex-col text-gray-700 bg-white border border-gray-300 rounded shadow h-72 ${className}`}
       id="optionsContainer"
     >
       <Search
