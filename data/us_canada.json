@@ -7,7 +7,7 @@
       "PST8PDT"
     ],
     "abbr": "PST",
-    "label": "Pacific Standard Time (US & Canada)",
+    "label": "Pacific Standard Time",
     "value": "Pacific Standard Time Los Angeles Tijuana Vancouver PST8PDT"
   },
   {
@@ -21,7 +21,7 @@
       "Etc/GMT+7"
     ],
     "abbr": "UMST",
-    "label": "Mountain Time (US & Canada)",
+    "label": "Mountain Time",
     "value": "US Mountain Standard Time Creston Dawson Dawson Creek Hermosillo Phoenix Whitehorse GMT+7"
   },
   {
@@ -41,7 +41,7 @@
       "CST6CDT"
     ],
     "abbr": "CDT",
-    "label": "Central Time (US & Canada)",
+    "label": "Central Time",
     "value": "Central Standard Time Chicago Knox Tell City Matamoros Menominee Beulah Center New_Salem Rainy_River Rankin_Inlet Resolute Winnipeg CST6CDT"
   },
   {
@@ -64,7 +64,7 @@
       "America/Toronto"
     ],
     "abbr": "EST",
-    "label": "Eastern Time (US & Canada)",
+    "label": "Eastern Time",
     "value": "Eastern Standard Time Detroit Havana Petersburg Vincennes Winamac Iqaluit Monticello Louisville Montreal Nassau New York Nipigon Pangnirtung Port-au-Prince Thunder_Bay Toronto"
   },
   {

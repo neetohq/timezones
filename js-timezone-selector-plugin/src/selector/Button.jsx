@@ -17,16 +17,16 @@ function Button({ selectedValue, showOptions, setShowOptions }) {
 
   return (
     <div
-      className="flex flex-col justify-between px-4 py-2 pr-8 text-gray-700 bg-white border border-gray-300 rounded shadow"
+      className="flex flex-col justify-between w-full text-gray-700 bg-white rounded"
       id="selectTimezone"
     >
       <button
         onClick={handleClick}
         id="changeTimezoneButton"
-        className="flex items-center justify-between px-4 py-4 text-xs"
+        className="flex items-center justify-between px-4 py-4 text-md"
         value={selectedValue?.value}
       >
-        <div className="flex items-center w-3/4 space-x-4 truncate pointer-events-none line-clamp-2">
+        <div className="flex items-center w-3/4 space-x-4 text-left truncate pointer-events-none line-clamp-2">
           <div>{selectedValue?.label}</div>
         </div>
         <div className="text-right truncate line-clamp-2">

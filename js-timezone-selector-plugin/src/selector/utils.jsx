@@ -41,11 +41,11 @@ export const createOptionButton = ({
   <button
     id={valueToId(value)}
     onClick={onClick}
-    className={`flex items-center justify-between px-4 py-4 text-xs hover:bg-slate-100 ${selected ? 'bg-blue-300' : ''}`}
+    className={`flex items-center justify-between px-2 py-4 text-md hover:bg-slate-100 ${selected ? 'bg-blue-300' : ''}`}
     key={key}
     value={value}
   >
-    <div className="flex items-center w-3/4 space-x-4 truncate pointer-events-none line-clamp-2">
+    <div className="flex items-center w-3/4 space-x-4 text-left truncate pointer-events-none line-clamp-2">
       <div>{label}</div>
     </div>
     <div className="text-right truncate pointer-events-none line-clamp-2">
@@ -79,8 +79,8 @@ export const createGroupedOptionButton = (
       const key = Object.keys(groupItem)[0];
       const element = groupItem[key];
       return (
-        <div className="flex flex-col p-4 pb-0" key={groupIndex}>
-          <span className="text-xs font-bold uppercase">{key}</span>
+        <div className="flex flex-col px-2 py-4 pb-0" key={groupIndex}>
+          <span className="font-bold uppercase text-md">{key}</span>
           {element.map((timezone, index) => createOptionButton({
             onClick: handleSelect,
             key: index,
