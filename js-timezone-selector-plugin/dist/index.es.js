@@ -780,8 +780,8 @@ const Asia = [
       "Asia/Calcutta"
     ],
     abbr: "IST",
-    label: "Chennai, Kolkata, Mumbai, New Delhi",
-    value: "India Standard Time Kolkata Calcutta"
+    label: "Indian Standard Time",
+    value: "India Standard Time Kolkata Calcutta Chennai Mumbai New Delhi"
   },
   {
     utc: [
@@ -1467,7 +1467,7 @@ const UsCanada = [
       "PST8PDT"
     ],
     abbr: "PST",
-    label: "Pacific Standard Time (US & Canada)",
+    label: "Pacific Standard Time",
     value: "Pacific Standard Time Los Angeles Tijuana Vancouver PST8PDT"
   },
   {
@@ -1481,7 +1481,7 @@ const UsCanada = [
       "Etc/GMT+7"
     ],
     abbr: "UMST",
-    label: "Mountain Time (US & Canada)",
+    label: "Mountain Time",
     value: "US Mountain Standard Time Creston Dawson Dawson Creek Hermosillo Phoenix Whitehorse GMT+7"
   },
   {
@@ -1501,7 +1501,7 @@ const UsCanada = [
       "CST6CDT"
     ],
     abbr: "CDT",
-    label: "Central Time (US & Canada)",
+    label: "Central Time",
     value: "Central Standard Time Chicago Knox Tell City Matamoros Menominee Beulah Center New_Salem Rainy_River Rankin_Inlet Resolute Winnipeg CST6CDT"
   },
   {
@@ -1524,7 +1524,7 @@ const UsCanada = [
       "America/Toronto"
     ],
     abbr: "EST",
-    label: "Eastern Time (US & Canada)",
+    label: "Eastern Time",
     value: "Eastern Standard Time Detroit Havana Petersburg Vincennes Winamac Iqaluit Monticello Louisville Montreal Nassau New York Nipigon Pangnirtung Port-au-Prince Thunder_Bay Toronto"
   },
   {
@@ -1592,11 +1592,11 @@ const createOptionButton = ({
   {
     id: valueToId(value),
     onClick,
-    className: `flex items-center justify-between px-4 py-4 text-xs hover:bg-slate-100 ${selected ? "bg-blue-300" : ""}`,
+    className: `flex items-center justify-between px-2 py-4 text-md hover:bg-slate-100 ${selected ? "bg-blue-300" : ""}`,
     key,
     value
   },
-  /* @__PURE__ */ y("div", { className: "flex items-center w-3/4 space-x-4 truncate pointer-events-none line-clamp-2" }, /* @__PURE__ */ y("div", null, label)),
+  /* @__PURE__ */ y("div", { className: "flex items-center w-3/4 space-x-4 text-left truncate pointer-events-none line-clamp-2" }, /* @__PURE__ */ y("div", null, label)),
   /* @__PURE__ */ y("div", { className: "text-right truncate pointer-events-none line-clamp-2" }, currentTime)
 );
 const getCurrentTimeInTimezone = (timezone) => {
@@ -1613,7 +1613,7 @@ const getCurrentTimeInTimezone = (timezone) => {
 const createGroupedOptionButton = (group, selectedValue, handleSelect) => /* @__PURE__ */ y("div", null, group.map((groupItem, groupIndex) => {
   const key = Object.keys(groupItem)[0];
   const element = groupItem[key];
-  return /* @__PURE__ */ y("div", { className: "flex flex-col p-4 pb-0", key: groupIndex }, /* @__PURE__ */ y("span", { className: "text-xs font-bold uppercase" }, key), element.map((timezone, index) => createOptionButton({
+  return /* @__PURE__ */ y("div", { className: "flex flex-col px-2 py-4 pb-0", key: groupIndex }, /* @__PURE__ */ y("span", { className: "font-bold uppercase text-md" }, key), element.map((timezone, index) => createOptionButton({
     onClick: handleSelect,
     key: index,
     value: timezone.value,
@@ -1636,7 +1636,7 @@ function Button({ selectedValue, showOptions, setShowOptions }) {
   return /* @__PURE__ */ y(
     "div",
     {
-      className: "flex flex-col justify-between px-4 py-2 pr-8 text-gray-700 bg-white border border-gray-300 rounded shadow",
+      className: "flex flex-col justify-between w-full text-gray-700 bg-white rounded",
       id: "selectTimezone"
     },
     /* @__PURE__ */ y(
@@ -1644,10 +1644,10 @@ function Button({ selectedValue, showOptions, setShowOptions }) {
       {
         onClick: handleClick,
         id: "changeTimezoneButton",
-        className: "flex items-center justify-between px-4 py-4 text-xs",
+        className: "flex items-center justify-between px-4 py-4 text-md",
         value: selectedValue == null ? void 0 : selectedValue.value
       },
-      /* @__PURE__ */ y("div", { className: "flex items-center w-3/4 space-x-4 truncate pointer-events-none line-clamp-2" }, /* @__PURE__ */ y("div", null, selectedValue == null ? void 0 : selectedValue.label)),
+      /* @__PURE__ */ y("div", { className: "flex items-center w-3/4 space-x-4 text-left truncate pointer-events-none line-clamp-2" }, /* @__PURE__ */ y("div", null, selectedValue == null ? void 0 : selectedValue.label)),
       /* @__PURE__ */ y("div", { className: "text-right truncate line-clamp-2" }, getCurrentTimeInTimezone(selectedValue == null ? void 0 : selectedValue.utc[0]))
     )
   );
@@ -1696,7 +1696,7 @@ function Options({
     const selectedElement = document.getElementById(valueToId(selectedValue == null ? void 0 : selectedValue.value));
     selectedElement.scrollIntoView({ behavior: "auto", block: "center" });
   }, []);
-  return /* @__PURE__ */ y("div", { id: "selectTimezoneOptions", className: "h-64 overflow-y-scroll" }, /* @__PURE__ */ y("div", { className: "flex flex-col" }, createGroupedOptionButton(filterTimezones(searchInput), selectedValue, handleSelect)));
+  return /* @__PURE__ */ y("div", { id: "selectTimezoneOptions", className: "overflow-y-scroll h-72" }, /* @__PURE__ */ y("div", { className: "flex flex-col" }, createGroupedOptionButton(filterTimezones(searchInput), selectedValue, handleSelect)));
 }
 function OptionsContainer({
   className,
@@ -1708,7 +1708,7 @@ function OptionsContainer({
   return /* @__PURE__ */ y(
     "div",
     {
-      className: `w-full p-4 flex flex-col text-gray-700 bg-white border border-gray-300 rounded shadow ${className}`,
+      className: `w-full px-2 py-4 flex flex-col text-gray-700 bg-white border border-gray-300 rounded shadow h-72 ${className}`,
       id: "optionsContainer"
     },
     /* @__PURE__ */ y(
@@ -1737,24 +1737,25 @@ const Selector = ({ className = "", position = "bottom", onChange = (selectedVal
   p(() => {
     onChange(selectedValue);
   }, [selectedValue]);
-  return /* @__PURE__ */ y("div", { className: `flex flex-col p-4 relative w-full ${className}`, id: "timezoneSelector" }, /* @__PURE__ */ y(Button, { showOptions, setShowOptions, selectedValue }), showOptions === true && /* @__PURE__ */ y(
+  return /* @__PURE__ */ y("div", { className: `flex flex-col relative w-full z-40 ${className}`, id: "timezoneSelector" }, /* @__PURE__ */ y(Button, { showOptions, setShowOptions, selectedValue }), showOptions === true && /* @__PURE__ */ y(
     OptionsContainer,
     {
       selectedValue,
       setSelectedValue,
       setShowOptions,
-      className: `absolute ${top ? "bottom-4" : "top-4"} left-2 right-2`
+      className: `absolute ${top ? "bottom-16" : "top-16"}`
     }
   ));
 };
 const styles = "";
 class Plugin {
-  constructor(element) {
+  constructor(element, options) {
     this.element = element;
+    this.options = options;
     this.render();
   }
   render() {
-    D(/* @__PURE__ */ y(Selector, null), this.element);
+    D(/* @__PURE__ */ y(Selector, { ...this.options }), this.element);
   }
 }
 window.NeetoTimezoneSelector = Plugin;
