@@ -22,7 +22,7 @@ function Options({
   }, []);
 
   return (
-    <div id="selectTimezoneOptions" className="overflow-y-scroll h-72">
+    <div id="selectTimezoneOptions" className="overflow-y-scroll h-80">
       <div className="flex flex-col">
         {createGroupedOptionButton(filterTimezones(searchInput), selectedValue, handleSelect)}
       </div>
