@@ -1592,7 +1592,7 @@ const createOptionButton = ({
   {
     id: valueToId(value),
     onClick,
-    className: `flex items-center justify-between px-2 py-4 text-md hover:bg-slate-100 ${selected ? "bg-blue-300" : ""}`,
+    className: `flex items-center justify-between px-2 py-3 text-md hover:bg-slate-100 ${selected ? "bg-blue-300" : ""}`,
     key,
     value
   },
@@ -1613,7 +1613,7 @@ const getCurrentTimeInTimezone = (timezone) => {
 const createGroupedOptionButton = (group, selectedValue, handleSelect) => /* @__PURE__ */ y("div", null, group.map((groupItem, groupIndex) => {
   const key = Object.keys(groupItem)[0];
   const element = groupItem[key];
-  return /* @__PURE__ */ y("div", { className: "flex flex-col px-2 py-4 pb-0", key: groupIndex }, /* @__PURE__ */ y("span", { className: "font-bold uppercase text-md" }, key), element.map((timezone, index) => createOptionButton({
+  return /* @__PURE__ */ y("div", { className: "flex flex-col px-2 py-1", key: groupIndex }, /* @__PURE__ */ y("span", { className: "pb-1 font-bold uppercase text-md" }, key), element.map((timezone, index) => createOptionButton({
     onClick: handleSelect,
     key: index,
     value: timezone.value,
@@ -1648,7 +1648,7 @@ function Button({ selectedValue, showOptions, setShowOptions }) {
         value: selectedValue == null ? void 0 : selectedValue.value
       },
       /* @__PURE__ */ y("div", { className: "flex items-center w-3/4 space-x-4 text-left truncate pointer-events-none line-clamp-2" }, /* @__PURE__ */ y("div", null, selectedValue == null ? void 0 : selectedValue.label)),
-      /* @__PURE__ */ y("div", { className: "text-right truncate line-clamp-2" }, getCurrentTimeInTimezone(selectedValue == null ? void 0 : selectedValue.utc[0]))
+      /* @__PURE__ */ y("div", { className: "text-right truncate line-clamp-2" }, /* @__PURE__ */ y("span", { className: "flex" }, getCurrentTimeInTimezone(selectedValue == null ? void 0 : selectedValue.utc[0]), " ", /* @__PURE__ */ y("svg", { height: "20", width: "20", viewBox: "0 2 20 20", "aria-hidden": "true", focusable: "false" }, /* @__PURE__ */ y("path", { d: "M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z" }))))
     )
   );
 }
@@ -1660,7 +1660,7 @@ function Search({ searchInput, setSearchInput }) {
       type: "text",
       placeholder: "Search",
       onInput: (event) => setSearchInput(event.target.value),
-      className: "px-2 py-2 m-2 border rounded",
+      className: "px-2 py-2 m-2 border-2 border-blue-400 rounded shadow-lg outline-none",
       value: searchInput
     }
   );
@@ -1696,7 +1696,7 @@ function Options({
     const selectedElement = document.getElementById(valueToId(selectedValue == null ? void 0 : selectedValue.value));
     selectedElement.scrollIntoView({ behavior: "auto", block: "center" });
   }, []);
-  return /* @__PURE__ */ y("div", { id: "selectTimezoneOptions", className: "overflow-y-scroll h-72" }, /* @__PURE__ */ y("div", { className: "flex flex-col" }, createGroupedOptionButton(filterTimezones(searchInput), selectedValue, handleSelect)));
+  return /* @__PURE__ */ y("div", { id: "selectTimezoneOptions", className: "overflow-y-scroll h-80" }, /* @__PURE__ */ y("div", { className: "flex flex-col" }, createGroupedOptionButton(filterTimezones(searchInput), selectedValue, handleSelect)));
 }
 function OptionsContainer({
   className,
@@ -1708,7 +1708,7 @@ function OptionsContainer({
   return /* @__PURE__ */ y(
     "div",
     {
-      className: `w-full px-2 py-4 flex flex-col text-gray-700 bg-white border border-gray-300 rounded shadow h-72 ${className}`,
+      className: `w-full px-2 py-4 flex flex-col text-gray-700 bg-white border border-gray-300 rounded shadow h-80 ${className}`,
       id: "optionsContainer"
     },
     /* @__PURE__ */ y(
