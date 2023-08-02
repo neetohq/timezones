@@ -12,7 +12,7 @@ const Selector = ({ className = "", position = "bottom", onChange = (selectedVal
 
   const addOutsideClickListener = () => {
     window.addEventListener('click', function (e) {
-      if (!(document.getElementById('timezoneSelector').contains(e.target))) {
+      if (!(document.getElementById('timezoneSelector')?.contains(e.target))) {
         setShowOptions(false)
       }
     });
