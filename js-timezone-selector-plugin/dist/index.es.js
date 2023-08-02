@@ -1728,7 +1728,8 @@ const Selector = ({ className = "", position = "bottom", onChange = (selectedVal
   const top = position === "top";
   const addOutsideClickListener = () => {
     window.addEventListener("click", function(e2) {
-      if (!document.getElementById("timezoneSelector").contains(e2.target)) {
+      var _a;
+      if (!((_a = document.getElementById("timezoneSelector")) == null ? void 0 : _a.contains(e2.target))) {
         setShowOptions(false);
       }
     });
