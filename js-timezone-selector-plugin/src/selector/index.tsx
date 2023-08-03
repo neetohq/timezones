@@ -12,16 +12,16 @@ const Selector = ({ className = "", position = "bottom", onChange = (selectedVal
   const top = position === "top";
 
   useEffect(() => {
-    const addOutsideClickListener = (e) => {
+    const handleOutsideClick = (e) => {
       if (!(document.getElementById(elementId)?.contains(e.target))) {
         setIsOverlayVisible(false);
       }
     };
 
-    window.addEventListener('click', addOutsideClickListener);
+    window.addEventListener('click', handleOutsideClick);
 
     return () => {
-      window.removeEventListener('click', addOutsideClickListener);
+      window.removeEventListener('click', handleOutsideClick);
     };
   }, []);
 
