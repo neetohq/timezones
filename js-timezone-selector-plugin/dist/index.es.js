@@ -1738,7 +1738,7 @@ const Selector = ({ className = "", position = "bottom", onChange = (selectedVal
   p(() => {
     onChange(selectedValue);
   }, [selectedValue]);
-  return /* @__PURE__ */ y("div", { className: `flex flex-col relative w-full z-40 ${className}`, id: "timezoneSelector" }, /* @__PURE__ */ y(Button, { showOptions, setShowOptions, selectedValue }), showOptions === true && /* @__PURE__ */ y(
+  return /* @__PURE__ */ y("div", { className: `flex flex-col relative w-full ${className}`, id: "timezoneSelector" }, /* @__PURE__ */ y(Button, { showOptions, setShowOptions, selectedValue }), showOptions === true && /* @__PURE__ */ y(
     OptionsContainer,
     {
       selectedValue,
