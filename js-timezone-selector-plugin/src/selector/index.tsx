@@ -7,13 +7,14 @@ import { DEFAULT_VALUE } from './utils';
 
 const Selector = ({ className = "", position = "bottom", onChange = (selectedValue) => { }, elementId = "timezone-selector" }) => {
   const [selectedValue, setSelectedValue] = useState(DEFAULT_VALUE);
-  const [showOptions, setShowOptions] = useState(false);
+  const [isOverlayVisible, setIsOverlayVisible] = useState(false);
+
   const top = position === "top";
 
   useEffect(() => {
     const addOutsideClickListener = (e) => {
       if (!(document.getElementById(elementId)?.contains(e.target))) {
-        setShowOptions(false);
+        setIsOverlayVisible(false);
       }
     };
 
@@ -30,14 +31,14 @@ const Selector = ({ className = "", position = "bottom", onChange = (selectedVal
 
   return (
     <div className={`flex flex-col relative w-full ${className}`} id={elementId}>
-      <Button showOptions={showOptions} setShowOptions={setShowOptions} selectedValue={selectedValue} elementId={elementId} />
-      {showOptions === true && (
+      <Button isOverlayVisible={isOverlayVisible} setIsOverlayVisible={setIsOverlayVisible} selectedValue={selectedValue} elementId={elementId} />
+      {isOverlayVisible === true && (
         <OptionsContainer
           className={`absolute ${top ? 'bottom-16' : 'top-16'}`}
           elementId={elementId}
           selectedValue={selectedValue}
           setSelectedValue={setSelectedValue}
-          setShowOptions={setShowOptions}
+          setIsOverlayVisible={setIsOverlayVisible}
         />
       )}
     </div>

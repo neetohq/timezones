@@ -3,21 +3,21 @@ import { useEffect } from 'preact/hooks';
 import { getCurrentTimeInTimezone } from './utils';
 
 function Button({
-  selectedValue, showOptions, setShowOptions, elementId,
+  selectedValue, isOverlayVisible, setIsOverlayVisible, elementId,
 }) {
   const handleClick = () => {
-    setShowOptions((showOptions) => !showOptions);
+    setIsOverlayVisible((previousIsOverlayVisible) => !previousIsOverlayVisible);
   };
 
   const searchBoxElementId = `${elementId}-search-box`;
 
   useEffect(() => {
-    if (showOptions) {
+    if (isOverlayVisible) {
       const searchBox = document.getElementById(searchBoxElementId);
 
       searchBox.focus();
     }
-  }, [showOptions]);
+  }, [isOverlayVisible]);
 
   return (
     <div

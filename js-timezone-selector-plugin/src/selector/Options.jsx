@@ -8,11 +8,11 @@ import {
 import { filterTimezones } from './Search/utils';
 
 function Options({
-  searchInput, selectedValue, setSelectedValue, setShowOptions,
+  searchInput, selectedValue, setSelectedValue, setIsOverlayVisible,
 }) {
   const handleSelect = (e) => {
     const selectedTimezone = allTimezones.find((timezone) => timezone?.value === e?.target?.value);
-    setShowOptions(false);
+    setIsOverlayVisible(false);
     setSelectedValue(selectedTimezone);
   };
 
