@@ -13,12 +13,11 @@ function OptionsContainer({
     <div
       className={`w-full px-2 py-4 flex flex-col text-gray-700 bg-white border border-gray-300 rounded shadow h-80 ${className}`}
     >
-      <Search
-        elementId={elementId}
-        searchInput={searchInput}
-        setSearchInput={setSearchInput}
+      <Search {...{ elementId, searchInput, setSearchInput }} />
+      <Options {...{
+        searchInput, selectedValue, setSelectedValue, setIsOverlayVisible,
+      }}
       />
-      <Options searchInput={searchInput} selectedValue={selectedValue} setSelectedValue={setSelectedValue} setIsOverlayVisible={setIsOverlayVisible} />
     </div>
   );
 }

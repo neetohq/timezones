@@ -31,14 +31,11 @@ const Selector = ({ className = "", position = "bottom", onChange = (selectedVal
 
   return (
     <div className={`flex flex-col relative w-full ${className}`} id={elementId}>
-      <Button isOverlayVisible={isOverlayVisible} setIsOverlayVisible={setIsOverlayVisible} selectedValue={selectedValue} elementId={elementId} />
+      <Button {...{ isOverlayVisible, setIsOverlayVisible, selectedValue, elementId }} />
       {isOverlayVisible === true && (
         <OptionsContainer
           className={`absolute ${top ? 'bottom-16' : 'top-16'}`}
-          elementId={elementId}
-          selectedValue={selectedValue}
-          setSelectedValue={setSelectedValue}
-          setIsOverlayVisible={setIsOverlayVisible}
+          {...{ elementId, selectedValue, setSelectedValue, setIsOverlayVisible }}
         />
       )}
     </div>
