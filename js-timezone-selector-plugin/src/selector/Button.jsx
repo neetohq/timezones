@@ -9,13 +9,13 @@ function Button({
     setShowOptions((showOptions) => !showOptions);
   };
 
-  const searchBoxElementId = `${elementId}-searchbox`;
+  const searchBoxElementId = `${elementId}-search-box`;
 
   useEffect(() => {
     if (showOptions) {
-      const searchbox = document.getElementById(searchBoxElementId);
+      const searchBox = document.getElementById(searchBoxElementId);
 
-      searchbox.focus();
+      searchBox.focus();
     }
   }, [showOptions]);
 
