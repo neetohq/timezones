@@ -10,8 +10,6 @@ function Button({
   };
 
   const searchBoxElementId = `${elementId}-searchbox`;
-  const selectTimezoneElementId = `${elementId}-select-timezone`;
-  const changeTimezoneButtonElementId = `${elementId}-change-timezone-button`;
 
   useEffect(() => {
     if (showOptions) {
@@ -24,11 +22,9 @@ function Button({
   return (
     <div
       className="flex flex-col justify-between w-full text-gray-700 bg-white rounded"
-      id={selectTimezoneElementId}
     >
       <button
         onClick={handleClick}
-        id={changeTimezoneButtonElementId}
         className="flex items-center justify-between px-4 py-4 text-md"
         value={selectedValue?.value}
       >

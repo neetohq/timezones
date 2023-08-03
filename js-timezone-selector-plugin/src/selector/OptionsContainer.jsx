@@ -9,12 +9,9 @@ function OptionsContainer({
 }) {
   const [searchInput, setSearchInput] = useState('');
 
-  const optionsContainerElementId = `${elementId}-options-container`;
-
   return (
     <div
       className={`w-full px-2 py-4 flex flex-col text-gray-700 bg-white border border-gray-300 rounded shadow h-80 ${className}`}
-      id={optionsContainerElementId}
     >
       <Search
         elementId={elementId}
