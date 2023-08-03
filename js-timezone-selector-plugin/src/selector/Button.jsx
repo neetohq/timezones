@@ -2,14 +2,20 @@ import { h } from 'htm/preact';
 import { useEffect } from 'preact/hooks';
 import { getCurrentTimeInTimezone } from './utils';
 
-function Button({ selectedValue, showOptions, setShowOptions }) {
+function Button({
+  selectedValue, showOptions, setShowOptions, elementId,
+}) {
   const handleClick = () => {
     setShowOptions((showOptions) => !showOptions);
   };
 
+  const searchBoxElementId = `${elementId}-searchbox`;
+  const selectTimezoneElementId = `${elementId}-select-timezone`;
+  const changeTimezoneButtonElementId = `${elementId}-change-timezone-button`;
+
   useEffect(() => {
     if (showOptions) {
-      const searchbox = document.getElementById('searchbox');
+      const searchbox = document.getElementById(searchBoxElementId);
 
       searchbox.focus();
     }
@@ -18,11 +24,11 @@ function Button({ selectedValue, showOptions, setShowOptions }) {
   return (
     <div
       className="flex flex-col justify-between w-full text-gray-700 bg-white rounded"
-      id="selectTimezone"
+      id={selectTimezoneElementId}
     >
       <button
         onClick={handleClick}
-        id="changeTimezoneButton"
+        id={changeTimezoneButtonElementId}
         className="flex items-center justify-between px-4 py-4 text-md"
         value={selectedValue?.value}
       >

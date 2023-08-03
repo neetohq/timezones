@@ -1,9 +1,11 @@
 import { h } from 'htm/preact';
 
-function Search({ searchInput, setSearchInput }) {
+function Search({ searchInput, setSearchInput, elementId }) {
+  const searchboxElementId = `${elementId}-searchbox`;
+
   return (
     <input
-      id="searchbox"
+      id={searchboxElementId}
       type="text"
       placeholder="Search"
       onInput={(event) => setSearchInput(event.target.value)}
