@@ -18,7 +18,7 @@ function OptionsContainer({
         searchInput={searchInput}
         setSearchInput={setSearchInput}
       />
-      <Options elementId={elementId} searchInput={searchInput} selectedValue={selectedValue} setSelectedValue={setSelectedValue} setShowOptions={setShowOptions} />
+      <Options searchInput={searchInput} selectedValue={selectedValue} setSelectedValue={setSelectedValue} setShowOptions={setShowOptions} />
     </div>
   );
 }
