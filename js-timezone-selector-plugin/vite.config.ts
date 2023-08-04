@@ -1,6 +1,8 @@
+/* eslint-disable no-underscore-dangle */
 import * as path from "path";
-import url from 'url'
+import url from "url";
 
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { defineConfig } from "vite";
 
 // TODO import dts from "vite-plugin-dts";
@@ -23,15 +25,15 @@ export default defineConfig({
     minify: "terser",
   },
   esbuild: {
-    jsxFactory: 'h',
-    jsxFragment: 'Fragment'
+    jsxFactory: "h",
+    jsxFragment: "Fragment",
   },
   plugins: [],
   css: {
     preprocessorOptions: {
       postcss: {
         plugins: [
-          'tailwindcss',
+          "tailwindcss",
         ],
       },
     },

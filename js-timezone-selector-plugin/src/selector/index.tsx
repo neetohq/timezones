@@ -1,11 +1,14 @@
-import { h } from 'preact';
-import { useEffect, useState } from 'preact/hooks';
+import { h } from "preact";
+import { useEffect, useState } from "preact/hooks";
 
 import Button from "./Button";
 import OptionsContainer from "./OptionsContainer";
-import { DEFAULT_VALUE } from './utils';
+import { DEFAULT_VALUE } from "./utils";
 
-const Selector = ({ className = "", position = "bottom", onChange = (selectedValue) => { }, elementId = "timezone-selector" }) => {
+function Selector({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  className = "", position = "bottom", onChange = (selectedValue) => { }, elementId = "timezone-selector",
+}) {
   const [selectedValue, setSelectedValue] = useState(DEFAULT_VALUE);
   const [isOverlayVisible, setIsOverlayVisible] = useState(false);
 
@@ -18,28 +21,33 @@ const Selector = ({ className = "", position = "bottom", onChange = (selectedVal
       }
     };
 
-    window.addEventListener('click', handleOutsideClick);
+    window.addEventListener("click", handleOutsideClick);
 
     return () => {
-      window.removeEventListener('click', handleOutsideClick);
+      window.removeEventListener("click", handleOutsideClick);
     };
   }, []);
 
   useEffect(() => {
     onChange(selectedValue);
-  }, [selectedValue])
+  }, [selectedValue]);
 
   return (
     <div className={`ntsp flex flex-col relative w-full ${className}`} id={elementId}>
-      <Button {...{ isOverlayVisible, setIsOverlayVisible, selectedValue, elementId }} />
+      <Button {...{
+        isOverlayVisible, setIsOverlayVisible, selectedValue, elementId,
+      }}
+      />
       {isOverlayVisible === true && (
         <OptionsContainer
-          className={`absolute ${top ? 'bottom-16' : 'top-16'}`}
-          {...{ elementId, selectedValue, setSelectedValue, setIsOverlayVisible }}
+          className={`absolute ${top ? "bottom-16" : "top-16"}`}
+          {...{
+            elementId, selectedValue, setSelectedValue, setIsOverlayVisible,
+          }}
         />
       )}
     </div>
-  )
+  );
 }
 
 export default Selector;
