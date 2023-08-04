@@ -27,7 +27,8 @@
         "react/prop-types": 0,
         "quotes": ["error", "double"],
         "semi": ["error", "always"],
-        "react/jsx-filename-extension": [2, { "extensions": [".js:", ".jsx", ".ts", ".tsx"] }]
+        "react/jsx-filename-extension": [2, { "extensions": [".js:", ".jsx", ".ts", ".tsx"] }],
+        "react/jsx-props-no-spreading": 0
     },
     "settings": {
         "react": {

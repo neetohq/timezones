@@ -1,7 +1,7 @@
-import { groupedOptions } from '../utils';
+import { groupedOptions } from "../utils";
 
 export const filterTimezones = (inputValue) => {
-  if (inputValue === '') {
+  if (inputValue === "") {
     return groupedOptions;
   }
 
@@ -21,7 +21,7 @@ export const filterTimezones = (inputValue) => {
 };
 
 export const createContainerForUpdatedOptions = () => {
-  const updatedOptionsContainer = document.createElement('div');
-  updatedOptionsContainer.className = 'flex flex-col';
+  const updatedOptionsContainer = document.createElement("div");
+  updatedOptionsContainer.className = "flex flex-col";
   return updatedOptionsContainer;
 };
