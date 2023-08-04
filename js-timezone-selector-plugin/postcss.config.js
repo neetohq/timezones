@@ -8,6 +8,6 @@ module.exports = {
     tailwindcss(),
     autoprefixer(),
     ...(process.env.NODE_ENV === 'production' ? [cssnano()] : []),
-    prefixWrap('.ntsp'), // Replace '.my-custom-wrap' with your desired prefix
+    prefixWrap('.ntsp'),
   ],
 };
