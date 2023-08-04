@@ -2,27 +2,29 @@ import { h } from 'htm/preact';
 import { useEffect } from 'preact/hooks';
 import { getCurrentTimeInTimezone } from './utils';
 
-function Button({ selectedValue, showOptions, setShowOptions }) {
+function Button({
+  selectedValue, isOverlayVisible, setIsOverlayVisible, elementId,
+}) {
   const handleClick = () => {
-    setShowOptions((showOptions) => !showOptions);
+    setIsOverlayVisible((previousIsOverlayVisible) => !previousIsOverlayVisible);
   };
 
-  useEffect(() => {
-    if (showOptions) {
-      const searchbox = document.getElementById('searchbox');
+  const searchBoxElementId = `${elementId}-search-box`;
 
-      searchbox.focus();
+  useEffect(() => {
+    if (isOverlayVisible) {
+      const searchBox = document.getElementById(searchBoxElementId);
+
+      searchBox.focus();
     }
-  }, [showOptions]);
+  }, [isOverlayVisible]);
 
   return (
     <div
       className="flex flex-col justify-between w-full text-gray-700 bg-white rounded"
-      id="selectTimezone"
     >
       <button
         onClick={handleClick}
-        id="changeTimezoneButton"
         className="flex items-center justify-between px-4 py-4 text-md"
         value={selectedValue?.value}
       >

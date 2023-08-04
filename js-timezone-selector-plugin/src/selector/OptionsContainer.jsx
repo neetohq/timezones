@@ -5,20 +5,19 @@ import Search from './Search';
 import Options from './Options';
 
 function OptionsContainer({
-  className, selectedValue, setSelectedValue, setShowOptions,
+  className, selectedValue, setSelectedValue, setIsOverlayVisible, elementId,
 }) {
   const [searchInput, setSearchInput] = useState('');
 
   return (
     <div
       className={`w-full px-2 py-4 flex flex-col text-gray-700 bg-white border border-gray-300 rounded shadow h-80 ${className}`}
-      id="optionsContainer"
     >
-      <Search
-        searchInput={searchInput}
-        setSearchInput={setSearchInput}
+      <Search {...{ elementId, searchInput, setSearchInput }} />
+      <Options {...{
+        searchInput, selectedValue, setSelectedValue, setIsOverlayVisible,
+      }}
       />
-      <Options searchInput={searchInput} selectedValue={selectedValue} setSelectedValue={setSelectedValue} setShowOptions={setShowOptions} />
     </div>
   );
 }

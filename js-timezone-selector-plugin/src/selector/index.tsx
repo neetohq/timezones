@@ -5,35 +5,37 @@ import Button from "./Button";
 import OptionsContainer from "./OptionsContainer";
 import { DEFAULT_VALUE } from './utils';
 
-const Selector = ({ className = "", position = "bottom", onChange = (selectedValue) => { } }) => {
+const Selector = ({ className = "", position = "bottom", onChange = (selectedValue) => { }, elementId = "timezone-selector" }) => {
   const [selectedValue, setSelectedValue] = useState(DEFAULT_VALUE);
-  const [showOptions, setShowOptions] = useState(false);
+  const [isOverlayVisible, setIsOverlayVisible] = useState(false);
+
   const top = position === "top";
 
-  const addOutsideClickListener = () => {
-    window.addEventListener('click', function (e) {
-      if (!(document.getElementById('timezoneSelector')?.contains(e.target))) {
-        setShowOptions(false)
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (!(document.getElementById(elementId)?.contains(e.target))) {
+        setIsOverlayVisible(false);
       }
-    });
-  };
+    };
 
+    window.addEventListener('click', handleOutsideClick);
 
-  addOutsideClickListener();
+    return () => {
+      window.removeEventListener('click', handleOutsideClick);
+    };
+  }, []);
 
   useEffect(() => {
     onChange(selectedValue);
   }, [selectedValue])
 
   return (
-    <div className={`flex flex-col relative w-full ${className}`} id="timezoneSelector">
-      <Button showOptions={showOptions} setShowOptions={setShowOptions} selectedValue={selectedValue} />
-      {showOptions === true && (
+    <div className={`flex flex-col relative w-full ${className}`} id={elementId}>
+      <Button {...{ isOverlayVisible, setIsOverlayVisible, selectedValue, elementId }} />
+      {isOverlayVisible === true && (
         <OptionsContainer
-          selectedValue={selectedValue}
-          setSelectedValue={setSelectedValue}
-          setShowOptions={setShowOptions}
           className={`absolute ${top ? 'bottom-16' : 'top-16'}`}
+          {...{ elementId, selectedValue, setSelectedValue, setIsOverlayVisible }}
         />
       )}
     </div>
