@@ -30,7 +30,7 @@ const Selector = ({ className = "", position = "bottom", onChange = (selectedVal
   }, [selectedValue])
 
   return (
-    <div className={`flex flex-col relative w-full ${className}`} id={elementId}>
+    <div className={`ntsp flex flex-col relative w-full ${className}`} id={elementId}>
       <Button {...{ isOverlayVisible, setIsOverlayVisible, selectedValue, elementId }} />
       {isOverlayVisible === true && (
         <OptionsContainer
