@@ -2,7 +2,7 @@ import { h, render } from "htm/preact"
 import NeetoTimezoneSelect from "./NeetoTimezoneSelect";
 
 import Selector from "./selector";
-import './styles.css';
+import './css/styles.css';
 
 class Plugin {
   element: Element;
