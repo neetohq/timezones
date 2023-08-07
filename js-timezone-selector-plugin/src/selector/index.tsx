@@ -35,7 +35,7 @@ function Selector({
   return (
     <div className="ntsp" id={elementId}>
       <div
-        className={`ntsp-button-border flex flex-col relative w-full ${className}`}
+        className={`flex flex-col relative ${className}`}
       >
         <Button {...{
           isOverlayVisible, setIsOverlayVisible, selectedValue, elementId,

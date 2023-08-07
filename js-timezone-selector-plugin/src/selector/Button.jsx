@@ -1,6 +1,6 @@
-import { h } from 'htm/preact';
-import { useEffect } from 'preact/hooks';
-import { getCurrentTimeInTimezone } from './utils';
+import { h } from "htm/preact";
+import { useEffect } from "preact/hooks";
+import { getCurrentTimeInTimezone } from "./utils";
 
 function Button({
   selectedValue, isOverlayVisible, setIsOverlayVisible, elementId,
@@ -25,7 +25,7 @@ function Button({
     >
       <button
         onClick={handleClick}
-        className="flex items-center justify-between px-4 py-4 text-md"
+        className="flex items-center justify-between px-4 py-4 text-md ntsp-button-border"
         value={selectedValue?.value}
       >
         <div className="flex items-center w-3/4 space-x-4 text-left truncate pointer-events-none line-clamp-2">
