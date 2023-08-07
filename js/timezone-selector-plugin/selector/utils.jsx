@@ -1,13 +1,13 @@
 import { h } from "htm/preact";
 
-import Africa from "../../../../data/africa.json";
-import America from "../../../../data/america.json";
-import Asia from "../../../../data/asia.json";
-import Atlantic from "../../../../data/atlantic.json";
-import Australia from "../../../../data/australia.json";
-import Europe from "../../../../data/europe.json";
-import Pacific from "../../../../data/pacific.json";
-import UsCanada from "../../../../data/us_canada.json";
+import Africa from "../../../data/africa.json";
+import America from "../../../data/america.json";
+import Asia from "../../../data/asia.json";
+import Atlantic from "../../../data/atlantic.json";
+import Australia from "../../../data/australia.json";
+import Europe from "../../../data/europe.json";
+import Pacific from "../../../data/pacific.json";
+import UsCanada from "../../../data/us_canada.json";
 
 export const groupedOptions = [
   { "US/Canada": UsCanada },
