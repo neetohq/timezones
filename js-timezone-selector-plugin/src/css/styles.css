@@ -1,2 +1,9 @@
 @import url('preflight.css');
 @tailwind utilities;
+
+.ntsp-button-border{
+  border: 1px solid #d8dcde;
+  border-radius: 8px;
+  margin-top: 18px;
+  overflow: hidden;
+}

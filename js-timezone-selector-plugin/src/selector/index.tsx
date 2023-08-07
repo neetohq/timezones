@@ -33,19 +33,23 @@ function Selector({
   }, [selectedValue]);
 
   return (
-    <div className={`ntsp flex flex-col relative w-full ${className}`} id={elementId}>
-      <Button {...{
-        isOverlayVisible, setIsOverlayVisible, selectedValue, elementId,
-      }}
-      />
-      {isOverlayVisible === true && (
-        <OptionsContainer
-          className={`absolute ${top ? "bottom-16" : "top-16"}`}
-          {...{
-            elementId, selectedValue, setSelectedValue, setIsOverlayVisible,
-          }}
+    <div className="ntsp" id={elementId}>
+      <div
+        className={`ntsp-button-border flex flex-col relative w-full ${className}`}
+      >
+        <Button {...{
+          isOverlayVisible, setIsOverlayVisible, selectedValue, elementId,
+        }}
         />
-      )}
+        {isOverlayVisible === true && (
+          <OptionsContainer
+            className={`absolute ${top ? "bottom-16" : "top-16"}`}
+            {...{
+              elementId, selectedValue, setSelectedValue, setIsOverlayVisible,
+            }}
+          />
+        )}
+      </div>
     </div>
   );
 }
