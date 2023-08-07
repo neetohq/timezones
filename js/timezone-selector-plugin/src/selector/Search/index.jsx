@@ -1,4 +1,4 @@
-import { h } from 'htm/preact';
+import { h } from "htm/preact";
 
 function Search({ searchInput, setSearchInput, elementId }) {
   const searchBoxElementId = `${elementId}-search-box`;
