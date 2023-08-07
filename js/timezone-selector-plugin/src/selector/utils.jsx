@@ -1,16 +1,16 @@
-import { h } from 'htm/preact';
+import { h } from "htm/preact";
 
-import Africa from '../../../data/africa.json';
-import America from '../../../data/america.json';
-import Asia from '../../../data/asia.json';
-import Atlantic from '../../../data/atlantic.json';
-import Australia from '../../../data/australia.json';
-import Europe from '../../../data/europe.json';
-import Pacific from '../../../data/pacific.json';
-import UsCanada from '../../../data/us_canada.json';
+import Africa from "../../../../data/africa.json";
+import America from "../../../../data/america.json";
+import Asia from "../../../../data/asia.json";
+import Atlantic from "../../../../data/atlantic.json";
+import Australia from "../../../../data/australia.json";
+import Europe from "../../../../data/europe.json";
+import Pacific from "../../../../data/pacific.json";
+import UsCanada from "../../../../data/us_canada.json";
 
 export const groupedOptions = [
-  { 'US/Canada': UsCanada },
+  { "US/Canada": UsCanada },
   { America },
   { Asia },
   { Africa },
@@ -33,7 +33,7 @@ const findBrowserTimezone = () => {
 
 export const DEFAULT_VALUE = findBrowserTimezone() || allTimezones[0];
 
-export const valueToId = (value) => `option-${value.replaceAll(' ', '_').toLowerCase()}`;
+export const valueToId = (value) => `option-${value.replaceAll(" ", "_").toLowerCase()}`;
 
 export const createOptionButton = ({
   key, value, onClick, label, selected, currentTime,
@@ -41,7 +41,7 @@ export const createOptionButton = ({
   <button
     id={valueToId(value)}
     onClick={onClick}
-    className={`flex items-center justify-between px-2 py-3 text-md hover:bg-slate-100 ${selected ? 'bg-blue-300' : ''}`}
+    className={`flex items-center justify-between px-2 py-3 text-md hover:bg-slate-100 ${selected ? "bg-blue-300" : ""}`}
     key={key}
     value={value}
   >
@@ -60,11 +60,11 @@ export const getCurrentTimeInTimezone = (timezone) => {
   const options = {
     timeZone: timezone,
     hour12: true,
-    hour: 'numeric',
-    minute: 'numeric',
+    hour: "numeric",
+    minute: "numeric",
   };
 
-  const currentTimeInTimezone = currentTimeInUTC.toLocaleString('en-US', options);
+  const currentTimeInTimezone = currentTimeInUTC.toLocaleString("en-US", options);
 
   return currentTimeInTimezone;
 };
