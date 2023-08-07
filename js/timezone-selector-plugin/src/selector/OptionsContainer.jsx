@@ -1,13 +1,13 @@
-import { h } from 'htm/preact';
-import { useState } from 'preact/hooks';
+import { h } from "htm/preact";
+import { useState } from "preact/hooks";
 
-import Search from './Search';
-import Options from './Options';
+import Search from "./Search";
+import Options from "./Options";
 
 function OptionsContainer({
   className, selectedValue, setSelectedValue, setIsOverlayVisible, elementId,
 }) {
-  const [searchInput, setSearchInput] = useState('');
+  const [searchInput, setSearchInput] = useState("");
 
   return (
     <div

@@ -1,11 +1,11 @@
-import { h } from 'htm/preact';
-import { useEffect } from 'preact/hooks';
+import { h } from "htm/preact";
+import { useEffect } from "preact/hooks";
 
 import {
   allTimezones,
   createGroupedOptionButton, valueToId,
-} from './utils';
-import { filterTimezones } from './Search/utils';
+} from "./utils";
+import { filterTimezones } from "./Search/utils";
 
 function Options({
   searchInput, selectedValue, setSelectedValue, setIsOverlayVisible,
@@ -18,7 +18,7 @@ function Options({
 
   useEffect(() => {
     const selectedElement = document.getElementById(valueToId(selectedValue?.value));
-    selectedElement.scrollIntoView({ behavior: 'auto', block: 'center' });
+    selectedElement.scrollIntoView({ behavior: "auto", block: "center" });
   }, []);
 
   return (
