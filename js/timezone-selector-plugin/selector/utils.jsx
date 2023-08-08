@@ -43,7 +43,7 @@ export const isDST = (timezone) => {
 
   const currentTimeInTimezone = currentTimeInUTC.toLocaleString("en-US", options);
 
-  return currentTimeInTimezone.includes("Daylight");
+  return currentTimeInTimezone.toLowerCase().includes("daylight");
 };
 
 export const DEFAULT_VALUE = findBrowserTimezone() || allTimezones[0];
