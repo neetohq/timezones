@@ -1,8 +1,83 @@
 import { e as Plugin } from "./index-82040dcd.js";
 var react = { exports: {} };
 var react_production_min = {};
-/**
- * @license React
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+var objectAssign;
+var hasRequiredObjectAssign;
+function requireObjectAssign() {
+  if (hasRequiredObjectAssign)
+    return objectAssign;
+  hasRequiredObjectAssign = 1;
+  var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+  var hasOwnProperty = Object.prototype.hasOwnProperty;
+  var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+  function toObject(val) {
+    if (val === null || val === void 0) {
+      throw new TypeError("Object.assign cannot be called with null or undefined");
+    }
+    return Object(val);
+  }
+  function shouldUseNative() {
+    try {
+      if (!Object.assign) {
+        return false;
+      }
+      var test1 = new String("abc");
+      test1[5] = "de";
+      if (Object.getOwnPropertyNames(test1)[0] === "5") {
+        return false;
+      }
+      var test2 = {};
+      for (var i = 0; i < 10; i++) {
+        test2["_" + String.fromCharCode(i)] = i;
+      }
+      var order2 = Object.getOwnPropertyNames(test2).map(function(n) {
+        return test2[n];
+      });
+      if (order2.join("") !== "0123456789") {
+        return false;
+      }
+      var test3 = {};
+      "abcdefghijklmnopqrst".split("").forEach(function(letter) {
+        test3[letter] = letter;
+      });
+      if (Object.keys(Object.assign({}, test3)).join("") !== "abcdefghijklmnopqrst") {
+        return false;
+      }
+      return true;
+    } catch (err) {
+      return false;
+    }
+  }
+  objectAssign = shouldUseNative() ? Object.assign : function(target, source) {
+    var from;
+    var to = toObject(target);
+    var symbols;
+    for (var s = 1; s < arguments.length; s++) {
+      from = Object(arguments[s]);
+      for (var key in from) {
+        if (hasOwnProperty.call(from, key)) {
+          to[key] = from[key];
+        }
+      }
+      if (getOwnPropertySymbols) {
+        symbols = getOwnPropertySymbols(from);
+        for (var i = 0; i < symbols.length; i++) {
+          if (propIsEnumerable.call(from, symbols[i])) {
+            to[symbols[i]] = from[symbols[i]];
+          }
+        }
+      }
+    }
+    return to;
+  };
+  return objectAssign;
+}
+/** @license React v17.0.0
  * react.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -15,71 +90,97 @@ function requireReact_production_min() {
   if (hasRequiredReact_production_min)
     return react_production_min;
   hasRequiredReact_production_min = 1;
-  var l = Symbol.for("react.element"), n = Symbol.for("react.portal"), p = Symbol.for("react.fragment"), q = Symbol.for("react.strict_mode"), r = Symbol.for("react.profiler"), t = Symbol.for("react.provider"), u = Symbol.for("react.context"), v = Symbol.for("react.forward_ref"), w = Symbol.for("react.suspense"), x = Symbol.for("react.memo"), y = Symbol.for("react.lazy"), z = Symbol.iterator;
-  function A(a) {
+  var l = requireObjectAssign(), n = 60103, p = 60106;
+  react_production_min.Fragment = 60107;
+  react_production_min.StrictMode = 60108;
+  react_production_min.Profiler = 60114;
+  var q = 60109, r = 60110, t = 60112;
+  react_production_min.Suspense = 60113;
+  var u = 60115, v = 60116;
+  if ("function" === typeof Symbol && Symbol.for) {
+    var w = Symbol.for;
+    n = w("react.element");
+    p = w("react.portal");
+    react_production_min.Fragment = w("react.fragment");
+    react_production_min.StrictMode = w("react.strict_mode");
+    react_production_min.Profiler = w("react.profiler");
+    q = w("react.provider");
+    r = w("react.context");
+    t = w("react.forward_ref");
+    react_production_min.Suspense = w("react.suspense");
+    u = w("react.memo");
+    v = w("react.lazy");
+  }
+  var x = "function" === typeof Symbol && Symbol.iterator;
+  function y(a) {
     if (null === a || "object" !== typeof a)
       return null;
-    a = z && a[z] || a["@@iterator"];
+    a = x && a[x] || a["@@iterator"];
     return "function" === typeof a ? a : null;
   }
-  var B = { isMounted: function() {
+  function z(a) {
+    for (var b = "https://reactjs.org/docs/error-decoder.html?invariant=" + a, c = 1; c < arguments.length; c++)
+      b += "&args[]=" + encodeURIComponent(arguments[c]);
+    return "Minified React error #" + a + "; visit " + b + " for the full message or use the non-minified dev environment for full errors and additional helpful warnings.";
+  }
+  var A = { isMounted: function() {
     return false;
   }, enqueueForceUpdate: function() {
   }, enqueueReplaceState: function() {
   }, enqueueSetState: function() {
-  } }, C = Object.assign, D = {};
-  function E(a, b, e) {
+  } }, B = {};
+  function C(a, b, c) {
     this.props = a;
     this.context = b;
-    this.refs = D;
-    this.updater = e || B;
+    this.refs = B;
+    this.updater = c || A;
   }
-  E.prototype.isReactComponent = {};
-  E.prototype.setState = function(a, b) {
+  C.prototype.isReactComponent = {};
+  C.prototype.setState = function(a, b) {
     if ("object" !== typeof a && "function" !== typeof a && null != a)
-      throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
+      throw Error(z(85));
     this.updater.enqueueSetState(this, a, b, "setState");
   };
-  E.prototype.forceUpdate = function(a) {
+  C.prototype.forceUpdate = function(a) {
     this.updater.enqueueForceUpdate(this, a, "forceUpdate");
   };
-  function F() {
+  function D() {
   }
-  F.prototype = E.prototype;
-  function G(a, b, e) {
+  D.prototype = C.prototype;
+  function E(a, b, c) {
     this.props = a;
     this.context = b;
-    this.refs = D;
-    this.updater = e || B;
+    this.refs = B;
+    this.updater = c || A;
   }
-  var H = G.prototype = new F();
-  H.constructor = G;
-  C(H, E.prototype);
-  H.isPureReactComponent = true;
-  var I = Array.isArray, J = Object.prototype.hasOwnProperty, K = { current: null }, L = { key: true, ref: true, __self: true, __source: true };
-  function M(a, b, e) {
-    var d, c = {}, k = null, h2 = null;
+  var F = E.prototype = new D();
+  F.constructor = E;
+  l(F, C.prototype);
+  F.isPureReactComponent = true;
+  var G = { current: null }, H = Object.prototype.hasOwnProperty, I = { key: true, ref: true, __self: true, __source: true };
+  function J(a, b, c) {
+    var e, d = {}, k = null, h2 = null;
     if (null != b)
-      for (d in void 0 !== b.ref && (h2 = b.ref), void 0 !== b.key && (k = "" + b.key), b)
-        J.call(b, d) && !L.hasOwnProperty(d) && (c[d] = b[d]);
+      for (e in void 0 !== b.ref && (h2 = b.ref), void 0 !== b.key && (k = "" + b.key), b)
+        H.call(b, e) && !I.hasOwnProperty(e) && (d[e] = b[e]);
     var g = arguments.length - 2;
     if (1 === g)
-      c.children = e;
+      d.children = c;
     else if (1 < g) {
       for (var f = Array(g), m = 0; m < g; m++)
         f[m] = arguments[m + 2];
-      c.children = f;
+      d.children = f;
     }
     if (a && a.defaultProps)
-      for (d in g = a.defaultProps, g)
-        void 0 === c[d] && (c[d] = g[d]);
-    return { $$typeof: l, type: a, key: k, ref: h2, props: c, _owner: K.current };
+      for (e in g = a.defaultProps, g)
+        void 0 === d[e] && (d[e] = g[e]);
+    return { $$typeof: n, type: a, key: k, ref: h2, props: d, _owner: G.current };
   }
-  function N(a, b) {
-    return { $$typeof: l, type: a.type, key: b, ref: a.ref, props: a.props, _owner: a._owner };
+  function K(a, b) {
+    return { $$typeof: n, type: a.type, key: b, ref: a.ref, props: a.props, _owner: a._owner };
   }
-  function O(a) {
-    return "object" === typeof a && null !== a && a.$$typeof === l;
+  function L(a) {
+    return "object" === typeof a && null !== a && a.$$typeof === n;
   }
   function escape(a) {
     var b = { "=": "=0", ":": "=2" };
@@ -87,11 +188,11 @@ function requireReact_production_min() {
       return b[a2];
     });
   }
-  var P = /\/+/g;
-  function Q(a, b) {
+  var M = /\/+/g;
+  function N(a, b) {
     return "object" === typeof a && null !== a && null != a.key ? escape("" + a.key) : b.toString(36);
   }
-  function R(a, b, e, d, c) {
+  function O(a, b, c, e, d) {
     var k = typeof a;
     if ("undefined" === k || "boolean" === k)
       a = null;
@@ -106,114 +207,124 @@ function requireReact_production_min() {
           break;
         case "object":
           switch (a.$$typeof) {
-            case l:
             case n:
+            case p:
               h2 = true;
           }
       }
     if (h2)
-      return h2 = a, c = c(h2), a = "" === d ? "." + Q(h2, 0) : d, I(c) ? (e = "", null != a && (e = a.replace(P, "$&/") + "/"), R(c, b, e, "", function(a2) {
+      return h2 = a, d = d(h2), a = "" === e ? "." + N(h2, 0) : e, Array.isArray(d) ? (c = "", null != a && (c = a.replace(M, "$&/") + "/"), O(d, b, c, "", function(a2) {
         return a2;
-      })) : null != c && (O(c) && (c = N(c, e + (!c.key || h2 && h2.key === c.key ? "" : ("" + c.key).replace(P, "$&/") + "/") + a)), b.push(c)), 1;
+      })) : null != d && (L(d) && (d = K(d, c + (!d.key || h2 && h2.key === d.key ? "" : ("" + d.key).replace(M, "$&/") + "/") + a)), b.push(d)), 1;
     h2 = 0;
-    d = "" === d ? "." : d + ":";
-    if (I(a))
+    e = "" === e ? "." : e + ":";
+    if (Array.isArray(a))
       for (var g = 0; g < a.length; g++) {
         k = a[g];
-        var f = d + Q(k, g);
-        h2 += R(k, b, e, f, c);
+        var f = e + N(k, g);
+        h2 += O(k, b, c, f, d);
       }
-    else if (f = A(a), "function" === typeof f)
+    else if (f = y(a), "function" === typeof f)
       for (a = f.call(a), g = 0; !(k = a.next()).done; )
-        k = k.value, f = d + Q(k, g++), h2 += R(k, b, e, f, c);
+        k = k.value, f = e + N(k, g++), h2 += O(k, b, c, f, d);
     else if ("object" === k)
-      throw b = String(a), Error("Objects are not valid as a React child (found: " + ("[object Object]" === b ? "object with keys {" + Object.keys(a).join(", ") + "}" : b) + "). If you meant to render a collection of children, use an array instead.");
+      throw b = "" + a, Error(z(31, "[object Object]" === b ? "object with keys {" + Object.keys(a).join(", ") + "}" : b));
     return h2;
   }
-  function S(a, b, e) {
+  function P(a, b, c) {
     if (null == a)
       return a;
-    var d = [], c = 0;
-    R(a, d, "", "", function(a2) {
-      return b.call(e, a2, c++);
+    var e = [], d = 0;
+    O(a, e, "", "", function(a2) {
+      return b.call(c, a2, d++);
     });
-    return d;
+    return e;
   }
-  function T(a) {
+  function Q(a) {
     if (-1 === a._status) {
       var b = a._result;
       b = b();
+      a._status = 0;
+      a._result = b;
       b.then(function(b2) {
-        if (0 === a._status || -1 === a._status)
-          a._status = 1, a._result = b2;
+        0 === a._status && (b2 = b2.default, a._status = 1, a._result = b2);
       }, function(b2) {
-        if (0 === a._status || -1 === a._status)
-          a._status = 2, a._result = b2;
+        0 === a._status && (a._status = 2, a._result = b2);
       });
-      -1 === a._status && (a._status = 0, a._result = b);
     }
     if (1 === a._status)
-      return a._result.default;
+      return a._result;
     throw a._result;
   }
-  var U = { current: null }, V = { transition: null }, W = { ReactCurrentDispatcher: U, ReactCurrentBatchConfig: V, ReactCurrentOwner: K };
-  react_production_min.Children = { map: S, forEach: function(a, b, e) {
-    S(a, function() {
+  var R = { current: null };
+  function S() {
+    var a = R.current;
+    if (null === a)
+      throw Error(z(321));
+    return a;
+  }
+  var T = { ReactCurrentDispatcher: R, ReactCurrentBatchConfig: { transition: 0 }, ReactCurrentOwner: G, IsSomeRendererActing: { current: false }, assign: l };
+  react_production_min.Children = { map: P, forEach: function(a, b, c) {
+    P(a, function() {
       b.apply(this, arguments);
-    }, e);
+    }, c);
   }, count: function(a) {
     var b = 0;
-    S(a, function() {
+    P(a, function() {
       b++;
     });
     return b;
   }, toArray: function(a) {
-    return S(a, function(a2) {
+    return P(a, function(a2) {
       return a2;
     }) || [];
   }, only: function(a) {
-    if (!O(a))
-      throw Error("React.Children.only expected to receive a single React element child.");
+    if (!L(a))
+      throw Error(z(143));
     return a;
   } };
-  react_production_min.Component = E;
-  react_production_min.Fragment = p;
-  react_production_min.Profiler = r;
-  react_production_min.PureComponent = G;
-  react_production_min.StrictMode = q;
-  react_production_min.Suspense = w;
-  react_production_min.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = W;
-  react_production_min.cloneElement = function(a, b, e) {
+  react_production_min.Component = C;
+  react_production_min.PureComponent = E;
+  react_production_min.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = T;
+  react_production_min.cloneElement = function(a, b, c) {
     if (null === a || void 0 === a)
-      throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + a + ".");
-    var d = C({}, a.props), c = a.key, k = a.ref, h2 = a._owner;
+      throw Error(z(267, a));
+    var e = l({}, a.props), d = a.key, k = a.ref, h2 = a._owner;
     if (null != b) {
-      void 0 !== b.ref && (k = b.ref, h2 = K.current);
-      void 0 !== b.key && (c = "" + b.key);
+      void 0 !== b.ref && (k = b.ref, h2 = G.current);
+      void 0 !== b.key && (d = "" + b.key);
       if (a.type && a.type.defaultProps)
         var g = a.type.defaultProps;
       for (f in b)
-        J.call(b, f) && !L.hasOwnProperty(f) && (d[f] = void 0 === b[f] && void 0 !== g ? g[f] : b[f]);
+        H.call(b, f) && !I.hasOwnProperty(f) && (e[f] = void 0 === b[f] && void 0 !== g ? g[f] : b[f]);
     }
     var f = arguments.length - 2;
     if (1 === f)
-      d.children = e;
+      e.children = c;
     else if (1 < f) {
       g = Array(f);
       for (var m = 0; m < f; m++)
         g[m] = arguments[m + 2];
-      d.children = g;
+      e.children = g;
     }
-    return { $$typeof: l, type: a.type, key: c, ref: k, props: d, _owner: h2 };
+    return {
+      $$typeof: n,
+      type: a.type,
+      key: d,
+      ref: k,
+      props: e,
+      _owner: h2
+    };
   };
-  react_production_min.createContext = function(a) {
-    a = { $$typeof: u, _currentValue: a, _currentValue2: a, _threadCount: 0, Provider: null, Consumer: null, _defaultValue: null, _globalName: null };
-    a.Provider = { $$typeof: t, _context: a };
+  react_production_min.createContext = function(a, b) {
+    void 0 === b && (b = null);
+    a = { $$typeof: r, _calculateChangedBits: b, _currentValue: a, _currentValue2: a, _threadCount: 0, Provider: null, Consumer: null };
+    a.Provider = { $$typeof: q, _context: a };
     return a.Consumer = a;
   };
-  react_production_min.createElement = M;
+  react_production_min.createElement = J;
   react_production_min.createFactory = function(a) {
-    var b = M.bind(null, a);
+    var b = J.bind(null, a);
     b.type = a;
     return b;
   };
@@ -221,77 +332,49 @@ function requireReact_production_min() {
     return { current: null };
   };
   react_production_min.forwardRef = function(a) {
-    return { $$typeof: v, render: a };
+    return { $$typeof: t, render: a };
   };
-  react_production_min.isValidElement = O;
+  react_production_min.isValidElement = L;
   react_production_min.lazy = function(a) {
-    return { $$typeof: y, _payload: { _status: -1, _result: a }, _init: T };
+    return { $$typeof: v, _payload: { _status: -1, _result: a }, _init: Q };
   };
   react_production_min.memo = function(a, b) {
-    return { $$typeof: x, type: a, compare: void 0 === b ? null : b };
-  };
-  react_production_min.startTransition = function(a) {
-    var b = V.transition;
-    V.transition = {};
-    try {
-      a();
-    } finally {
-      V.transition = b;
-    }
-  };
-  react_production_min.unstable_act = function() {
-    throw Error("act(...) is not supported in production builds of React.");
+    return { $$typeof: u, type: a, compare: void 0 === b ? null : b };
   };
   react_production_min.useCallback = function(a, b) {
-    return U.current.useCallback(a, b);
+    return S().useCallback(a, b);
   };
-  react_production_min.useContext = function(a) {
-    return U.current.useContext(a);
+  react_production_min.useContext = function(a, b) {
+    return S().useContext(a, b);
   };
   react_production_min.useDebugValue = function() {
   };
-  react_production_min.useDeferredValue = function(a) {
-    return U.current.useDeferredValue(a);
-  };
   react_production_min.useEffect = function(a, b) {
-    return U.current.useEffect(a, b);
+    return S().useEffect(a, b);
   };
-  react_production_min.useId = function() {
-    return U.current.useId();
-  };
-  react_production_min.useImperativeHandle = function(a, b, e) {
-    return U.current.useImperativeHandle(a, b, e);
-  };
-  react_production_min.useInsertionEffect = function(a, b) {
-    return U.current.useInsertionEffect(a, b);
+  react_production_min.useImperativeHandle = function(a, b, c) {
+    return S().useImperativeHandle(a, b, c);
   };
   react_production_min.useLayoutEffect = function(a, b) {
-    return U.current.useLayoutEffect(a, b);
+    return S().useLayoutEffect(a, b);
   };
   react_production_min.useMemo = function(a, b) {
-    return U.current.useMemo(a, b);
+    return S().useMemo(a, b);
   };
-  react_production_min.useReducer = function(a, b, e) {
-    return U.current.useReducer(a, b, e);
+  react_production_min.useReducer = function(a, b, c) {
+    return S().useReducer(a, b, c);
   };
   react_production_min.useRef = function(a) {
-    return U.current.useRef(a);
+    return S().useRef(a);
   };
   react_production_min.useState = function(a) {
-    return U.current.useState(a);
+    return S().useState(a);
   };
-  react_production_min.useSyncExternalStore = function(a, b, e) {
-    return U.current.useSyncExternalStore(a, b, e);
-  };
-  react_production_min.useTransition = function() {
-    return U.current.useTransition();
-  };
-  react_production_min.version = "18.2.0";
+  react_production_min.version = "17.0.0";
   return react_production_min;
 }
-var react_development = { exports: {} };
-/**
- * @license React
+var react_development = {};
+/** @license React v17.0.0
  * react.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -299,33 +382,57 @@ var react_development = { exports: {} };
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-react_development.exports;
 var hasRequiredReact_development;
 function requireReact_development() {
   if (hasRequiredReact_development)
-    return react_development.exports;
+    return react_development;
   hasRequiredReact_development = 1;
-  (function(module, exports) {
+  (function(exports) {
     if (process.env.NODE_ENV !== "production") {
       (function() {
-        if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
-          __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
+        var _assign = requireObjectAssign();
+        var ReactVersion = "17.0.0";
+        var REACT_ELEMENT_TYPE = 60103;
+        var REACT_PORTAL_TYPE = 60106;
+        exports.Fragment = 60107;
+        exports.StrictMode = 60108;
+        exports.Profiler = 60114;
+        var REACT_PROVIDER_TYPE = 60109;
+        var REACT_CONTEXT_TYPE = 60110;
+        var REACT_FORWARD_REF_TYPE = 60112;
+        exports.Suspense = 60113;
+        var REACT_SUSPENSE_LIST_TYPE = 60120;
+        var REACT_MEMO_TYPE = 60115;
+        var REACT_LAZY_TYPE = 60116;
+        var REACT_BLOCK_TYPE = 60121;
+        var REACT_SERVER_BLOCK_TYPE = 60122;
+        var REACT_FUNDAMENTAL_TYPE = 60117;
+        var REACT_DEBUG_TRACING_MODE_TYPE = 60129;
+        var REACT_LEGACY_HIDDEN_TYPE = 60131;
+        if (typeof Symbol === "function" && Symbol.for) {
+          var symbolFor = Symbol.for;
+          REACT_ELEMENT_TYPE = symbolFor("react.element");
+          REACT_PORTAL_TYPE = symbolFor("react.portal");
+          exports.Fragment = symbolFor("react.fragment");
+          exports.StrictMode = symbolFor("react.strict_mode");
+          exports.Profiler = symbolFor("react.profiler");
+          REACT_PROVIDER_TYPE = symbolFor("react.provider");
+          REACT_CONTEXT_TYPE = symbolFor("react.context");
+          REACT_FORWARD_REF_TYPE = symbolFor("react.forward_ref");
+          exports.Suspense = symbolFor("react.suspense");
+          REACT_SUSPENSE_LIST_TYPE = symbolFor("react.suspense_list");
+          REACT_MEMO_TYPE = symbolFor("react.memo");
+          REACT_LAZY_TYPE = symbolFor("react.lazy");
+          REACT_BLOCK_TYPE = symbolFor("react.block");
+          REACT_SERVER_BLOCK_TYPE = symbolFor("react.server.block");
+          REACT_FUNDAMENTAL_TYPE = symbolFor("react.fundamental");
+          symbolFor("react.scope");
+          symbolFor("react.opaque.id");
+          REACT_DEBUG_TRACING_MODE_TYPE = symbolFor("react.debug_trace_mode");
+          symbolFor("react.offscreen");
+          REACT_LEGACY_HIDDEN_TYPE = symbolFor("react.legacy_hidden");
         }
-        var ReactVersion = "18.2.0";
-        var REACT_ELEMENT_TYPE = Symbol.for("react.element");
-        var REACT_PORTAL_TYPE = Symbol.for("react.portal");
-        var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
-        var REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode");
-        var REACT_PROFILER_TYPE = Symbol.for("react.profiler");
-        var REACT_PROVIDER_TYPE = Symbol.for("react.provider");
-        var REACT_CONTEXT_TYPE = Symbol.for("react.context");
-        var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref");
-        var REACT_SUSPENSE_TYPE = Symbol.for("react.suspense");
-        var REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list");
-        var REACT_MEMO_TYPE = Symbol.for("react.memo");
-        var REACT_LAZY_TYPE = Symbol.for("react.lazy");
-        var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
-        var MAYBE_ITERATOR_SYMBOL = Symbol.iterator;
+        var MAYBE_ITERATOR_SYMBOL = typeof Symbol === "function" && Symbol.iterator;
         var FAUX_ITERATOR_SYMBOL = "@@iterator";
         function getIteratorFn(maybeIterable) {
           if (maybeIterable === null || typeof maybeIterable !== "object") {
@@ -345,13 +452,7 @@ function requireReact_development() {
           current: null
         };
         var ReactCurrentBatchConfig = {
-          transition: null
-        };
-        var ReactCurrentActQueue = {
-          current: null,
-          // Used to reproduce behavior of `batchedUpdates` in legacy mode.
-          isBatchingLegacy: false,
-          didScheduleLegacyUpdate: false
+          transition: 0
         };
         var ReactCurrentOwner = {
           /**
@@ -386,38 +487,34 @@ function requireReact_development() {
             return stack;
           };
         }
-        var enableScopeAPI = false;
-        var enableCacheElement = false;
-        var enableTransitionTracing = false;
-        var enableLegacyHidden = false;
-        var enableDebugTracing = false;
+        var IsSomeRendererActing = {
+          current: false
+        };
         var ReactSharedInternals = {
           ReactCurrentDispatcher,
           ReactCurrentBatchConfig,
-          ReactCurrentOwner
+          ReactCurrentOwner,
+          IsSomeRendererActing,
+          // Used by renderers to avoid bundling object-assign twice in UMD bundles:
+          assign: _assign
         };
         {
           ReactSharedInternals.ReactDebugCurrentFrame = ReactDebugCurrentFrame;
-          ReactSharedInternals.ReactCurrentActQueue = ReactCurrentActQueue;
         }
         function warn(format) {
           {
-            {
-              for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-                args[_key - 1] = arguments[_key];
-              }
-              printWarning("warn", format, args);
+            for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+              args[_key - 1] = arguments[_key];
             }
+            printWarning("warn", format, args);
           }
         }
         function error(format) {
           {
-            {
-              for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-                args[_key2 - 1] = arguments[_key2];
-              }
-              printWarning("error", format, args);
+            for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+              args[_key2 - 1] = arguments[_key2];
             }
+            printWarning("error", format, args);
           }
         }
         function printWarning(level, format, args) {
@@ -429,7 +526,7 @@ function requireReact_development() {
               args = args.concat([stack]);
             }
             var argsWithFormat = args.map(function(item) {
-              return String(item);
+              return "" + item;
             });
             argsWithFormat.unshift("Warning: " + format);
             Function.prototype.apply.call(console[level], console, argsWithFormat);
@@ -509,7 +606,6 @@ function requireReact_development() {
             warnNoop(publicInstance, "setState");
           }
         };
-        var assign = Object.assign;
         var emptyObject = {};
         {
           Object.freeze(emptyObject);
@@ -522,8 +618,10 @@ function requireReact_development() {
         }
         Component.prototype.isReactComponent = {};
         Component.prototype.setState = function(partialState, callback) {
-          if (typeof partialState !== "object" && typeof partialState !== "function" && partialState != null) {
-            throw new Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
+          if (!(typeof partialState === "object" || typeof partialState === "function" || partialState == null)) {
+            {
+              throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
+            }
           }
           this.updater.enqueueSetState(this, partialState, callback, "setState");
         };
@@ -560,7 +658,7 @@ function requireReact_development() {
         }
         var pureComponentPrototype = PureComponent.prototype = new ComponentDummy();
         pureComponentPrototype.constructor = PureComponent;
-        assign(pureComponentPrototype, Component.prototype);
+        _assign(pureComponentPrototype, Component.prototype);
         pureComponentPrototype.isPureReactComponent = true;
         function createRef() {
           var refObject = {
@@ -571,56 +669,20 @@ function requireReact_development() {
           }
           return refObject;
         }
-        var isArrayImpl = Array.isArray;
-        function isArray(a) {
-          return isArrayImpl(a);
-        }
-        function typeName(value) {
-          {
-            var hasToStringTag = typeof Symbol === "function" && Symbol.toStringTag;
-            var type = hasToStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
-            return type;
-          }
-        }
-        function willCoercionThrow(value) {
-          {
-            try {
-              testStringCoercion(value);
-              return false;
-            } catch (e) {
-              return true;
-            }
-          }
-        }
-        function testStringCoercion(value) {
-          return "" + value;
-        }
-        function checkKeyStringCoercion(value) {
-          {
-            if (willCoercionThrow(value)) {
-              error("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", typeName(value));
-              return testStringCoercion(value);
-            }
-          }
-        }
         function getWrappedName(outerType, innerType, wrapperName) {
-          var displayName = outerType.displayName;
-          if (displayName) {
-            return displayName;
-          }
           var functionName = innerType.displayName || innerType.name || "";
-          return functionName !== "" ? wrapperName + "(" + functionName + ")" : wrapperName;
+          return outerType.displayName || (functionName !== "" ? wrapperName + "(" + functionName + ")" : wrapperName);
         }
         function getContextName(type) {
           return type.displayName || "Context";
         }
-        function getComponentNameFromType(type) {
+        function getComponentName(type) {
           if (type == null) {
             return null;
           }
           {
             if (typeof type.tag === "number") {
-              error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue.");
+              error("Received an unexpected object in getComponentName(). This is likely a bug in React. Please file an issue.");
             }
           }
           if (typeof type === "function") {
@@ -630,15 +692,15 @@ function requireReact_development() {
             return type;
           }
           switch (type) {
-            case REACT_FRAGMENT_TYPE:
+            case exports.Fragment:
               return "Fragment";
             case REACT_PORTAL_TYPE:
               return "Portal";
-            case REACT_PROFILER_TYPE:
+            case exports.Profiler:
               return "Profiler";
-            case REACT_STRICT_MODE_TYPE:
+            case exports.StrictMode:
               return "StrictMode";
-            case REACT_SUSPENSE_TYPE:
+            case exports.Suspense:
               return "Suspense";
             case REACT_SUSPENSE_LIST_TYPE:
               return "SuspenseList";
@@ -654,17 +716,15 @@ function requireReact_development() {
               case REACT_FORWARD_REF_TYPE:
                 return getWrappedName(type, type.render, "ForwardRef");
               case REACT_MEMO_TYPE:
-                var outerName = type.displayName || null;
-                if (outerName !== null) {
-                  return outerName;
-                }
-                return getComponentNameFromType(type.type) || "Memo";
+                return getComponentName(type.type);
+              case REACT_BLOCK_TYPE:
+                return getComponentName(type._render);
               case REACT_LAZY_TYPE: {
                 var lazyComponent = type;
                 var payload = lazyComponent._payload;
                 var init = lazyComponent._init;
                 try {
-                  return getComponentNameFromType(init(payload));
+                  return getComponentName(init(payload));
                 } catch (x) {
                   return null;
                 }
@@ -739,7 +799,7 @@ function requireReact_development() {
         function warnIfStringRefCannotBeAutoConverted(config) {
           {
             if (typeof config.ref === "string" && ReactCurrentOwner.current && config.__self && ReactCurrentOwner.current.stateNode !== config.__self) {
-              var componentName = getComponentNameFromType(ReactCurrentOwner.current.type);
+              var componentName = getComponentName(ReactCurrentOwner.current.type);
               if (!didWarnAboutStringRefs[componentName]) {
                 error('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', componentName, config.ref);
                 didWarnAboutStringRefs[componentName] = true;
@@ -801,9 +861,6 @@ function requireReact_development() {
               }
             }
             if (hasValidKey(config)) {
-              {
-                checkKeyStringCoercion(config.key);
-              }
               key = "" + config.key;
             }
             self = config.__self === void 0 ? null : config.__self;
@@ -855,11 +912,13 @@ function requireReact_development() {
           return newElement;
         }
         function cloneElement(element, config, children) {
-          if (element === null || element === void 0) {
-            throw new Error("React.cloneElement(...): The argument must be a React element, but you passed " + element + ".");
+          if (!!(element === null || element === void 0)) {
+            {
+              throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + element + ".");
+            }
           }
           var propName;
-          var props = assign({}, element.props);
+          var props = _assign({}, element.props);
           var key = element.key;
           var ref = element.ref;
           var self = element._self;
@@ -871,9 +930,6 @@ function requireReact_development() {
               owner = ReactCurrentOwner.current;
             }
             if (hasValidKey(config)) {
-              {
-                checkKeyStringCoercion(config.key);
-              }
               key = "" + config.key;
             }
             var defaultProps;
@@ -925,9 +981,6 @@ function requireReact_development() {
         }
         function getElementKey(element, index) {
           if (typeof element === "object" && element !== null && element.key != null) {
-            {
-              checkKeyStringCoercion(element.key);
-            }
             return escape("" + element.key);
           }
           return index.toString(36);
@@ -958,7 +1011,7 @@ function requireReact_development() {
             var _child = children;
             var mappedChild = callback(_child);
             var childKey = nameSoFar === "" ? SEPARATOR + getElementKey(_child, 0) : nameSoFar;
-            if (isArray(mappedChild)) {
+            if (Array.isArray(mappedChild)) {
               var escapedChildKey = "";
               if (childKey != null) {
                 escapedChildKey = escapeUserProvidedKey(childKey) + "/";
@@ -968,11 +1021,6 @@ function requireReact_development() {
               });
             } else if (mappedChild != null) {
               if (isValidElement(mappedChild)) {
-                {
-                  if (mappedChild.key && (!_child || _child.key !== mappedChild.key)) {
-                    checkKeyStringCoercion(mappedChild.key);
-                  }
-                }
                 mappedChild = cloneAndReplaceKey(
                   mappedChild,
                   // Keep both the (mapped) and old keys if they differ, just as
@@ -980,7 +1028,6 @@ function requireReact_development() {
                   escapedPrefix + // $FlowFixMe Flow incorrectly thinks React.Portal doesn't have a key
                   (mappedChild.key && (!_child || _child.key !== mappedChild.key) ? (
                     // $FlowFixMe Flow incorrectly thinks existing element's key can be a number
-                    // eslint-disable-next-line react-internal/safe-string-coercion
                     escapeUserProvidedKey("" + mappedChild.key) + "/"
                   ) : "") + childKey
                 );
@@ -993,7 +1040,7 @@ function requireReact_development() {
           var nextName;
           var subtreeCount = 0;
           var nextNamePrefix = nameSoFar === "" ? SEPARATOR : nameSoFar + SUBSEPARATOR;
-          if (isArray(children)) {
+          if (Array.isArray(children)) {
             for (var i = 0; i < children.length; i++) {
               child = children[i];
               nextName = nextNamePrefix + getElementKey(child, i);
@@ -1020,8 +1067,12 @@ function requireReact_development() {
                 subtreeCount += mapIntoArray(child, array, escapedPrefix, nextName, callback);
               }
             } else if (type === "object") {
-              var childrenString = String(children);
-              throw new Error("Objects are not valid as a React child (found: " + (childrenString === "[object Object]" ? "object with keys {" + Object.keys(children).join(", ") + "}" : childrenString) + "). If you meant to render a collection of children, use an array instead.");
+              var childrenString = "" + children;
+              {
+                {
+                  throw Error("Objects are not valid as a React child (found: " + (childrenString === "[object Object]" ? "object with keys {" + Object.keys(children).join(", ") + "}" : childrenString) + "). If you meant to render a collection of children, use an array instead.");
+                }
+              }
             }
           }
           return subtreeCount;
@@ -1056,13 +1107,25 @@ function requireReact_development() {
         }
         function onlyChild(children) {
           if (!isValidElement(children)) {
-            throw new Error("React.Children.only expected to receive a single React element child.");
+            {
+              throw Error("React.Children.only expected to receive a single React element child.");
+            }
           }
           return children;
         }
-        function createContext(defaultValue) {
+        function createContext(defaultValue, calculateChangedBits) {
+          if (calculateChangedBits === void 0) {
+            calculateChangedBits = null;
+          } else {
+            {
+              if (calculateChangedBits !== null && typeof calculateChangedBits !== "function") {
+                error("createContext: Expected the optional second argument to be a function. Instead received: %s", calculateChangedBits);
+              }
+            }
+          }
           var context = {
             $$typeof: REACT_CONTEXT_TYPE,
+            _calculateChangedBits: calculateChangedBits,
             // As a workaround to support multiple concurrent renderers, we categorize
             // some renderers as primary and others as secondary. We only expect
             // there to be two concurrent renderers at most: React Native (primary) and
@@ -1075,10 +1138,7 @@ function requireReact_development() {
             _threadCount: 0,
             // These are circular
             Provider: null,
-            Consumer: null,
-            // Add these to use same hidden class in VM as ServerContext
-            _defaultValue: null,
-            _globalName: null
+            Consumer: null
           };
           context.Provider = {
             $$typeof: REACT_PROVIDER_TYPE,
@@ -1090,7 +1150,8 @@ function requireReact_development() {
           {
             var Consumer = {
               $$typeof: REACT_CONTEXT_TYPE,
-              _context: context
+              _context: context,
+              _calculateChangedBits: context._calculateChangedBits
             };
             Object.defineProperties(Consumer, {
               Provider: {
@@ -1166,38 +1227,31 @@ function requireReact_development() {
           if (payload._status === Uninitialized) {
             var ctor = payload._result;
             var thenable = ctor();
-            thenable.then(function(moduleObject2) {
-              if (payload._status === Pending || payload._status === Uninitialized) {
+            var pending = payload;
+            pending._status = Pending;
+            pending._result = thenable;
+            thenable.then(function(moduleObject) {
+              if (payload._status === Pending) {
+                var defaultExport = moduleObject.default;
+                {
+                  if (defaultExport === void 0) {
+                    error("lazy: Expected the result of a dynamic import() call. Instead received: %s\n\nYour code should look like: \n  const MyComponent = lazy(() => import('./MyComponent'))", moduleObject);
+                  }
+                }
                 var resolved = payload;
                 resolved._status = Resolved;
-                resolved._result = moduleObject2;
+                resolved._result = defaultExport;
               }
             }, function(error2) {
-              if (payload._status === Pending || payload._status === Uninitialized) {
+              if (payload._status === Pending) {
                 var rejected = payload;
                 rejected._status = Rejected;
                 rejected._result = error2;
               }
             });
-            if (payload._status === Uninitialized) {
-              var pending = payload;
-              pending._status = Pending;
-              pending._result = thenable;
-            }
           }
           if (payload._status === Resolved) {
-            var moduleObject = payload._result;
-            {
-              if (moduleObject === void 0) {
-                error("lazy: Expected the result of a dynamic import() call. Instead received: %s\n\nYour code should look like: \n  const MyComponent = lazy(() => import('./MyComponent'))\n\nDid you accidentally put curly braces around the import?", moduleObject);
-              }
-            }
-            {
-              if (!("default" in moduleObject)) {
-                error("lazy: Expected the result of a dynamic import() call. Instead received: %s\n\nYour code should look like: \n  const MyComponent = lazy(() => import('./MyComponent'))", moduleObject);
-              }
-            }
-            return moduleObject.default;
+            return payload._result;
           } else {
             throw payload._result;
           }
@@ -1205,7 +1259,7 @@ function requireReact_development() {
         function lazy(ctor) {
           var payload = {
             // We use these fields to store the result.
-            _status: Uninitialized,
+            _status: -1,
             _result: ctor
           };
           var lazyType = {
@@ -1278,7 +1332,7 @@ function requireReact_development() {
               },
               set: function(name) {
                 ownName = name;
-                if (!render.name && !render.displayName) {
+                if (render.displayName == null) {
                   render.displayName = name;
                 }
               }
@@ -1286,23 +1340,16 @@ function requireReact_development() {
           }
           return elementType;
         }
-        var REACT_MODULE_REFERENCE;
-        {
-          REACT_MODULE_REFERENCE = Symbol.for("react.module.reference");
-        }
+        var enableScopeAPI = false;
         function isValidElementType(type) {
           if (typeof type === "string" || typeof type === "function") {
             return true;
           }
-          if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden || type === REACT_OFFSCREEN_TYPE || enableScopeAPI || enableCacheElement || enableTransitionTracing) {
+          if (type === exports.Fragment || type === exports.Profiler || type === REACT_DEBUG_TRACING_MODE_TYPE || type === exports.StrictMode || type === exports.Suspense || type === REACT_SUSPENSE_LIST_TYPE || type === REACT_LEGACY_HIDDEN_TYPE || enableScopeAPI) {
             return true;
           }
           if (typeof type === "object" && type !== null) {
-            if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
-            // types supported by any Flight configuration anywhere since
-            // we don't know which Flight build this will end up being used
-            // with.
-            type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== void 0) {
+            if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_BLOCK_TYPE || type[0] === REACT_SERVER_BLOCK_TYPE) {
               return true;
             }
           }
@@ -1329,7 +1376,7 @@ function requireReact_development() {
               },
               set: function(name) {
                 ownName = name;
-                if (!type.name && !type.displayName) {
+                if (type.displayName == null) {
                   type.displayName = name;
                 }
               }
@@ -1339,16 +1386,19 @@ function requireReact_development() {
         }
         function resolveDispatcher() {
           var dispatcher = ReactCurrentDispatcher.current;
-          {
-            if (dispatcher === null) {
-              error("Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.");
+          if (!(dispatcher !== null)) {
+            {
+              throw Error("Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.");
             }
           }
           return dispatcher;
         }
-        function useContext(Context) {
+        function useContext(Context, unstable_observedBits) {
           var dispatcher = resolveDispatcher();
           {
+            if (unstable_observedBits !== void 0) {
+              error("useContext() second argument is reserved for future use in React. Passing it is not supported. You passed: %s.%s", unstable_observedBits, typeof unstable_observedBits === "number" && Array.isArray(arguments[2]) ? "\n\nDid you call array.map(useContext)? Calling Hooks inside a loop is not supported. Learn more at https://reactjs.org/link/rules-of-hooks" : "");
+            }
             if (Context._context !== void 0) {
               var realContext = Context._context;
               if (realContext.Consumer === Context) {
@@ -1358,7 +1408,7 @@ function requireReact_development() {
               }
             }
           }
-          return dispatcher.useContext(Context);
+          return dispatcher.useContext(Context, unstable_observedBits);
         }
         function useState(initialState) {
           var dispatcher = resolveDispatcher();
@@ -1375,10 +1425,6 @@ function requireReact_development() {
         function useEffect(create, deps) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useEffect(create, deps);
-        }
-        function useInsertionEffect(create, deps) {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useInsertionEffect(create, deps);
         }
         function useLayoutEffect(create, deps) {
           var dispatcher = resolveDispatcher();
@@ -1401,22 +1447,6 @@ function requireReact_development() {
             var dispatcher = resolveDispatcher();
             return dispatcher.useDebugValue(value, formatterFn);
           }
-        }
-        function useTransition() {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useTransition();
-        }
-        function useDeferredValue(value) {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useDeferredValue(value);
-        }
-        function useId() {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useId();
-        }
-        function useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot) {
-          var dispatcher = resolveDispatcher();
-          return dispatcher.useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
         }
         var disabledDepth = 0;
         var prevLog;
@@ -1468,25 +1498,25 @@ function requireReact_development() {
                 writable: true
               };
               Object.defineProperties(console, {
-                log: assign({}, props, {
+                log: _assign({}, props, {
                   value: prevLog
                 }),
-                info: assign({}, props, {
+                info: _assign({}, props, {
                   value: prevInfo
                 }),
-                warn: assign({}, props, {
+                warn: _assign({}, props, {
                   value: prevWarn
                 }),
-                error: assign({}, props, {
+                error: _assign({}, props, {
                   value: prevError
                 }),
-                group: assign({}, props, {
+                group: _assign({}, props, {
                   value: prevGroup
                 }),
-                groupCollapsed: assign({}, props, {
+                groupCollapsed: _assign({}, props, {
                   value: prevGroupCollapsed
                 }),
-                groupEnd: assign({}, props, {
+                groupEnd: _assign({}, props, {
                   value: prevGroupEnd
                 })
               });
@@ -1587,9 +1617,6 @@ function requireReact_development() {
                       c--;
                       if (c < 0 || sampleLines[s] !== controlLines[c]) {
                         var _frame = "\n" + sampleLines[s].replace(" at new ", " at ");
-                        if (fn.displayName && _frame.includes("<anonymous>")) {
-                          _frame = _frame.replace("<anonymous>", fn.displayName);
-                        }
                         {
                           if (typeof fn === "function") {
                             componentFrameCache.set(fn, _frame);
@@ -1642,7 +1669,7 @@ function requireReact_development() {
             return describeBuiltInComponentFrame(type);
           }
           switch (type) {
-            case REACT_SUSPENSE_TYPE:
+            case exports.Suspense:
               return describeBuiltInComponentFrame("Suspense");
             case REACT_SUSPENSE_LIST_TYPE:
               return describeBuiltInComponentFrame("SuspenseList");
@@ -1653,6 +1680,8 @@ function requireReact_development() {
                 return describeFunctionComponentFrame(type.render);
               case REACT_MEMO_TYPE:
                 return describeUnknownElementTypeFrameInDEV(type.type, source, ownerFn);
+              case REACT_BLOCK_TYPE:
+                return describeFunctionComponentFrame(type._render);
               case REACT_LAZY_TYPE: {
                 var lazyComponent = type;
                 var payload = lazyComponent._payload;
@@ -1681,7 +1710,7 @@ function requireReact_development() {
         }
         function checkPropTypes(typeSpecs, values, location, componentName, element) {
           {
-            var has = Function.call.bind(hasOwnProperty);
+            var has = Function.call.bind(Object.prototype.hasOwnProperty);
             for (var typeSpecName in typeSpecs) {
               if (has(typeSpecs, typeSpecName)) {
                 var error$1 = void 0;
@@ -1727,7 +1756,7 @@ function requireReact_development() {
         }
         function getDeclarationErrorAddendum() {
           if (ReactCurrentOwner.current) {
-            var name = getComponentNameFromType(ReactCurrentOwner.current.type);
+            var name = getComponentName(ReactCurrentOwner.current.type);
             if (name) {
               return "\n\nCheck the render method of `" + name + "`.";
             }
@@ -1771,7 +1800,7 @@ function requireReact_development() {
           ownerHasKeyUseWarning[currentComponentErrorInfo] = true;
           var childOwner = "";
           if (element && element._owner && element._owner !== ReactCurrentOwner.current) {
-            childOwner = " It was passed a child from " + getComponentNameFromType(element._owner.type) + ".";
+            childOwner = " It was passed a child from " + getComponentName(element._owner.type) + ".";
           }
           {
             setCurrentlyValidatingElement$1(element);
@@ -1783,7 +1812,7 @@ function requireReact_development() {
           if (typeof node !== "object") {
             return;
           }
-          if (isArray(node)) {
+          if (Array.isArray(node)) {
             for (var i = 0; i < node.length; i++) {
               var child = node[i];
               if (isValidElement(child)) {
@@ -1826,11 +1855,11 @@ function requireReact_development() {
               return;
             }
             if (propTypes) {
-              var name = getComponentNameFromType(type);
+              var name = getComponentName(type);
               checkPropTypes(propTypes, element.props, "prop", name, element);
             } else if (type.PropTypes !== void 0 && !propTypesMisspellWarningShown) {
               propTypesMisspellWarningShown = true;
-              var _name = getComponentNameFromType(type);
+              var _name = getComponentName(type);
               error("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", _name || "Unknown");
             }
             if (typeof type.getDefaultProps === "function" && !type.getDefaultProps.isReactClassApproved) {
@@ -1873,10 +1902,10 @@ function requireReact_development() {
             var typeString;
             if (type === null) {
               typeString = "null";
-            } else if (isArray(type)) {
+            } else if (Array.isArray(type)) {
               typeString = "array";
             } else if (type !== void 0 && type.$$typeof === REACT_ELEMENT_TYPE) {
-              typeString = "<" + (getComponentNameFromType(type.type) || "Unknown") + " />";
+              typeString = "<" + (getComponentName(type.type) || "Unknown") + " />";
               info = " Did you accidentally export a JSX literal instead of a component?";
             } else {
               typeString = typeof type;
@@ -1894,7 +1923,7 @@ function requireReact_development() {
               validateChildKeys(arguments[i], type);
             }
           }
-          if (type === REACT_FRAGMENT_TYPE) {
+          if (type === exports.Fragment) {
             validateFragmentProps(element);
           } else {
             validatePropTypes(element);
@@ -1931,194 +1960,12 @@ function requireReact_development() {
           validatePropTypes(newElement);
           return newElement;
         }
-        function startTransition(scope, options) {
-          var prevTransition = ReactCurrentBatchConfig.transition;
-          ReactCurrentBatchConfig.transition = {};
-          var currentTransition = ReactCurrentBatchConfig.transition;
-          {
-            ReactCurrentBatchConfig.transition._updatedFibers = /* @__PURE__ */ new Set();
-          }
+        {
           try {
-            scope();
-          } finally {
-            ReactCurrentBatchConfig.transition = prevTransition;
-            {
-              if (prevTransition === null && currentTransition._updatedFibers) {
-                var updatedFibersCount = currentTransition._updatedFibers.size;
-                if (updatedFibersCount > 10) {
-                  warn("Detected a large number of updates inside startTransition. If this is due to a subscription please re-write it to use React provided hooks. Otherwise concurrent mode guarantees are off the table.");
-                }
-                currentTransition._updatedFibers.clear();
-              }
-            }
-          }
-        }
-        var didWarnAboutMessageChannel = false;
-        var enqueueTaskImpl = null;
-        function enqueueTask(task) {
-          if (enqueueTaskImpl === null) {
-            try {
-              var requireString = ("require" + Math.random()).slice(0, 7);
-              var nodeRequire = module && module[requireString];
-              enqueueTaskImpl = nodeRequire.call(module, "timers").setImmediate;
-            } catch (_err) {
-              enqueueTaskImpl = function(callback) {
-                {
-                  if (didWarnAboutMessageChannel === false) {
-                    didWarnAboutMessageChannel = true;
-                    if (typeof MessageChannel === "undefined") {
-                      error("This browser does not have a MessageChannel implementation, so enqueuing tasks via await act(async () => ...) will fail. Please file an issue at https://github.com/facebook/react/issues if you encounter this warning.");
-                    }
-                  }
-                }
-                var channel = new MessageChannel();
-                channel.port1.onmessage = callback;
-                channel.port2.postMessage(void 0);
-              };
-            }
-          }
-          return enqueueTaskImpl(task);
-        }
-        var actScopeDepth = 0;
-        var didWarnNoAwaitAct = false;
-        function act(callback) {
-          {
-            var prevActScopeDepth = actScopeDepth;
-            actScopeDepth++;
-            if (ReactCurrentActQueue.current === null) {
-              ReactCurrentActQueue.current = [];
-            }
-            var prevIsBatchingLegacy = ReactCurrentActQueue.isBatchingLegacy;
-            var result;
-            try {
-              ReactCurrentActQueue.isBatchingLegacy = true;
-              result = callback();
-              if (!prevIsBatchingLegacy && ReactCurrentActQueue.didScheduleLegacyUpdate) {
-                var queue = ReactCurrentActQueue.current;
-                if (queue !== null) {
-                  ReactCurrentActQueue.didScheduleLegacyUpdate = false;
-                  flushActQueue(queue);
-                }
-              }
-            } catch (error2) {
-              popActScope(prevActScopeDepth);
-              throw error2;
-            } finally {
-              ReactCurrentActQueue.isBatchingLegacy = prevIsBatchingLegacy;
-            }
-            if (result !== null && typeof result === "object" && typeof result.then === "function") {
-              var thenableResult = result;
-              var wasAwaited = false;
-              var thenable = {
-                then: function(resolve, reject) {
-                  wasAwaited = true;
-                  thenableResult.then(function(returnValue2) {
-                    popActScope(prevActScopeDepth);
-                    if (actScopeDepth === 0) {
-                      recursivelyFlushAsyncActWork(returnValue2, resolve, reject);
-                    } else {
-                      resolve(returnValue2);
-                    }
-                  }, function(error2) {
-                    popActScope(prevActScopeDepth);
-                    reject(error2);
-                  });
-                }
-              };
-              {
-                if (!didWarnNoAwaitAct && typeof Promise !== "undefined") {
-                  Promise.resolve().then(function() {
-                  }).then(function() {
-                    if (!wasAwaited) {
-                      didWarnNoAwaitAct = true;
-                      error("You called act(async () => ...) without await. This could lead to unexpected testing behaviour, interleaving multiple act calls and mixing their scopes. You should - await act(async () => ...);");
-                    }
-                  });
-                }
-              }
-              return thenable;
-            } else {
-              var returnValue = result;
-              popActScope(prevActScopeDepth);
-              if (actScopeDepth === 0) {
-                var _queue = ReactCurrentActQueue.current;
-                if (_queue !== null) {
-                  flushActQueue(_queue);
-                  ReactCurrentActQueue.current = null;
-                }
-                var _thenable = {
-                  then: function(resolve, reject) {
-                    if (ReactCurrentActQueue.current === null) {
-                      ReactCurrentActQueue.current = [];
-                      recursivelyFlushAsyncActWork(returnValue, resolve, reject);
-                    } else {
-                      resolve(returnValue);
-                    }
-                  }
-                };
-                return _thenable;
-              } else {
-                var _thenable2 = {
-                  then: function(resolve, reject) {
-                    resolve(returnValue);
-                  }
-                };
-                return _thenable2;
-              }
-            }
-          }
-        }
-        function popActScope(prevActScopeDepth) {
-          {
-            if (prevActScopeDepth !== actScopeDepth - 1) {
-              error("You seem to have overlapping act() calls, this is not supported. Be sure to await previous act() calls before making a new one. ");
-            }
-            actScopeDepth = prevActScopeDepth;
-          }
-        }
-        function recursivelyFlushAsyncActWork(returnValue, resolve, reject) {
-          {
-            var queue = ReactCurrentActQueue.current;
-            if (queue !== null) {
-              try {
-                flushActQueue(queue);
-                enqueueTask(function() {
-                  if (queue.length === 0) {
-                    ReactCurrentActQueue.current = null;
-                    resolve(returnValue);
-                  } else {
-                    recursivelyFlushAsyncActWork(returnValue, resolve, reject);
-                  }
-                });
-              } catch (error2) {
-                reject(error2);
-              }
-            } else {
-              resolve(returnValue);
-            }
-          }
-        }
-        var isFlushing = false;
-        function flushActQueue(queue) {
-          {
-            if (!isFlushing) {
-              isFlushing = true;
-              var i = 0;
-              try {
-                for (; i < queue.length; i++) {
-                  var callback = queue[i];
-                  do {
-                    callback = callback(true);
-                  } while (callback !== null);
-                }
-                queue.length = 0;
-              } catch (error2) {
-                queue = queue.slice(i + 1);
-                throw error2;
-              } finally {
-                isFlushing = false;
-              }
-            }
+            var frozenObject = Object.freeze({});
+            /* @__PURE__ */ new Map([[frozenObject, null]]);
+            /* @__PURE__ */ new Set([frozenObject]);
+          } catch (e) {
           }
         }
         var createElement$1 = createElementWithValidation;
@@ -2133,11 +1980,7 @@ function requireReact_development() {
         };
         exports.Children = Children;
         exports.Component = Component;
-        exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.Profiler = REACT_PROFILER_TYPE;
         exports.PureComponent = PureComponent;
-        exports.StrictMode = REACT_STRICT_MODE_TYPE;
-        exports.Suspense = REACT_SUSPENSE_TYPE;
         exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals;
         exports.cloneElement = cloneElement$1;
         exports.createContext = createContext;
@@ -2148,31 +1991,21 @@ function requireReact_development() {
         exports.isValidElement = isValidElement;
         exports.lazy = lazy;
         exports.memo = memo;
-        exports.startTransition = startTransition;
-        exports.unstable_act = act;
         exports.useCallback = useCallback;
         exports.useContext = useContext;
         exports.useDebugValue = useDebugValue;
-        exports.useDeferredValue = useDeferredValue;
         exports.useEffect = useEffect;
-        exports.useId = useId;
         exports.useImperativeHandle = useImperativeHandle;
-        exports.useInsertionEffect = useInsertionEffect;
         exports.useLayoutEffect = useLayoutEffect;
         exports.useMemo = useMemo;
         exports.useReducer = useReducer;
         exports.useRef = useRef;
         exports.useState = useState;
-        exports.useSyncExternalStore = useSyncExternalStore;
-        exports.useTransition = useTransition;
         exports.version = ReactVersion;
-        if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") {
-          __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
-        }
       })();
     }
-  })(react_development, react_development.exports);
-  return react_development.exports;
+  })(react_development);
+  return react_development;
 }
 if (process.env.NODE_ENV === "production") {
   react.exports = requireReact_production_min();
