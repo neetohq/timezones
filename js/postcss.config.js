@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable import/no-extraneous-dependencies */
 
-const tailwindcss = require("tailwindcss");
-const autoprefixer = require("autoprefixer");
-const cssnano = require("cssnano");
-const prefixWrap = require("postcss-prefixwrap");
+import tailwindcss from "tailwindcss";
+import autoprefixer from "autoprefixer";
+import cssnano from "cssnano";
+import prefixWrap from "postcss-prefixwrap";
 
-module.exports = {
+export default {
   plugins: [
     tailwindcss(),
     autoprefixer(),
