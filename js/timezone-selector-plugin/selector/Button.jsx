@@ -1,6 +1,6 @@
 import { h } from "htm/preact";
 import { useEffect } from "preact/hooks";
-import { getCurrentTimeInTimezone } from "./utils";
+import { getCurrentTimeInTimezone, isDST } from "./utils";
 
 function Button({
   selectedValue, isOverlayVisible, setIsOverlayVisible, elementId,
@@ -27,9 +27,24 @@ function Button({
         onClick={handleClick}
         className="flex items-center justify-between px-4 py-4 text-md ntsp-button-border"
         value={selectedValue?.value}
+        type="submit"
       >
-        <div className="flex items-center w-3/4 space-x-4 text-left truncate pointer-events-none line-clamp-2">
-          <div>{selectedValue?.label}</div>
+        <div className="flex flex-row gap-x-2">
+          <div
+            className="flex items-center space-x-4 text-left truncate pointer-events-none line-clamp-2"
+          >
+            <span>
+              {selectedValue?.label}
+            </span>
+          </div>
+          {isDST(selectedValue?.utc[0]) && (
+          <span
+            data-tooltip="Daylight savings Time"
+            data-tooltip-position="right"
+          >
+            &#127774;
+          </span>
+          )}
         </div>
         <div className="text-right truncate line-clamp-2">
           <span className="flex">
