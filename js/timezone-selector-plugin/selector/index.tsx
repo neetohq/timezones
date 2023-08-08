@@ -16,9 +16,9 @@ function Selector({
 
   useEffect(() => {
     const handleOutsideClick = (e) => {
-      const element = document.getElementById("elementId");
+      const element = document.getElementById(elementId);
 
-      if (element && !element.contains(e.target)) {
+      if (element && !element?.contains(e.target)) {
         setIsOverlayVisible(false);
       }
     };
