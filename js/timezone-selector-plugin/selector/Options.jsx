@@ -11,7 +11,11 @@ function Options({
   searchInput, selectedValue, setSelectedValue, setIsOverlayVisible,
 }) {
   const handleSelect = (e) => {
-    const selectedTimezone = allTimezones.find((timezone) => timezone?.value === e?.target?.value);
+    const targetValue = e?.target?.value
+      || e?.target?.parentNode?.value
+      || e?.target?.parentNode?.parentNode?.value;
+
+    const selectedTimezone = allTimezones.find((timezone) => timezone?.value === targetValue);
     setIsOverlayVisible(false);
     setSelectedValue(selectedTimezone);
   };

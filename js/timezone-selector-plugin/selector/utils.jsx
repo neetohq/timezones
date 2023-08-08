@@ -31,22 +31,53 @@ const findBrowserTimezone = () => {
   return allTimezones.find((timezone) => timezone.utc.includes(browserTimezone));
 };
 
+export const isDST = (timezone) => {
+  const currentTimeInUTC = new Date();
+
+  const options = {
+    timeZone: timezone,
+    hour12: true,
+    hour: "numeric",
+    timeZoneName: "long",
+  };
+
+  const currentTimeInTimezone = currentTimeInUTC.toLocaleString("en-US", options);
+
+  return currentTimeInTimezone.includes("Daylight");
+};
+
 export const DEFAULT_VALUE = findBrowserTimezone() || allTimezones[0];
 
 export const valueToId = (value) => `option-${value.replaceAll(" ", "_").toLowerCase()}`;
 
 export const createOptionButton = ({
-  key, value, onClick, label, selected, currentTime,
+  key, value, onClick, label, selected, currentTime, utc,
 }) => (
   <button
     id={valueToId(value)}
+    type="submit"
     onClick={onClick}
     className={`flex items-center justify-between px-2 py-3 text-md hover:bg-slate-100 ${selected ? "bg-blue-300" : ""}`}
     key={key}
     value={value}
   >
-    <div className="flex items-center w-3/4 space-x-4 text-left truncate pointer-events-none line-clamp-2">
-      <div>{label}</div>
+    <div className="flex flex-row gap-x-2">
+      <div
+        className="flex items-center space-x-4 text-left truncate pointer-events-none line-clamp-2"
+      >
+        <span>
+          {label}
+        </span>
+      </div>
+      {isDST(utc) && (
+      <span
+        value={value}
+        data-tooltip="Daylight savings Time"
+        data-tooltip-position="bottom"
+      >
+        &#127774;
+      </span>
+      )}
     </div>
     <div className="text-right truncate pointer-events-none line-clamp-2">
       {currentTime}
@@ -89,6 +120,7 @@ export const createGroupedOptionButton = (
             label: timezone.label,
             selected: selectedValue.value === timezone.value,
             currentTime: getCurrentTimeInTimezone(timezone.utc[0]),
+            utc: timezone.utc[0],
           }))}
         </div>
       );
