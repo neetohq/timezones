@@ -1761,8 +1761,8 @@ function Selector({
   const top = position === "top";
   p(() => {
     const handleOutsideClick = (e2) => {
-      var _a;
-      if (!((_a = document.getElementById(elementId)) == null ? void 0 : _a.contains(e2.target))) {
+      const element = document.getElementById(elementId);
+      if (element && !(element == null ? void 0 : element.contains(e2.target))) {
         setIsOverlayVisible(false);
       }
     };
