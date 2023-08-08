@@ -15,9 +15,10 @@ export default defineConfig({
   build: {
     emptyOutDir: true,
     lib: {
-      entry: [
-        path.resolve(__dirname, "./index.tsx")
-      ],
+      entry: {
+        index: path.resolve(__dirname, "./index.tsx"),
+        react: path.resolve(__dirname, "./react/index.jsx")
+      },
       formats: ["es"],
       name: "NeetoTimezoneSelector",
       /*
@@ -35,7 +36,7 @@ export default defineConfig({
       import NeetoTimezoneSelector from "neeto-timezones"
       import NeetoTimezoneSelector from "neeto-timezones/react"
       */
-      fileName: (format) => `index.${format}.js`,
+      fileName: (format, fileName) =>`${fileName}.${format}.js`,
     },
     target: "modules",
     minify: "terser",

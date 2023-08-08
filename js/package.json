@@ -1,8 +1,13 @@
 {
-  "name": "neeto-timezones-selector",
+  "name": "neeto-timezones",
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.es.js",
+  "exports": {
+    ".": "./dist/index.es.js",
+    "./react": "./dist/react.es.js"
+  },
+  "type": "module",
   "files": [
     "dist"
   ],
