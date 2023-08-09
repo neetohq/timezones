@@ -1,6 +1,6 @@
 # neeto-timezones
 
-A simple tool designed to help users manage timezones effortlessly.
+A set of utilities to manage timezones better.
 
 ## Projects
 

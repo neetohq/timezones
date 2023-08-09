@@ -2,8 +2,7 @@
 
 ![npm version](https://img.shields.io/npm/v/@neetohq/timezones.svg) ![license](https://img.shields.io/npm/l/@neetohq/timezones.svg)
 
-A simple and lightweight NPM package for working with time zones. This package provides an easy-to-use timezone selector.
-
+A simple and lightweight NPM package for working with time zones. This package provides a human friendly timezone selector and utility functions for timezones.
 
 
 ## Installation
