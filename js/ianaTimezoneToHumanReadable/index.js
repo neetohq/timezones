@@ -25,7 +25,7 @@ const allTimezones = groupedOptions.reduce((accumulator, currentValue) => {
 }, []);
 
 const ianaTimezoneToHumanReadable = (ianaValue) => {
-  const TimezoneObject = allTimezones.find((timezone) => timezone.utc.includes(ianaValue.utc[0]));
+  const TimezoneObject = allTimezones.find((timezone) => timezone.utc.includes(ianaValue));
 
   return TimezoneObject?.label || "";
 };
