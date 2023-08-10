@@ -4,8 +4,10 @@
       "Africa/Cairo"
     ],
     "abbr": "EST",
-    "label": "Cairo",
-    "value": "Egypt Standard Time Cairo"
+    "label": "Egypt Standard Time",
+    "value": "Egypt Standard Time Cairo",
+    "isDST": false,
+    "cities": "Cairo"
   },
   {
     "utc": [
@@ -25,16 +27,20 @@
       "Etc/GMT-1"
     ],
     "abbr": "WCAST",
-    "label": "West Central Africa",
-    "value": "W. Central Africa Standard Time Algiers Bangui Brazzaville Douala Kinshasa Lagos Libreville Luanda Malabo Ndjamena Niamey Porto-Novo Tunis GMT-1"
+    "label": "West Central Africa Standard Time",
+    "value": "W. Central Africa Standard Time Algiers Bangui Brazzaville Douala Kinshasa Lagos Libreville Luanda Malabo Ndjamena Niamey Porto-Novo Tunis GMT-1",
+    "isDST": false,
+    "cities": "Algiers, Bangui, Brazzaville, Douala, Kinshasa, Lagos, Libreville, Luanda, Malabo, Ndjamena, Niamey, Porto-Novo, Tunis"
   },
   {
     "utc": [
       "Africa/Windhoek"
     ],
     "abbr": "NST",
-    "label": "Windhoek",
-    "value": "Namibia Standard Time Windhoek"
+    "label": "Namibia Standard Time",
+    "value": "Namibia Standard Time Windhoek",
+    "isDST": false,
+    "cities": "Windhoek"
   },
   {
     "utc": [
@@ -52,16 +58,20 @@
       "Etc/GMT-2"
     ],
     "abbr": "SAST",
-    "label": "Harare, Pretoria",
-    "value": "South Africa Standard Time Blantyre Bujumbura Gaborone Harare Johannesburg Kigali Lubumbashi Lusaka Maputo Maseru Mbabane GMT-2"
+    "label": "South Africa Standard Time",
+    "value": "South Africa Standard Time Blantyre Bujumbura Gaborone Harare Johannesburg Kigali Lubumbashi Lusaka Maputo Maseru Mbabane GMT-2",
+    "isDST": false,
+    "cities": "Blantyre, Bujumbura, Gaborone, Harare, Johannesburg, Kigali, Lubumbashi, Lusaka, Maputo, Maseru, Mbabane, Pretoria"
   },
   {
     "utc": [
       "Africa/Tripoli"
     ],
     "abbr": "LST",
-    "label": "Tripoli",
-    "value": "Libya Standard Time Tripoli"
+    "label": "Libya Standard Time",
+    "value": "Libya Standard Time Tripoli",
+    "isDST": false,
+    "cities": "Tripoli"
   },
   {
     "utc": [
@@ -81,8 +91,10 @@
       "Indian/Mayotte"
     ],
     "abbr": "EAST",
-    "label": "Nairobi",
-    "value": "E. Africa Standard Time Addis Ababa Asmera Dar_es_Salaam Djibouti Juba Kampala Khartoum Mogadishu Nairobi Syowa GMT-3 Antananarivo Comoro Mayotte"
+    "label": "East Africa Standard Time",
+    "value": "E. Africa Standard Time Addis Ababa Asmera Dar_es_Salaam Djibouti Juba Kampala Khartoum Mogadishu Nairobi Syowa GMT-3 Antananarivo Comoro Mayotte",
+    "isDST": false,
+    "cities": "Addis Abada, Asmera, Dar es Salaam, Djibouti, Juba, Kampala, Khartoum, Mogadishu, Nairobi, Syowa, Antananarivo, Comoro, Mayotte"
   },
   {
     "utc": [
@@ -103,8 +115,10 @@
       "Atlantic/St_Helena"
     ],
     "abbr": "GST",
-    "label": "Monrovia, Reykjavik",
-    "value": "Greenwich Standard Time Abidjan Accra Bamako Banjul Bissau Conakry Dakar Freetown Lome Monrovia Nouakchott Ouagadougou Sao Tome Reykjavik St_Helena"
+    "label": "Greenwich Standard Time",
+    "value": "Greenwich Standard Time Abidjan Accra Bamako Banjul Bissau Conakry Dakar Freetown Lome Monrovia Nouakchott Ouagadougou Sao Tome Reykjavik St_Helena",
+    "isDST": false,
+    "cities": "Abidjan, Accra, Bamako, Banjul, Bissau, Conakry, Dakar, Freetown, Lome, Monrovia, Nouakchott, Ouagadougou, Sao Tome, Reykjavik, St. Helena"
   },
   {
     "utc": [
@@ -112,8 +126,10 @@
       "Africa/El_Aaiun"
     ],
     "abbr": "MDT",
-    "label": "Casablanca",
-    "value": "Morocco Standard Time Casablanca El Aaiun"
+    "label": "Morocco Standard Time",
+    "value": "Morocco Standard Time Casablanca El Aaiun",
+    "isDST": true,
+    "cities": "Casablanca, El Aaiun"
   },
   {
     "utc": [
@@ -122,7 +138,9 @@
       "Indian/Reunion"
     ],
     "abbr": "MST",
-    "label": "Port Louis",
-    "value": "Mauritius Standard Time Mahe Mauritius Reunion"
+    "label": "Mauritius Standard Time",
+    "value": "Mauritius Standard Time Mahe Mauritius Reunion",
+    "isDST": false,
+    "cities": "Mahe, Mauritius, Reunion"
   }
 ]
