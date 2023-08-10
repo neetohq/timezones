@@ -4,7 +4,7 @@
       "Africa/Cairo"
     ],
     "label": "Egypt Standard Time",
-    "value": "Egypt Standard Time Cairo",
+    "keywords": "Egypt Standard Time Cairo",
     "isDST": false,
     "cities": "Cairo"
   },
@@ -26,7 +26,7 @@
       "Etc/GMT-1"
     ],
     "label": "West Central Africa Standard Time",
-    "value": "W. Central Africa Standard Time Algiers Bangui Brazzaville Douala Kinshasa Lagos Libreville Luanda Malabo Ndjamena Niamey Porto-Novo Tunis GMT-1",
+    "keywords": "W. Central Africa Standard Time Algiers Bangui Brazzaville Douala Kinshasa Lagos Libreville Luanda Malabo Ndjamena Niamey Porto-Novo Tunis GMT-1",
     "isDST": false,
     "cities": "Algiers, Bangui, Brazzaville, Douala, Kinshasa, Lagos, Libreville, Luanda, Malabo, Ndjamena, Niamey, Porto-Novo, Tunis"
   },
@@ -35,7 +35,7 @@
       "Africa/Windhoek"
     ],
     "label": "Namibia Standard Time",
-    "value": "Namibia Standard Time Windhoek",
+    "keywords": "Namibia Standard Time Windhoek",
     "isDST": false,
     "cities": "Windhoek"
   },
@@ -55,7 +55,7 @@
       "Etc/GMT-2"
     ],
     "label": "South Africa Standard Time",
-    "value": "South Africa Standard Time Blantyre Bujumbura Gaborone Harare Johannesburg Kigali Lubumbashi Lusaka Maputo Maseru Mbabane GMT-2",
+    "keywords": "South Africa Standard Time Blantyre Bujumbura Gaborone Harare Johannesburg Kigali Lubumbashi Lusaka Maputo Maseru Mbabane GMT-2",
     "isDST": false,
     "cities": "Blantyre, Bujumbura, Gaborone, Harare, Johannesburg, Kigali, Lubumbashi, Lusaka, Maputo, Maseru, Mbabane, Pretoria"
   },
@@ -64,7 +64,7 @@
       "Africa/Tripoli"
     ],
     "label": "Libya Standard Time",
-    "value": "Libya Standard Time Tripoli",
+    "keywords": "Libya Standard Time Tripoli",
     "isDST": false,
     "cities": "Tripoli"
   },
@@ -86,7 +86,7 @@
       "Indian/Mayotte"
     ],
     "label": "East Africa Standard Time",
-    "value": "E. Africa Standard Time Addis Ababa Asmera Dar_es_Salaam Djibouti Juba Kampala Khartoum Mogadishu Nairobi Syowa GMT-3 Antananarivo Comoro Mayotte",
+    "keywords": "E. Africa Standard Time Addis Ababa Asmera Dar_es_Salaam Djibouti Juba Kampala Khartoum Mogadishu Nairobi Syowa GMT-3 Antananarivo Comoro Mayotte",
     "isDST": false,
     "cities": "Addis Abada, Asmera, Dar es Salaam, Djibouti, Juba, Kampala, Khartoum, Mogadishu, Nairobi, Syowa, Antananarivo, Comoro, Mayotte"
   },
@@ -109,7 +109,7 @@
       "Atlantic/St_Helena"
     ],
     "label": "Greenwich Standard Time",
-    "value": "Greenwich Standard Time Abidjan Accra Bamako Banjul Bissau Conakry Dakar Freetown Lome Monrovia Nouakchott Ouagadougou Sao Tome Reykjavik St_Helena",
+    "keywords": "Greenwich Standard Time Abidjan Accra Bamako Banjul Bissau Conakry Dakar Freetown Lome Monrovia Nouakchott Ouagadougou Sao Tome Reykjavik St_Helena",
     "isDST": false,
     "cities": "Abidjan, Accra, Bamako, Banjul, Bissau, Conakry, Dakar, Freetown, Lome, Monrovia, Nouakchott, Ouagadougou, Sao Tome, Reykjavik, St. Helena"
   },
@@ -119,7 +119,7 @@
       "Africa/El_Aaiun"
     ],
     "label": "Morocco Standard Time",
-    "value": "Morocco Standard Time Casablanca El Aaiun",
+    "keywords": "Morocco Standard Time Casablanca El Aaiun",
     "isDST": true,
     "cities": "Casablanca, El Aaiun"
   },
@@ -130,7 +130,7 @@
       "Indian/Reunion"
     ],
     "label": "Mauritius Standard Time",
-    "value": "Mauritius Standard Time Mahe Mauritius Reunion",
+    "keywords": "Mauritius Standard Time Mahe Mauritius Reunion",
     "isDST": false,
     "cities": "Mahe, Mauritius, Reunion"
   }

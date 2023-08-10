@@ -10,7 +10,7 @@
       "Europe/Tirane"
     ],
     "label": "Central Europe Standard Time",
-    "value": "Central Europe Standard Time Belgrade Bratislava Budapest Ljubljana Podgorica Prague Tirane",
+    "keywords": "Central Europe Standard Time Belgrade Bratislava Budapest Ljubljana Podgorica Prague Tirane",
     "isDst": true,
     "cities": "Belgrade, Bratislava, Budapest, Ljubljana, Podgorica, Prague, Tirane"
   },
@@ -22,7 +22,7 @@
       "Europe/Zagreb"
     ],
     "label": "Central European Standard Time",
-    "value": "Central European Standard Time Sarajevo Skopje Warsaw Zagreb",
+    "keywords": "Central European Standard Time Sarajevo Skopje Warsaw Zagreb",
     "isDst": true,
     "cities": "Sarajevo, Skopje, Warsaw, Zagreb"
   },
@@ -34,7 +34,7 @@
       "Europe/Jersey"
     ],
     "label": "GMT Standard Time",
-    "value": "GMT Standard Time Isle of_Man Guernsey Jersey London Edinburgh",
+    "keywords": "GMT Standard Time Isle of_Man Guernsey Jersey London Edinburgh",
     "isDst": true,
     "cities": "London, Edinburgh, Isle of Man, Guernsey, Jersey"
   },
@@ -47,7 +47,7 @@
       "Europe/Lisbon"
     ],
     "label": "GMT Standard Time",
-    "value": "GMT Standard Time Canary Faeroe Madeira Dublin Lisbon",
+    "keywords": "GMT Standard Time Canary Faeroe Madeira Dublin Lisbon",
     "isDst": true,
     "cities": "Canary, Faeroe, Madeira, Dublin, Lisbon"
   },
@@ -72,7 +72,7 @@
       "Europe/Zurich"
     ],
     "label": "West Europe Standard Time",
-    "value": "W. Europe Standard Time Longyearbyen Amsterdam Andorra Berlin Bern Busingen Gibraltar Luxembourg Malta Monaco Oslo Rome San Marino Stockholm Vaduz Vatican Vienna Zurich",
+    "keywords": "W. Europe Standard Time Longyearbyen Amsterdam Andorra Berlin Bern Busingen Gibraltar Luxembourg Malta Monaco Oslo Rome San Marino Stockholm Vaduz Vatican Vienna Zurich",
     "isDst": true,
     "cities": "Longyearbyen, Amsterdam, Andorra, Berlin, Bern, Busingen, Gibraltar, Luxembourg, Malta, Monaco, Oslo, Rome, San Marino, Stockholm, Vaduz, Vatican, Vienna, Zurich"
   },
@@ -85,7 +85,7 @@
       "Europe/Paris"
     ],
     "label": "Romance Standard Time",
-    "value": "Romance Standard Time Ceuta Brussels Copenhagen Madrid Paris",
+    "keywords": "Romance Standard Time Ceuta Brussels Copenhagen Madrid Paris",
     "isDst": true,
     "cities": "Brussels, Copenhagen, Madrid, Paris, Ceuta"
   },
@@ -107,7 +107,7 @@
       "Europe/Zaporozhye"
     ],
     "label": "East Europe Standard Time",
-    "value": "East E. Europe Standard Time Nicosia Athens Bucharest Chisinau Helsinki Kiev Mariehamn Nicosia Riga Sofia Tallinn Uzhgorod Vilnius Zaporozhye",
+    "keywords": "East E. Europe Standard Time Nicosia Athens Bucharest Chisinau Helsinki Kiev Mariehamn Nicosia Riga Sofia Tallinn Uzhgorod Vilnius Zaporozhye",
     "isDst": true,
     "cities": "Nicosia, Athens, Bucharest, Chisinau, Helsinki, Kiev, Mariehamn, Nicosia, Riga, Sofia, Tallinn, Uzhgorod, Vilnius, Zaporozhye"
   },
@@ -116,7 +116,7 @@
       "Europe/Istanbul"
     ],
     "label": "Istanbul",
-    "value": "Turkey Standard Time Istanbul",
+    "keywords": "Turkey Standard Time Istanbul",
     "isDst": false,
     "cities": "Istanbul"
   },
@@ -125,7 +125,7 @@
       "Europe/Kaliningrad"
     ],
     "label": "Kaliningrad Standard Time",
-    "value": "Kaliningrad Standard Time Kaliningrad",
+    "keywords": "Kaliningrad Standard Time Kaliningrad",
     "isDst": false,
     "cities": "Kaliningrad"
   },
@@ -138,7 +138,7 @@
       "Europe/Minsk"
     ],
     "label": "Moscow Standard Time",
-    "value": "Moscow Standard Time Kirov Moscow Simferopol Volgograd Minsk",
+    "keywords": "Moscow Standard Time Kirov Moscow Simferopol Volgograd Minsk",
     "isDst": false,
     "cities": "Moscow, St. Petersburg, Volgograd, Minsk, Kirov"
   },
@@ -149,7 +149,7 @@
       "Europe/Ulyanovsk"
     ],
     "label": "Samara Time",
-    "value": "Samara Time Astrakhan Samara Ulyanovsk",
+    "keywords": "Samara Time Astrakhan Samara Ulyanovsk",
     "isDst": false,
     "cities": "Samara, Ulyanovsk, Saratov"
   }

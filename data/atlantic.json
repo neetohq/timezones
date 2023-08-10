@@ -5,7 +5,7 @@
       "Atlantic/Azores"
     ],
     "label": "Azores Standard Time",
-    "value": "Azores Standard Time Scoresbysund Azores",
+    "keywords": "Azores Standard Time Scoresbysund Azores",
     "isDST": true,
     "cities": "Scoresbysund, Azores"
   },
@@ -15,7 +15,7 @@
       "Etc/GMT+1"
     ],
     "label": "Cape Verde Standard Time",
-    "value": "Cape Verde Standard Time Cape Verde GMT+1",
+    "keywords": "Cape Verde Standard Time Cape Verde GMT+1",
     "isDST": true,
     "cities": "Cape Verde"
   }

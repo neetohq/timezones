@@ -15,13 +15,13 @@ function Options({
       || e?.target?.parentNode?.value
       || e?.target?.parentNode?.parentNode?.value;
 
-    const selectedTimezone = allTimezones.find((timezone) => timezone?.value === targetValue);
+    const selectedTimezone = allTimezones.find((timezone) => timezone?.keywords === targetValue);
     setIsOverlayVisible(false);
     setSelectedValue(selectedTimezone);
   };
 
   useEffect(() => {
-    const selectedElement = document.getElementById(valueToId(selectedValue?.value));
+    const selectedElement = document.getElementById(valueToId(selectedValue?.keywords));
     selectedElement.scrollIntoView({ behavior: "auto", block: "center" });
   }, []);
 

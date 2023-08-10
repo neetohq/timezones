@@ -10,7 +10,7 @@ export const filterTimezones = (inputValue) => {
     const element = group[key]
       .filter(
         (timezone) => timezone.label.toLowerCase().includes(inputValue.toLowerCase())
-          || timezone.value.toLowerCase().includes(inputValue.toLowerCase()),
+          || timezone.keywords.toLowerCase().includes(inputValue.toLowerCase()),
       );
 
     return element.length > 0 ? { [key]: element } : null;

@@ -5,7 +5,7 @@
       "Asia/Calcutta"
     ],
     "label": "Indian Standard Time",
-    "value": "India Standard Time Kolkata Calcutta Chennai Mumbai New Delhi",
+    "keywords": "India Standard Time Kolkata Calcutta Chennai Mumbai New Delhi",
     "isDST": false,
     "cities": "Kolkata, Chennai, Mumbai, New Delhi"
   },
@@ -14,7 +14,7 @@
       "Asia/Beirut"
     ],
     "label": "Middle East Standard Time",
-    "value": "Middle East Standard Time Beirut",
+    "keywords": "Middle East Standard Time Beirut",
     "isDST": true,
     "cities": "Beirut"
   },
@@ -23,7 +23,7 @@
       "Asia/Damascus"
     ],
     "label": "Syria Standard Time",
-    "value": "Syria Standard Time Damascus",
+    "keywords": "Syria Standard Time Damascus",
     "isDST": true,
     "cities": "Damascus"
   },
@@ -32,7 +32,7 @@
       "Asia/Jerusalem"
     ],
     "label": "Israel Standard Time",
-    "value": "Israel Standard Time Jerusalem",
+    "keywords": "Israel Standard Time Jerusalem",
     "isDST": true,
     "cities": "Jerusalem"
   },
@@ -41,7 +41,7 @@
       "Asia/Amman"
     ],
     "label": "Jordan Standard Time",
-    "value": "Jordan Standard Time Amman",
+    "keywords": "Jordan Standard Time Amman",
     "isDST": false,
     "cities": "Amman"
   },
@@ -50,7 +50,7 @@
       "Asia/Baghdad"
     ],
     "label": "Baghdad",
-    "value": "Arabic Standard Time Baghdad",
+    "keywords": "Arabic Standard Time Baghdad",
     "isDST": false,
     "cities": "Baghdad"
   },
@@ -63,7 +63,7 @@
       "Asia/Riyadh"
     ],
     "label": "Kuwait, Riyadh",
-    "value": "Arab Standard Time Aden Bahrain Kuwait Qatar Riyadh",
+    "keywords": "Arab Standard Time Aden Bahrain Kuwait Qatar Riyadh",
     "isDST": false,
     "cities": "Aden, Bahrain, Kuwait, Qatar, Riyadh"
   },
@@ -72,7 +72,7 @@
       "Asia/Tehran"
     ],
     "label": "Iran Standard Time",
-    "value": "Iran Standard Time Tehran",
+    "keywords": "Iran Standard Time Tehran",
     "isDST": true,
     "cities": "Tehran"
   },
@@ -83,7 +83,7 @@
       "Etc/GMT-4"
     ],
     "label": "Arabian Standard time",
-    "value": "Arabian Standard Time Dubai Muscat GMT-4",
+    "keywords": "Arabian Standard Time Dubai Muscat GMT-4",
     "isDST": false,
     "cities": "Dubai, Muscat, Abu Dhabi"
   },
@@ -92,7 +92,7 @@
       "Asia/Baku"
     ],
     "label": "Azerbaijan Standard Time",
-    "value": "Azerbaijan Standard Time Baku",
+    "keywords": "Azerbaijan Standard Time Baku",
     "isDST": true,
     "cities": "Baku"
   },
@@ -101,7 +101,7 @@
       "Asia/Tbilisi"
     ],
     "label": "Georgian Standard Time",
-    "value": "Georgian Standard Time Tbilisi",
+    "keywords": "Georgian Standard Time Tbilisi",
     "isDST": false,
     "cities": "Tbilisi"
   },
@@ -110,7 +110,7 @@
       "Asia/Yerevan"
     ],
     "label": "Caucasus Standard Time",
-    "value": "Caucasus Standard Time Yerevan",
+    "keywords": "Caucasus Standard Time Yerevan",
     "isDST": false,
     "cities": "Yerevan"
   },
@@ -119,7 +119,7 @@
       "Asia/Kabul"
     ],
     "label": "Afghanistan Standard Time",
-    "value": "Afghanistan Standard Time Kabul",
+    "keywords": "Afghanistan Standard Time Kabul",
     "isDST": false,
     "cities": "Kabul"
   },
@@ -138,7 +138,7 @@
       "Indian/Maldives"
     ],
     "label": "West Asia Standard Time",
-    "value": "West Asia Standard Time Mawson Aqtau Aqtobe Ashgabat Dushanbe Oral Samarkand Tashkent GMT-5 Kerguelen Maldives",
+    "keywords": "West Asia Standard Time Mawson Aqtau Aqtobe Ashgabat Dushanbe Oral Samarkand Tashkent GMT-5 Kerguelen Maldives",
     "isDST": false,
     "cities": "Mawson, Aqtau, Aqtobe, Ashgabat, Dushanbe, Oral, Samarkand, Tashkent, Kerguelen, Maldives"
   },
@@ -147,7 +147,7 @@
       "Asia/Yekaterinburg"
     ],
     "label": "Yekaterinburg Time",
-    "value": "Yekaterinburg Time",
+    "keywords": "Yekaterinburg Time",
     "isDST": false,
     "cities": "Yekaterinburg"
   },
@@ -156,7 +156,7 @@
       "Asia/Karachi"
     ],
     "label": "Pakistan Standard Time",
-    "value": "Pakistan Standard Time Karachi",
+    "keywords": "Pakistan Standard Time Karachi",
     "isDST": false,
     "cities": "Islamabad, Karachi"
   },
@@ -165,7 +165,7 @@
       "Asia/Colombo"
     ],
     "label": "Sri Lanka Standard Time",
-    "value": "Sri Lanka Standard Time Colombo",
+    "keywords": "Sri Lanka Standard Time Colombo",
     "isDST": false,
     "cities": "Colombo"
   },
@@ -174,7 +174,7 @@
       "Asia/Kathmandu"
     ],
     "label": "Nepal Standard Time",
-    "value": "Nepal Standard Time Kathmandu",
+    "keywords": "Nepal Standard Time Kathmandu",
     "isDST": false,
     "cities": "Kathmandu"
   },
@@ -189,7 +189,7 @@
       "Indian/Chagos"
     ],
     "label": "Central Asia Standard Time",
-    "value": "Central Asia Standard Time Vostok Almaty Bishkek Qyzylorda Urumqi GMT-6 Chagos",
+    "keywords": "Central Asia Standard Time Vostok Almaty Bishkek Qyzylorda Urumqi GMT-6 Chagos",
     "isDST": false,
     "cities": "Vostok, Almaty, Bishkek, Qyzylorda, Urumqi, Chagos, Nur-Sultan (Astana)"
   },
@@ -199,7 +199,7 @@
       "Asia/Thimphu"
     ],
     "label": "Bangladesh Standard Time",
-    "value": "Bangladesh Standard Time Dhaka Thimphu",
+    "keywords": "Bangladesh Standard Time Dhaka Thimphu",
     "isDST": false,
     "cities": "Dhaka, Thimpu"
   },
@@ -209,7 +209,7 @@
       "Indian/Cocos"
     ],
     "label": "Myanmar Standard Time",
-    "value": "Myanmar Standard Time Rangoon Cocos",
+    "keywords": "Myanmar Standard Time Rangoon Cocos",
     "isDST": false,
     "cities": "Rangoon, Cocos"
   },
@@ -227,7 +227,7 @@
       "Indian/Christmas"
     ],
     "label": "South East Asia Standard Time",
-    "value": "SE Asia Standard Time Davis Bangkok Hovd Jakarta Phnom Penh Pontianak Saigon Vientiane GMT-7 Christmas",
+    "keywords": "SE Asia Standard Time Davis Bangkok Hovd Jakarta Phnom Penh Pontianak Saigon Vientiane GMT-7 Christmas",
     "isDST": false,
     "cities": "Bangkok, Hanoi, Jakarta, Hovd, Davis, Phnom Penh, Pontianak, Saigon, Vientiane, Christmas"
   },
@@ -238,7 +238,7 @@
       "Asia/Omsk"
     ],
     "label": "North Central Asia Standard Time",
-    "value": "N. Central Asia Standard Time Novokuznetsk Novosibirsk Omsk",
+    "keywords": "N. Central Asia Standard Time Novokuznetsk Novosibirsk Omsk",
     "isDST": false,
     "cities": "Novosibirsk, Novokuznetsk, Omsk"
   },
@@ -249,7 +249,7 @@
       "Asia/Shanghai"
     ],
     "label": "China Standard Time",
-    "value": "China Standard Time Hong Kong Macau Shanghai",
+    "keywords": "China Standard Time Hong Kong Macau Shanghai",
     "isDST": false,
     "cities": "Beijing, Chongqing, Hong Kong, Urumqi, Macau, Shanghai"
   },
@@ -258,7 +258,7 @@
       "Asia/Krasnoyarsk"
     ],
     "label": "North Asia Standard Time",
-    "value": "North Asia Standard Time Krasnoyarsk",
+    "keywords": "North Asia Standard Time Krasnoyarsk",
     "isDST": false,
     "cities": "Krasnoyarsk"
   },
@@ -273,7 +273,7 @@
       "Etc/GMT-8"
     ],
     "label": "Singapore Standard Time",
-    "value": "Singapore Standard Time Brunei Kuala Lumpur Kuching Makassar Manila Singapore GMT-8",
+    "keywords": "Singapore Standard Time Brunei Kuala Lumpur Kuching Makassar Manila Singapore GMT-8",
     "isDST": false,
     "cities": "Brunei, Kuala Lumpur, Singapore, Makassar, Manila, Kuching"
   },
@@ -282,7 +282,7 @@
       "Asia/Taipei"
     ],
     "label": "Taipei Standard Time",
-    "value": "Taipei Standard Time Taipei",
+    "keywords": "Taipei Standard Time Taipei",
     "isDST": false,
     "cities": "Taipei"
   },
@@ -292,7 +292,7 @@
       "Asia/Ulaanbaatar"
     ],
     "label": "Ulaanbaatar Standard Time",
-    "value": "Ulaanbaatar Standard Time Choibalsan Ulaanbaatar",
+    "keywords": "Ulaanbaatar Standard Time Choibalsan Ulaanbaatar",
     "isDST": false,
     "cities": "Ulaanbaatar, Choibalsan"
   },
@@ -301,7 +301,7 @@
       "Asia/Irkutsk"
     ],
     "label": "North Asia East Standard Time",
-    "value": "North Asia East Standard Time Irkutsk",
+    "keywords": "North Asia East Standard Time Irkutsk",
     "isDST": false,
     "cities": "Irkutsk"
   },
@@ -314,7 +314,7 @@
       "Pacific/Palau"
     ],
     "label": "Japan Standard Time",
-    "value": "Japan Standard Time Dili Jayapura Tokyo GMT-9 Palau",
+    "keywords": "Japan Standard Time Dili Jayapura Tokyo GMT-9 Palau",
     "isDST": false,
     "cities": "Osaka, Sapporo, Tokyo, Jayapura, Dili, Palau"
   },
@@ -324,7 +324,7 @@
       "Asia/Seoul"
     ],
     "label": "Korea Standard Time",
-    "value": "Korea Standard Time Pyongyang Seoul",
+    "keywords": "Korea Standard Time Pyongyang Seoul",
     "isDST": false,
     "cities": "Pyongyang, Seoul"
   },
@@ -336,7 +336,7 @@
       "Asia/Srednekolymsk"
     ],
     "label": "Magadan Standard Time",
-    "value": "Magadan Standard Time Anadyr Kamchatka Magadan Srednekolymsk",
+    "keywords": "Magadan Standard Time Anadyr Kamchatka Magadan Srednekolymsk",
     "isDST": false,
     "cities": "Anadyr, Kamchatka, Magadan, Srednekolymsk"
   },
@@ -345,7 +345,7 @@
       "Asia/Kamchatka"
     ],
     "label": "Kamchatka Standard Time",
-    "value": "Kamchatka Standard Time Kamchatka",
+    "keywords": "Kamchatka Standard Time Kamchatka",
     "isDST": true,
     "cities": "Petropavlovsk-Kamchatsky - Old"
   },
@@ -356,7 +356,7 @@
       "Asia/Vladivostok"
     ],
     "label": "Vladivostok Standard Time",
-    "value": "Vladivostok Standard Time Sakhalin Ust-Nera Vladivostok",
+    "keywords": "Vladivostok Standard Time Sakhalin Ust-Nera Vladivostok",
     "isDST": false,
     "cities": "Sakhalin, Ust-Nera, Vladivostok"
   },
@@ -367,7 +367,7 @@
       "Asia/Yakutsk"
     ],
     "label": "Yakutsk Standard Time",
-    "value": "Yakutsk Standard Time Chita Khandyga Yakutsk",
+    "keywords": "Yakutsk Standard Time Chita Khandyga Yakutsk",
     "isDST": false,
     "cities": "Chita, Khandyga, Yakutsk"
   }

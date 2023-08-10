@@ -7,7 +7,7 @@
       "Pacific/Pago_Pago"
     ],
     "label": "Coordinated Universal Time (UTC -11)",
-    "value": "UTC-11 GMT+11 Midway Niue Pago Pago",
+    "keywords": "UTC-11 GMT+11 Midway Niue Pago Pago",
     "isDST": false,
     "cities": "Midway, Pago Pago"
   },
@@ -16,7 +16,7 @@
       "Pacific/Apia"
     ],
     "label": "Samoa Standard Time",
-    "value": "Samoa Standard Time Apia",
+    "keywords": "Samoa Standard Time Apia",
     "isDST": false,
     "cities": "Apia"
   },
@@ -26,7 +26,7 @@
       "Pacific/Auckland"
     ],
     "label": "New Zealand Standard Time",
-    "value": "New Zealand Standard Time Wellington McMurdo Auckland",
+    "keywords": "New Zealand Standard Time Wellington McMurdo Auckland",
     "isDST": false,
     "cities": "Auckland, Wellington, McMurdo"
   },
@@ -35,7 +35,7 @@
       "Pacific/Fiji"
     ],
     "label": "Fiji Standard Time",
-    "value": "Fiji Standard Time Fiji",
+    "keywords": "Fiji Standard Time Fiji",
     "isDST": false,
     "cities": "Fiji"
   },
@@ -51,7 +51,7 @@
       "Pacific/Wallis"
     ],
     "label": "Coordinated Universal Time (UtC +12)",
-    "value": "UTC+12 GMT-12 Funafuti Kwajalein Majuro Nauru Tarawa Wake Wallis",
+    "keywords": "UTC+12 GMT-12 Funafuti Kwajalein Majuro Nauru Tarawa Wake Wallis",
     "isDST": false,
     "cities": "Funafuti, Kwajalein, Majuro, Nauru, Tarawa, Wake, Wallis"
   },
@@ -65,7 +65,7 @@
       "Pacific/Truk"
     ],
     "label": "West Pacific Standard Time",
-    "value": "West Pacific Standard Time DumontDUrville GMT-10 Guam Port Moresby Saipan Truk",
+    "keywords": "West Pacific Standard Time DumontDUrville GMT-10 Guam Port Moresby Saipan Truk",
     "isDST": false,
     "cities": "DumontDUrville, Guam, Port Moresby, Saipan, Truk"
   },
@@ -80,7 +80,7 @@
       "Pacific/Ponape"
     ],
     "label": "Central Pacific Standard Time",
-    "value": "Central Pacific Standard Time Macquarie GMT-11 Efate Guadalcanal Kosrae Noumea Ponape",
+    "keywords": "Central Pacific Standard Time Macquarie GMT-11 Efate Guadalcanal Kosrae Noumea Ponape",
     "isDST": false,
     "cities": "Macquarie, Efate, Guadalcanal, Kosrae, Noumea, Ponape"
   },
@@ -92,7 +92,7 @@
       "Pacific/Tongatapu"
     ],
     "label": "Tonga Standard Time",
-    "value": "Tonga Standard Time GMT-13 Enderbury Fakaofo Tongatapu",
+    "keywords": "Tonga Standard Time GMT-13 Enderbury Fakaofo Tongatapu",
     "isDST": false,
     "cities": "Enderbury, Fakaofo, Tongatapu"
   },
@@ -101,7 +101,7 @@
       "Etc/GMT+12"
     ],
     "label": "International Date Line West",
-    "value": "Dateline Standard Time GMT+12",
+    "keywords": "Dateline Standard Time GMT+12",
     "isDST": false,
     "cities": ""
   }

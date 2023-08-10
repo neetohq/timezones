@@ -26,7 +26,7 @@ function Button({
       <button
         onClick={handleClick}
         className="flex items-center justify-between px-4 py-4 text-md ntsp-button-border"
-        value={selectedValue?.value}
+        value={selectedValue?.keywords}
         type="submit"
       >
         <div className="flex flex-row gap-x-2">
