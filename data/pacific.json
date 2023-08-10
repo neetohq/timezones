@@ -6,34 +6,38 @@
       "Pacific/Niue",
       "Pacific/Pago_Pago"
     ],
-    "abbr": "U",
-    "label": "Coordinated Universal Time-11",
-    "value": "UTC-11 GMT+11 Midway Niue Pago Pago"
+    "label": "Coordinated Universal Time (UTC -11)",
+    "keywords": "UTC-11 GMT+11 Midway Niue Pago Pago",
+    "isDST": false,
+    "cities": "Midway, Pago Pago"
   },
   {
     "utc": [
       "Pacific/Apia"
     ],
-    "abbr": "SST",
-    "label": "Samoa",
-    "value": "Samoa Standard Time Apia"
+    "label": "Samoa Standard Time",
+    "keywords": "Samoa Standard Time Apia",
+    "isDST": false,
+    "cities": "Apia"
   },
   {
     "utc": [
       "Antarctica/McMurdo",
       "Pacific/Auckland"
     ],
-    "abbr": "NZST",
-    "label": "Auckland, Wellington",
-    "value": "New Zealand Standard Time McMurdo Auckland"
+    "label": "New Zealand Standard Time",
+    "keywords": "New Zealand Standard Time Wellington McMurdo Auckland",
+    "isDST": false,
+    "cities": "Auckland, Wellington, McMurdo"
   },
   {
     "utc": [
       "Pacific/Fiji"
     ],
-    "abbr": "FST",
-    "label": "Fiji",
-    "value": "Fiji Standard Time Fiji"
+    "label": "Fiji Standard Time",
+    "keywords": "Fiji Standard Time Fiji",
+    "isDST": false,
+    "cities": "Fiji"
   },
   {
     "utc": [
@@ -46,9 +50,10 @@
       "Pacific/Wake",
       "Pacific/Wallis"
     ],
-    "abbr": "U",
-    "label": "Coordinated Universal Time+12",
-    "value": "UTC+12 GMT-12 Funafuti Kwajalein Majuro Nauru Tarawa Wake Wallis"
+    "label": "Coordinated Universal Time (UtC +12)",
+    "keywords": "UTC+12 GMT-12 Funafuti Kwajalein Majuro Nauru Tarawa Wake Wallis",
+    "isDST": false,
+    "cities": "Funafuti, Kwajalein, Majuro, Nauru, Tarawa, Wake, Wallis"
   },
   {
     "utc": [
@@ -59,9 +64,10 @@
       "Pacific/Saipan",
       "Pacific/Truk"
     ],
-    "abbr": "WPST",
-    "label": "Guam, Port Moresby",
-    "value": "West Pacific Standard Time DumontDUrville GMT-10 Guam Port Moresby Saipan Truk"
+    "label": "West Pacific Standard Time",
+    "keywords": "West Pacific Standard Time DumontDUrville GMT-10 Guam Port Moresby Saipan Truk",
+    "isDST": false,
+    "cities": "DumontDUrville, Guam, Port Moresby, Saipan, Truk"
   },
   {
     "utc": [
@@ -73,9 +79,10 @@
       "Pacific/Noumea",
       "Pacific/Ponape"
     ],
-    "abbr": "CPST",
-    "label": "Solomon Is., New Caledonia",
-    "value": "Central Pacific Standard Time Macquarie GMT-11 Efate Guadalcanal Kosrae Noumea Ponape"
+    "label": "Central Pacific Standard Time",
+    "keywords": "Central Pacific Standard Time Macquarie GMT-11 Efate Guadalcanal Kosrae Noumea Ponape",
+    "isDST": false,
+    "cities": "Macquarie, Efate, Guadalcanal, Kosrae, Noumea, Ponape"
   },
   {
     "utc": [
@@ -84,16 +91,18 @@
       "Pacific/Fakaofo",
       "Pacific/Tongatapu"
     ],
-    "abbr": "TST",
-    "label": "Nuku'alofa",
-    "value": "Tonga Standard Time GMT-13 Enderbury Fakaofo Tongatapu"
+    "label": "Tonga Standard Time",
+    "keywords": "Tonga Standard Time GMT-13 Enderbury Fakaofo Tongatapu",
+    "isDST": false,
+    "cities": "Enderbury, Fakaofo, Tongatapu"
   },
   {
     "utc": [
       "Etc/GMT+12"
     ],
-    "abbr": "DST",
     "label": "International Date Line West",
-    "value": "Dateline Standard Time GMT+12"
+    "keywords": "Dateline Standard Time GMT+12",
+    "isDST": false,
+    "cities": ""
   }
 ]

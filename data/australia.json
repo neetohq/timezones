@@ -4,52 +4,58 @@
       "Antarctica/Casey",
       "Australia/Perth"
     ],
-    "abbr": "WAST",
-    "label": "Perth",
-    "value": "W. Australia Standard Time Casey Perth"
+    "label": "West Australia Standard Time",
+    "keywords": "W. Australia Standard Time Casey Perth",
+    "isDST": false,
+    "cities": "Casey, Perth"
   },
   {
     "utc": [
       "Australia/Adelaide",
       "Australia/Broken_Hill"
     ],
-    "abbr": "CAST",
-    "label": "Adelaide",
-    "value": "Cen. Australia Standard Time Adelaide Broken Hill"
+    "label": "Central Australian Standard Time",
+    "keywords": "Cen. Australia Standard Time Adelaide Broken Hill",
+    "isDST": false,
+    "cities": "Adelaide, Broken Hill"
   },
   {
     "utc": [
       "Australia/Darwin"
     ],
-    "abbr": "ACST",
-    "label": "Darwin",
-    "value": "AUS Central Standard Time Darwin"
+    "label": "Australian Central Standard Time",
+    "keywords": "AUS Central Standard Time Darwin",
+    "isDST": false,
+    "cities": ""
   },
   {
     "utc": [
       "Australia/Brisbane",
       "Australia/Lindeman"
     ],
-    "abbr": "EAST",
-    "label": "Brisbane",
-    "value": "E. Australia Standard Time Brisbane Lindeman"
+    "label": "East Australian Standard Time",
+    "keywords": "East Australian Australia Standard Time Brisbane Lindeman",
+    "isDST": false,
+    "cities": "Brisbane, Lindeman"
   },
   {
     "utc": [
       "Australia/Melbourne",
       "Australia/Sydney"
     ],
-    "abbr": "AEST",
-    "label": "Canberra, Melbourne, Sydney",
-    "value": "AUS Eastern Standard Time Melbourne Sydney"
+    "label": "Australian Eastern Standard Time",
+    "keywords": "AUS Eastern Standard Time Melbourne Sydney",
+    "isDST": false,
+    "cities": "Melbourne, Sydney, Canberra"
   },
   {
     "utc": [
       "Australia/Currie",
       "Australia/Hobart"
     ],
-    "abbr": "TST",
-    "label": "Hobart",
-    "value": "Tasmania Standard Time Currie Hobart"
+    "label": "Tasmania Standard Time",
+    "keywords": "Tasmania Standard Time Currie Hobart",
+    "isDST": false,
+    "cities": "Currie, Hobart"
   }
 ]
