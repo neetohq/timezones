@@ -9,8 +9,7 @@ export const filterTimezones = (inputValue) => {
     const key = Object.keys(group)[0];
     const element = group[key]
       .filter(
-        (timezone) => timezone.abbr === inputValue.toUpperCase()
-          || timezone.label.toLowerCase().includes(inputValue.toLowerCase())
+        (timezone) => timezone.label.toLowerCase().includes(inputValue.toLowerCase())
           || timezone.value.toLowerCase().includes(inputValue.toLowerCase()),
       );
 

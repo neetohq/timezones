@@ -14,7 +14,6 @@
       "America/Jujuy",
       "America/Mendoza"
     ],
-    "abbr": "AST",
     "label": "Argentina Standard Time",
     "value": "Argentina Standard Time La Rioja Rio_Gallegos Salta San_Juan San_Luis Tucuman Ushuaia Buenos_Aires Catamarca Cordoba Jujuy Mendoza",
     "isDST": false,
@@ -24,7 +23,6 @@
     "utc": [
       "America/Asuncion"
     ],
-    "abbr": "PYT",
     "label": "Paraguay Standard Time",
     "value": "Paraguay Standard Time Asuncion",
     "isDST": false,
@@ -43,7 +41,6 @@
       "America/Rio_Branco",
       "Etc/GMT+5"
     ],
-    "abbr": "SPST",
     "label": "South American Pacific Standard Time",
     "value": "SA Pacific Standard Time Bogota Cayman Coral Harbour Eirunepe Guayaquil Jamaica Lima Panama Rio_Branco GMT+5",
     "isDST": false,
@@ -54,7 +51,6 @@
       "America/Campo_Grande",
       "America/Cuiaba"
     ],
-    "abbr": "CBST",
     "label": "Central Brazilian Standard Time",
     "value": "Central Brazilian Standard Time Campo Grande Cuiaba",
     "isDST": false,
@@ -64,7 +60,6 @@
     "utc": [
       "America/Caracas"
     ],
-    "abbr": "VST",
     "label": "Venezuela Standard Time",
     "value": "Venezuela Standard Time Caracas",
     "isDST": false,
@@ -74,7 +69,6 @@
     "utc": [
       "America/Godthab"
     ],
-    "abbr": "GDT",
     "label": "Greenland Standard Time",
     "value": "Greenland Standard Time Godthab",
     "isDST": true,
@@ -85,7 +79,6 @@
       "America/Regina",
       "America/Swift_Current"
     ],
-    "abbr": "CCST",
     "label": "Canada Central Standard Time",
     "value": "Canada Central Standard Time Regina Swift Current",
     "isDST": false,
@@ -96,7 +89,6 @@
       "America/Chihuahua",
       "America/Mazatlan"
     ],
-    "abbr": "MDT",
     "label": "Mountain Standard Time (Mexico)",
     "value": "Mountain Standard Time (Mexico) Chihuahua Mazatlan",
     "isDST": true,
@@ -110,7 +102,6 @@
       "America/Mexico_City",
       "America/Monterrey"
     ],
-    "abbr": "CDT",
     "label": "Central Standard Time (Mexico)",
     "value": "Central Standard Time (Mexico) Bahia Banderas Cancun Merida Mexico_City Monterrey",
     "isDST": true,
@@ -120,7 +111,6 @@
     "utc": [
       "America/Montevideo"
     ],
-    "abbr": "MST",
     "label": "Montevideo Standard Time",
     "value": "Montevideo Standard Time Montevideo",
     "isDST": false,
@@ -132,7 +122,6 @@
       "Atlantic/South_Georgia",
       "Etc/GMT+2"
     ],
-    "abbr": "U",
     "label": "Coordinated Universal Time (UTC -02)",
     "value": "UTC-02 Noronha South Georgia GMT+2",
     "isDST": false,
@@ -143,7 +132,6 @@
       "America/Santiago",
       "Antarctica/Palmer"
     ],
-    "abbr": "PSST",
     "label": "Pacific SA Standard Time",
     "value": "Pacific SA Standard Time Santiago Palmer",
     "isDST": false,
@@ -153,7 +141,6 @@
     "utc": [
       "America/Santa_Isabel"
     ],
-    "abbr": "PDT",
     "label": "Pacific Standard Time (Mexico)",
     "value": "Pacific Standard Time (Mexico) Santa Isabel",
     "isDST": true,
@@ -168,7 +155,6 @@
       "America/Thule",
       "Atlantic/Bermuda"
     ],
-    "abbr": "ADT",
     "label": "Atlantic Time (Canada)",
     "value": "Atlantic Standard Time Glace Bay Goose_Bay Halifax Moncton Thule Bermuda",
     "isDST": true,
@@ -178,7 +164,6 @@
     "utc": [
       "America/Sao_Paulo"
     ],
-    "abbr": "ESAST",
     "label": "East South America Standard Time",
     "value": "E. South America Standard Time Sao Paulo",
     "isDST": false,
@@ -189,7 +174,6 @@
       "America/Danmarkshavn",
       "Etc/GMT"
     ],
-    "abbr": "UTC",
     "label": "Coordinated Universal Time",
     "value": "UTC Danmarkshavn GMT",
     "isDST": false,
@@ -199,7 +183,6 @@
     "utc": [
       "America/Bahia"
     ],
-    "abbr": "BST",
     "label": "Bahia Standard Time",
     "value": "Bahia Standard Time Bahia",
     "isDST": false,
@@ -219,7 +202,6 @@
       "Atlantic/Stanley",
       "Etc/GMT+3"
     ],
-    "abbr": "SEST",
     "label": "South American Eastern Standard Time",
     "value": "SA Eastern Standard Time Araguaina Belem Cayenne Fortaleza Maceio Paramaribo Recife Santarem Rothera Stanley GMT+3",
     "isDST": false,
@@ -258,7 +240,6 @@
       "America/Tortola",
       "Etc/GMT+4"
     ],
-    "abbr": "SWST",
     "label": "South American Western Standard Time",
     "value": "SA Western Standard Time Anguilla Antigua Aruba Barbados Blanc-Sablon Boa Vista Curacao Dominica Grand_Turk Grenada Guadeloupe Guyana Kralendijk La_Paz Lower_Princes Manaus Marigot Martinique Montserrat Port_of_Spain Porto_Velho Puerto_Rico Santo_Domingo St_Barthelemy St_Kitts St_Lucia St_Thomas St_Vincent Tortola GMT+4",
     "isDST": false,
@@ -270,7 +251,6 @@
       "America/Indiana/Vevay",
       "America/Indianapolis"
     ],
-    "abbr": "UEDT",
     "label": "US Eastern Standard Time",
     "value": "US Eastern Standard Time Marengo Vevay Indianapolis",
     "isDST": false,

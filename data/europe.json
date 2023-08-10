@@ -9,7 +9,6 @@
       "Europe/Prague",
       "Europe/Tirane"
     ],
-    "abbr": "CEDT",
     "label": "Central Europe Standard Time",
     "value": "Central Europe Standard Time Belgrade Bratislava Budapest Ljubljana Podgorica Prague Tirane",
     "isDst": true,
@@ -22,7 +21,6 @@
       "Europe/Warsaw",
       "Europe/Zagreb"
     ],
-    "abbr": "CEDT",
     "label": "Central European Standard Time",
     "value": "Central European Standard Time Sarajevo Skopje Warsaw Zagreb",
     "isDst": true,
@@ -35,7 +33,6 @@
       "Europe/Guernsey",
       "Europe/Jersey"
     ],
-    "abbr": "GMT",
     "label": "GMT Standard Time",
     "value": "GMT Standard Time Isle of_Man Guernsey Jersey London Edinburgh",
     "isDst": true,
@@ -49,7 +46,6 @@
       "Europe/Dublin",
       "Europe/Lisbon"
     ],
-    "abbr": "GDT",
     "label": "GMT Standard Time",
     "value": "GMT Standard Time Canary Faeroe Madeira Dublin Lisbon",
     "isDst": true,
@@ -75,7 +71,6 @@
       "Europe/Vienna",
       "Europe/Zurich"
     ],
-    "abbr": "WEDT",
     "label": "West Europe Standard Time",
     "value": "W. Europe Standard Time Longyearbyen Amsterdam Andorra Berlin Bern Busingen Gibraltar Luxembourg Malta Monaco Oslo Rome San Marino Stockholm Vaduz Vatican Vienna Zurich",
     "isDst": true,
@@ -89,7 +84,6 @@
       "Europe/Madrid",
       "Europe/Paris"
     ],
-    "abbr": "RDT",
     "label": "Romance Standard Time",
     "value": "Romance Standard Time Ceuta Brussels Copenhagen Madrid Paris",
     "isDst": true,
@@ -112,7 +106,6 @@
       "Europe/Vilnius",
       "Europe/Zaporozhye"
     ],
-    "abbr": "EEDT",
     "label": "East Europe Standard Time",
     "value": "East E. Europe Standard Time Nicosia Athens Bucharest Chisinau Helsinki Kiev Mariehamn Nicosia Riga Sofia Tallinn Uzhgorod Vilnius Zaporozhye",
     "isDst": true,
@@ -122,7 +115,6 @@
     "utc": [
       "Europe/Istanbul"
     ],
-    "abbr": "Turkey Standard Time",
     "label": "Istanbul",
     "value": "Turkey Standard Time Istanbul",
     "isDst": false,
@@ -132,7 +124,6 @@
     "utc": [
       "Europe/Kaliningrad"
     ],
-    "abbr": "KST",
     "label": "Kaliningrad Standard Time",
     "value": "Kaliningrad Standard Time Kaliningrad",
     "isDst": false,
@@ -146,7 +137,6 @@
       "Europe/Volgograd",
       "Europe/Minsk"
     ],
-    "abbr": "MSK",
     "label": "Moscow Standard Time",
     "value": "Moscow Standard Time Kirov Moscow Simferopol Volgograd Minsk",
     "isDst": false,
@@ -158,7 +148,6 @@
       "Europe/Samara",
       "Europe/Ulyanovsk"
     ],
-    "abbr": "SAMT",
     "label": "Samara Time",
     "value": "Samara Time Astrakhan Samara Ulyanovsk",
     "isDst": false,

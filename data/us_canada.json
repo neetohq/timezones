@@ -6,7 +6,6 @@
       "America/Vancouver",
       "PST8PDT"
     ],
-    "abbr": "PST",
     "label": "Pacific Standard Time",
     "value": "Pacific Standard Time Los Angeles Tijuana Vancouver PST8PDT",
     "isDst": true,
@@ -22,7 +21,6 @@
       "America/Whitehorse",
       "Etc/GMT+7"
     ],
-    "abbr": "UMST",
     "label": "Mountain Time",
     "value": "US Mountain Standard Time Creston Dawson Dawson Creek Hermosillo Phoenix Whitehorse GMT+7",
     "isDst": false,
@@ -39,7 +37,6 @@
       "America/Yellowknife",
       "MST7MDT"
     ],
-    "abbr": "MDT",
     "label": "Mountain Time",
     "value": "Mountain Time Boise Cambridge_Bay Denver Edmonton Inuvik Ojinaga Yellowknife MST7MDT",
     "isDst": true,
@@ -61,7 +58,6 @@
       "America/Winnipeg",
       "CST6CDT"
     ],
-    "abbr": "CDT",
     "label": "Central Time",
     "value": "Central Standard Time Chicago Knox Tell City Matamoros Menominee Beulah Center New_Salem Rainy_River Rankin_Inlet Resolute Winnipeg CST6CDT",
     "isDst": true,
@@ -86,7 +82,6 @@
       "America/Thunder_Bay",
       "America/Toronto"
     ],
-    "abbr": "EST",
     "label": "Eastern Time",
     "value": "Eastern Standard Time Miami Detroit Havana Petersburg Vincennes Winamac Iqaluit Monticello Louisville Montreal Nassau New York Nipigon Pangnirtung Port-au-Prince Thunder_Bay Toronto",
     "isDst": true,
@@ -100,7 +95,6 @@
       "America/Sitka",
       "America/Yakutat"
     ],
-    "abbr": "AKDT",
     "label": "Alaskan Time",
     "value": "Alaskan Standard Time Anchorage Juneau Nome Sitka Yakutat",
     "isDst": true,
@@ -110,7 +104,6 @@
     "utc": [
       "America/St_Johns"
     ],
-    "abbr": "NDT",
     "label": "Newfoundland Time",
     "value": "Newfoundland Standard Time St Johns",
     "isDst": true,
@@ -124,7 +117,6 @@
       "Pacific/Rarotonga",
       "Pacific/Tahiti"
     ],
-    "abbr": "HST",
     "label": "Hawaiian Time",
     "value": "Hawaiian Standard Time GMT+10 Honolulu Johnston Rarotonga Tahiti",
     "isDst": false,

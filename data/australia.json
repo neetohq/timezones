@@ -4,7 +4,6 @@
       "Antarctica/Casey",
       "Australia/Perth"
     ],
-    "abbr": "WAST",
     "label": "West Australia Standard Time",
     "value": "W. Australia Standard Time Casey Perth",
     "isDST": false,
@@ -15,7 +14,6 @@
       "Australia/Adelaide",
       "Australia/Broken_Hill"
     ],
-    "abbr": "CAST",
     "label": "Central Australian Standard Time",
     "value": "Cen. Australia Standard Time Adelaide Broken Hill",
     "isDST": false,
@@ -25,7 +23,6 @@
     "utc": [
       "Australia/Darwin"
     ],
-    "abbr": "ACST",
     "label": "Australian Central Standard Time",
     "value": "AUS Central Standard Time Darwin",
     "isDST": false,
@@ -36,7 +33,6 @@
       "Australia/Brisbane",
       "Australia/Lindeman"
     ],
-    "abbr": "EAST",
     "label": "East Australian Standard Time",
     "value": "East Australian Australia Standard Time Brisbane Lindeman",
     "isDST": false,
@@ -47,7 +43,6 @@
       "Australia/Melbourne",
       "Australia/Sydney"
     ],
-    "abbr": "AEST",
     "label": "Australian Eastern Standard Time",
     "value": "AUS Eastern Standard Time Melbourne Sydney",
     "isDST": false,
@@ -58,7 +53,6 @@
       "Australia/Currie",
       "Australia/Hobart"
     ],
-    "abbr": "TST",
     "label": "Tasmania Standard Time",
     "value": "Tasmania Standard Time Currie Hobart",
     "isDST": false,

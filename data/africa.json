@@ -3,7 +3,6 @@
     "utc": [
       "Africa/Cairo"
     ],
-    "abbr": "EST",
     "label": "Egypt Standard Time",
     "value": "Egypt Standard Time Cairo",
     "isDST": false,
@@ -26,7 +25,6 @@
       "Africa/Tunis",
       "Etc/GMT-1"
     ],
-    "abbr": "WCAST",
     "label": "West Central Africa Standard Time",
     "value": "W. Central Africa Standard Time Algiers Bangui Brazzaville Douala Kinshasa Lagos Libreville Luanda Malabo Ndjamena Niamey Porto-Novo Tunis GMT-1",
     "isDST": false,
@@ -36,7 +34,6 @@
     "utc": [
       "Africa/Windhoek"
     ],
-    "abbr": "NST",
     "label": "Namibia Standard Time",
     "value": "Namibia Standard Time Windhoek",
     "isDST": false,
@@ -57,7 +54,6 @@
       "Africa/Mbabane",
       "Etc/GMT-2"
     ],
-    "abbr": "SAST",
     "label": "South Africa Standard Time",
     "value": "South Africa Standard Time Blantyre Bujumbura Gaborone Harare Johannesburg Kigali Lubumbashi Lusaka Maputo Maseru Mbabane GMT-2",
     "isDST": false,
@@ -67,7 +63,6 @@
     "utc": [
       "Africa/Tripoli"
     ],
-    "abbr": "LST",
     "label": "Libya Standard Time",
     "value": "Libya Standard Time Tripoli",
     "isDST": false,
@@ -90,7 +85,6 @@
       "Indian/Comoro",
       "Indian/Mayotte"
     ],
-    "abbr": "EAST",
     "label": "East Africa Standard Time",
     "value": "E. Africa Standard Time Addis Ababa Asmera Dar_es_Salaam Djibouti Juba Kampala Khartoum Mogadishu Nairobi Syowa GMT-3 Antananarivo Comoro Mayotte",
     "isDST": false,
@@ -114,7 +108,6 @@
       "Atlantic/Reykjavik",
       "Atlantic/St_Helena"
     ],
-    "abbr": "GST",
     "label": "Greenwich Standard Time",
     "value": "Greenwich Standard Time Abidjan Accra Bamako Banjul Bissau Conakry Dakar Freetown Lome Monrovia Nouakchott Ouagadougou Sao Tome Reykjavik St_Helena",
     "isDST": false,
@@ -125,7 +118,6 @@
       "Africa/Casablanca",
       "Africa/El_Aaiun"
     ],
-    "abbr": "MDT",
     "label": "Morocco Standard Time",
     "value": "Morocco Standard Time Casablanca El Aaiun",
     "isDST": true,
@@ -137,7 +129,6 @@
       "Indian/Mauritius",
       "Indian/Reunion"
     ],
-    "abbr": "MST",
     "label": "Mauritius Standard Time",
     "value": "Mauritius Standard Time Mahe Mauritius Reunion",
     "isDST": false,
