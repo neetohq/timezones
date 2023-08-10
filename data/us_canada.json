@@ -8,7 +8,9 @@
     ],
     "abbr": "PST",
     "label": "Pacific Standard Time",
-    "value": "Pacific Standard Time Los Angeles Tijuana Vancouver PST8PDT"
+    "value": "Pacific Standard Time Los Angeles Tijuana Vancouver PST8PDT",
+    "isDst": true,
+    "cities": "Los Angeles, Tijuana, Vancouver"
   },
   {
     "utc": [
@@ -22,7 +24,26 @@
     ],
     "abbr": "UMST",
     "label": "Mountain Time",
-    "value": "US Mountain Standard Time Creston Dawson Dawson Creek Hermosillo Phoenix Whitehorse GMT+7"
+    "value": "US Mountain Standard Time Creston Dawson Dawson Creek Hermosillo Phoenix Whitehorse GMT+7",
+    "isDst": false,
+    "cities": "Creston, Dawson, Dawson Creek, Hermosillo, Phoenix, Whitehorse"
+  },
+  {
+    "utc": [
+      "America/Boise",
+      "America/Cambridge_Bay",
+      "America/Denver",
+      "America/Edmonton",
+      "America/Inuvik",
+      "America/Ojinaga",
+      "America/Yellowknife",
+      "MST7MDT"
+    ],
+    "abbr": "MDT",
+    "label": "Mountain Time",
+    "value": "Mountain Time Boise Cambridge_Bay Denver Edmonton Inuvik Ojinaga Yellowknife MST7MDT",
+    "isDst": true,
+    "cities": "Boise, Cambridge Bay, Denver, Edmonton, Inuvik, Ojinaga, Yellowknife"
   },
   {
     "utc": [
@@ -42,7 +63,9 @@
     ],
     "abbr": "CDT",
     "label": "Central Time",
-    "value": "Central Standard Time Chicago Knox Tell City Matamoros Menominee Beulah Center New_Salem Rainy_River Rankin_Inlet Resolute Winnipeg CST6CDT"
+    "value": "Central Standard Time Chicago Knox Tell City Matamoros Menominee Beulah Center New_Salem Rainy_River Rankin_Inlet Resolute Winnipeg CST6CDT",
+    "isDst": true,
+    "cities": "Chicago, Knox, Tell City, Matamoros, Menominee, Beulah, Center, New Salem, Rainy River, Rankin Inlet, Resolute, Winnipeg"
   },
   {
     "utc": [
@@ -65,7 +88,9 @@
     ],
     "abbr": "EST",
     "label": "Eastern Time",
-    "value": "Eastern Standard Time Detroit Havana Petersburg Vincennes Winamac Iqaluit Monticello Louisville Montreal Nassau New York Nipigon Pangnirtung Port-au-Prince Thunder_Bay Toronto"
+    "value": "Eastern Standard Time Miami Detroit Havana Petersburg Vincennes Winamac Iqaluit Monticello Louisville Montreal Nassau New York Nipigon Pangnirtung Port-au-Prince Thunder_Bay Toronto",
+    "isDst": true,
+    "cities": "New York, Detroit, Havana, Petersburg, Vincennes, Winamac, Iqaluit, Monticello, Louisville, Montreal, Nassau, New York, Nipigon, Pangnirtung, Port-au-Prince, Thunder Bay, Toronto"
   },
   {
     "utc": [
@@ -76,16 +101,20 @@
       "America/Yakutat"
     ],
     "abbr": "AKDT",
-    "label": "Alaska",
-    "value": "Alaskan Standard Time Anchorage Juneau Nome Sitka Yakutat"
+    "label": "Alaskan Time",
+    "value": "Alaskan Standard Time Anchorage Juneau Nome Sitka Yakutat",
+    "isDst": true,
+    "cities": "Anchorage, Juneau, Nome, Sitka, Yakutat"
   },
   {
     "utc": [
       "America/St_Johns"
     ],
     "abbr": "NDT",
-    "label": "Newfoundland",
-    "value": "Newfoundland Standard Time St Johns"
+    "label": "Newfoundland Time",
+    "value": "Newfoundland Standard Time St Johns",
+    "isDst": true,
+    "cities": "St Johns"
   },
   {
     "utc": [
@@ -96,7 +125,9 @@
       "Pacific/Tahiti"
     ],
     "abbr": "HST",
-    "label": "Hawaii",
-    "value": "Hawaiian Standard Time GMT+10 Honolulu Johnston Rarotonga Tahiti"
+    "label": "Hawaiian Time",
+    "value": "Hawaiian Standard Time GMT+10 Honolulu Johnston Rarotonga Tahiti",
+    "isDst": false,
+    "cities": "Honolulu, Johnston, Rarotonga, Tahiti"
   }
 ]
