@@ -20,10 +20,13 @@ export const groupedOptions = [
   { Pacific },
 ];
 
-export const allTimezones = groupedOptions.reduce((accumulator, currentValue) => {
-  const key = Object.keys(currentValue)[0];
-  return [...accumulator, ...currentValue[key]];
-}, []);
+export const allTimezones = groupedOptions.reduce(
+  (accumulator, currentValue) => {
+    const key = Object.keys(currentValue)[0];
+    return [...accumulator, ...currentValue[key]];
+  },
+  [],
+);
 
 const findBrowserTimezone = () => {
   const browserTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -41,7 +44,10 @@ export const isDST = (timezone) => {
     timeZoneName: "long",
   };
 
-  const currentTimeInTimezone = currentTimeInUTC.toLocaleString("en-US", options);
+  const currentTimeInTimezone = currentTimeInUTC.toLocaleString(
+    "en-US",
+    options,
+  );
 
   return currentTimeInTimezone.toLowerCase().includes("daylight");
 };
@@ -51,37 +57,37 @@ export const DEFAULT_VALUE = findBrowserTimezone() || allTimezones[0];
 export const valueToId = (value) => `option-${value.replaceAll(" ", "_").toLowerCase()}`;
 
 export const createOptionButton = ({
-  key, value, onClick, label, selected, currentTime, utc,
+  key,
+  value,
+  onClick,
+  label,
+  selected,
+  currentTime,
+  utc,
 }) => (
   <button
     id={valueToId(value)}
     type="submit"
     onClick={onClick}
-    className={`flex items-center justify-between px-2 py-3 text-md hover:bg-slate-100 ${selected ? "bg-blue-300" : ""}`}
+    className={`flex items-center px-2 py-2 gap-2 text-md hover:bg-slate-100 ${
+      selected ? "bg-blue-300" : ""
+    }`}
     key={key}
     value={value}
   >
-    <div className="flex flex-row gap-x-2">
-      <div
-        className="flex items-center space-x-4 text-left truncate pointer-events-none line-clamp-2"
-      >
-        <span>
-          {label}
-        </span>
-      </div>
+    <span className="min-w-0 text-left break-words grow">
+      {label}
       {isDST(utc) && (
-      <span
-        value={value}
-        data-tooltip="Daylight savings Time"
-        data-tooltip-position="bottom"
-      >
-        &#127774;
-      </span>
+        <span
+          value={value}
+          data-tooltip="Daylight savings Time"
+          data-tooltip-position="bottom"
+        >
+          &#127774;
+        </span>
       )}
-    </div>
-    <div className="text-right truncate pointer-events-none line-clamp-2">
-      {currentTime}
-    </div>
+    </span>
+    <span className="flex items-center shrink-0">{currentTime}</span>
   </button>
 );
 
@@ -95,7 +101,10 @@ export const getCurrentTimeInTimezone = (timezone) => {
     minute: "numeric",
   };
 
-  const currentTimeInTimezone = currentTimeInUTC.toLocaleString("en-US", options);
+  const currentTimeInTimezone = currentTimeInUTC.toLocaleString(
+    "en-US",
+    options,
+  );
 
   return currentTimeInTimezone;
 };
