@@ -127,7 +127,7 @@ export const createGroupedOptionButton = (
             value: timezone.keywords,
             timezone: timezone.label,
             label: timezone.label,
-            selected: selectedValue.value === timezone.value,
+            selected: selectedValue.keywords === timezone.keywords,
             currentTime: getCurrentTimeInTimezone(timezone.utc[0]),
             utc: timezone.utc[0],
           }))}
