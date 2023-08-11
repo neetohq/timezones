@@ -11,7 +11,7 @@
     ],
     "label": "Central Europe Standard Time",
     "keywords": "Central Europe Standard Time Belgrade Bratislava Budapest Ljubljana Podgorica Prague Tirane",
-    "isDst": true,
+    "isDST": true,
     "cities": "Belgrade, Bratislava, Budapest, Ljubljana, Podgorica, Prague, Tirane"
   },
   {
@@ -23,7 +23,7 @@
     ],
     "label": "Central European Standard Time",
     "keywords": "Central European Standard Time Sarajevo Skopje Warsaw Zagreb",
-    "isDst": true,
+    "isDST": true,
     "cities": "Sarajevo, Skopje, Warsaw, Zagreb"
   },
   {
@@ -35,7 +35,7 @@
     ],
     "label": "GMT Standard Time",
     "keywords": "GMT Standard Time Isle of_Man Guernsey Jersey London Edinburgh",
-    "isDst": true,
+    "isDST": true,
     "cities": "London, Edinburgh, Isle of Man, Guernsey, Jersey"
   },
   {
@@ -48,7 +48,7 @@
     ],
     "label": "GMT Standard Time",
     "keywords": "GMT Standard Time Canary Faeroe Madeira Dublin Lisbon",
-    "isDst": true,
+    "isDST": true,
     "cities": "Canary, Faeroe, Madeira, Dublin, Lisbon"
   },
   {
@@ -73,7 +73,7 @@
     ],
     "label": "West Europe Standard Time",
     "keywords": "W. Europe Standard Time Longyearbyen Amsterdam Andorra Berlin Bern Busingen Gibraltar Luxembourg Malta Monaco Oslo Rome San Marino Stockholm Vaduz Vatican Vienna Zurich",
-    "isDst": true,
+    "isDST": true,
     "cities": "Longyearbyen, Amsterdam, Andorra, Berlin, Bern, Busingen, Gibraltar, Luxembourg, Malta, Monaco, Oslo, Rome, San Marino, Stockholm, Vaduz, Vatican, Vienna, Zurich"
   },
   {
@@ -86,7 +86,7 @@
     ],
     "label": "Romance Standard Time",
     "keywords": "Romance Standard Time Ceuta Brussels Copenhagen Madrid Paris",
-    "isDst": true,
+    "isDST": true,
     "cities": "Brussels, Copenhagen, Madrid, Paris, Ceuta"
   },
   {
@@ -108,7 +108,7 @@
     ],
     "label": "East Europe Standard Time",
     "keywords": "East E. Europe Standard Time Nicosia Athens Bucharest Chisinau Helsinki Kiev Mariehamn Nicosia Riga Sofia Tallinn Uzhgorod Vilnius Zaporozhye",
-    "isDst": true,
+    "isDST": true,
     "cities": "Nicosia, Athens, Bucharest, Chisinau, Helsinki, Kiev, Mariehamn, Nicosia, Riga, Sofia, Tallinn, Uzhgorod, Vilnius, Zaporozhye"
   },
   {
@@ -117,7 +117,7 @@
     ],
     "label": "Istanbul",
     "keywords": "Turkey Standard Time Istanbul",
-    "isDst": false,
+    "isDST": false,
     "cities": "Istanbul"
   },
   {
@@ -126,7 +126,7 @@
     ],
     "label": "Kaliningrad Standard Time",
     "keywords": "Kaliningrad Standard Time Kaliningrad",
-    "isDst": false,
+    "isDST": false,
     "cities": "Kaliningrad"
   },
   {
@@ -139,7 +139,7 @@
     ],
     "label": "Moscow Standard Time",
     "keywords": "Moscow Standard Time Kirov Moscow Simferopol Volgograd Minsk",
-    "isDst": false,
+    "isDST": false,
     "cities": "Moscow, St. Petersburg, Volgograd, Minsk, Kirov"
   },
   {
@@ -150,7 +150,7 @@
     ],
     "label": "Samara Time",
     "keywords": "Samara Time Astrakhan Samara Ulyanovsk",
-    "isDst": false,
+    "isDST": false,
     "cities": "Samara, Ulyanovsk, Saratov"
   }
 ]

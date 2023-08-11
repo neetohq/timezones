@@ -1,4 +1,4 @@
-import { h } from "htm/preact";
+import { h } from "preact";
 
 import Africa from "../../../data/africa.json";
 import America from "../../../data/america.json";
@@ -8,6 +8,7 @@ import Australia from "../../../data/australia.json";
 import Europe from "../../../data/europe.json";
 import Pacific from "../../../data/pacific.json";
 import UsCanada from "../../../data/us_canada.json";
+import Button from "./commons/Button";
 
 export const groupedOptions = [
   { "US/Canada": UsCanada },
@@ -34,80 +35,9 @@ const findBrowserTimezone = () => {
   return allTimezones.find((timezone) => timezone.utc.includes(browserTimezone));
 };
 
-export const isDST = (timezone) => {
-  const currentTimeInUTC = new Date();
-
-  const options = {
-    timeZone: timezone,
-    hour12: true,
-    hour: "numeric",
-    timeZoneName: "long",
-  };
-
-  const currentTimeInTimezone = currentTimeInUTC.toLocaleString(
-    "en-US",
-    options,
-  );
-
-  return currentTimeInTimezone.toLowerCase().includes("daylight");
-};
-
 export const DEFAULT_VALUE = findBrowserTimezone() || allTimezones[0];
 
 export const valueToId = (value) => `option-${value.replaceAll(" ", "_").toLowerCase()}`;
-
-export const createOptionButton = ({
-  key,
-  value,
-  onClick,
-  label,
-  selected,
-  currentTime,
-  utc,
-}) => (
-  <button
-    id={valueToId(value)}
-    type="submit"
-    onClick={onClick}
-    className={`flex items-center px-2 py-2 gap-2 text-md hover:bg-slate-100 ${
-      selected ? "bg-blue-300" : ""
-    }`}
-    key={key}
-    value={value}
-  >
-    <span className="min-w-0 text-left break-words grow">
-      {label}
-      {isDST(utc) && (
-        <span
-          value={value}
-          data-tooltip="Daylight savings Time"
-          data-tooltip-position="bottom"
-        >
-          &#127774;
-        </span>
-      )}
-    </span>
-    <span className="flex items-center shrink-0">{currentTime}</span>
-  </button>
-);
-
-export const getCurrentTimeInTimezone = (timezone) => {
-  const currentTimeInUTC = new Date();
-
-  const options = {
-    timeZone: timezone,
-    hour12: true,
-    hour: "numeric",
-    minute: "numeric",
-  };
-
-  const currentTimeInTimezone = currentTimeInUTC.toLocaleString(
-    "en-US",
-    options,
-  );
-
-  return currentTimeInTimezone;
-};
 
 export const createGroupedOptionButton = (
   group,
@@ -121,16 +51,17 @@ export const createGroupedOptionButton = (
       return (
         <div className="flex flex-col px-2 py-1" key={groupIndex}>
           <span className="pb-1 font-bold uppercase text-md">{key}</span>
-          {element.map((timezone, index) => createOptionButton({
-            onClick: handleSelect,
-            key: index,
-            value: timezone.keywords,
-            timezone: timezone.label,
-            label: timezone.label,
-            selected: selectedValue.keywords === timezone.keywords,
-            currentTime: getCurrentTimeInTimezone(timezone.utc[0]),
-            utc: timezone.utc[0],
-          }))}
+          {element.map((timezone, index) => (
+            <Button
+              id={valueToId(timezone.keywords)}
+              onClick={handleSelect}
+              customClass={`px-2 hover:bg-slate-100 ${
+                (selectedValue.keywords === timezone.keywords) ? "bg-blue-300" : ""
+              }`}
+              key={index}
+              timezone={timezone}
+            />
+          ))}
         </div>
       );
     })}
