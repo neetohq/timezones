@@ -54,7 +54,7 @@ function Button({
 
         {isDST && (
           <span
-            data-tooltip="Daylight savings Time applicable"
+            data-tooltip="Daylight saving time applicable"
             data-tooltip-position={toolTipPosition}
             value={value}
           >
