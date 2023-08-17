@@ -32,7 +32,6 @@ function Button({
         customClass="px-4 ntsp-button-border"
         timezone={selectedValue}
         hideCitiesTooltip
-        toolTipPosition="right"
       >
         <span className="flex items-center shrink-0">
           <svg

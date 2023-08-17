@@ -35,9 +35,15 @@ function Options({
   }, [searchInput]);
 
   return (
-    <div className="overflow-y-scroll h-80" id={`${elementId}-ntsp-overflow-container`}>
+    <div className="mt-6 overflow-y-scroll h-80" id={`${elementId}-ntsp-overflow-container`}>
       <div className="flex flex-col">
-        {createGroupedOptionButton(filterTimezones(searchInput), selectedValue, handleSelect)}
+        {
+          createGroupedOptionButton(
+            filterTimezones(searchInput),
+            selectedValue,
+            handleSelect,
+          )
+        }
       </div>
     </div>
   );
