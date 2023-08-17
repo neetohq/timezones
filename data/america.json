@@ -15,7 +15,7 @@
       "America/Mendoza"
     ],
     "label": "Argentina Standard Time",
-    "keywords": "Argentina Standard Time La Rioja Rio_Gallegos Salta San_Juan San_Luis Tucuman Ushuaia Buenos_Aires Catamarca Cordoba Jujuy Mendoza",
+    "keywords": "Argentina Standard Time La Rioja Rio_Gallegos Salta San_Juan San_Luis Tucuman Ushuaia Buenos_Aires Catamarca Cordoba Jujuy Mendoza AST",
     "isDST": false,
     "cities": "La Rioja, Rio Gallegos, Salta, San Juan, San Luis, Tucuman, Ushuaia, Buenos Aires, Catamarca, Cordoba, Jujuy, Mendoza"
   },
@@ -24,7 +24,7 @@
       "America/Asuncion"
     ],
     "label": "Paraguay Standard Time",
-    "keywords": "Paraguay Standard Time Asuncion",
+    "keywords": "Paraguay Standard Time Asuncion PST",
     "isDST": false,
     "cities": "Asuncion"
   },
@@ -42,7 +42,7 @@
       "Etc/GMT+5"
     ],
     "label": "South American Pacific Standard Time",
-    "keywords": "SA Pacific Standard Time Bogota Cayman Coral Harbour Eirunepe Guayaquil Jamaica Lima Panama Rio_Branco GMT+5",
+    "keywords": "SA Pacific Standard Time Bogota Cayman Coral Harbour Eirunepe Guayaquil Jamaica Lima Panama Rio_Branco GMT+5 SAPST PST",
     "isDST": false,
     "cities": "Bogota, Cayman, Coral Harbour, Eirunepe, Guayaquil, Jamaica, Lima, Panama, Rio Branco"
   },
@@ -52,7 +52,7 @@
       "America/Cuiaba"
     ],
     "label": "Central Brazilian Standard Time",
-    "keywords": "Central Brazilian Standard Time Campo Grande Cuiaba",
+    "keywords": "Central Brazilian Standard Time Campo Grande Cuiaba CBST",
     "isDST": false,
     "cities": "Cuiaba, Campo Grande"
   },
@@ -61,7 +61,7 @@
       "America/Caracas"
     ],
     "label": "Venezuela Standard Time",
-    "keywords": "Venezuela Standard Time Caracas",
+    "keywords": "Venezuela Standard Time Caracas VST",
     "isDST": false,
     "cities": "Caracas"
   },
@@ -70,7 +70,7 @@
       "America/Godthab"
     ],
     "label": "Greenland Standard Time",
-    "keywords": "Greenland Standard Time Godthab",
+    "keywords": "Greenland Standard Time Godthab GST",
     "isDST": true,
     "cities": "Godthab"
   },
@@ -80,7 +80,7 @@
       "America/Swift_Current"
     ],
     "label": "Canada Central Standard Time",
-    "keywords": "Canada Central Standard Time Regina Swift Current",
+    "keywords": "Canada Central Standard Time Regina Swift Current CCST",
     "isDST": false,
     "cities": "Regina, Swift Current"
   },
@@ -90,7 +90,7 @@
       "America/Mazatlan"
     ],
     "label": "Mountain Standard Time (Mexico)",
-    "keywords": "Mountain Standard Time (Mexico) Chihuahua Mazatlan",
+    "keywords": "Mountain Standard Time (Mexico) Chihuahua Mazatlan MST",
     "isDST": true,
     "cities": "Chihuahua, Mazatlan, La Paz,"
   },
@@ -103,7 +103,7 @@
       "America/Monterrey"
     ],
     "label": "Central Standard Time (Mexico)",
-    "keywords": "Central Standard Time (Mexico) Bahia Banderas Cancun Merida Mexico_City Monterrey",
+    "keywords": "Central Standard Time (Mexico) Bahia Banderas Cancun Merida Mexico_City Monterrey CST",
     "isDST": true,
     "cities": "Guadalajara, Mexico City, Monterrey, Bahia Baderas, Cancun, Merida"
   },
@@ -112,7 +112,7 @@
       "America/Montevideo"
     ],
     "label": "Montevideo Standard Time",
-    "keywords": "Montevideo Standard Time Montevideo",
+    "keywords": "Montevideo Standard Time Montevideo MST",
     "isDST": false,
     "cities": "Montevideo"
   },
@@ -123,7 +123,7 @@
       "Etc/GMT+2"
     ],
     "label": "Coordinated Universal Time (UTC -02)",
-    "keywords": "UTC-02 Noronha South Georgia GMT+2",
+    "keywords": "UTC-02 Noronha South Georgia GMT+2 CUT",
     "isDST": false,
     "cities": "Noronha, South Georgia"
   },
@@ -133,7 +133,7 @@
       "Antarctica/Palmer"
     ],
     "label": "Pacific SA Standard Time",
-    "keywords": "Pacific SA Standard Time Santiago Palmer",
+    "keywords": "Pacific SA Standard Time Santiago Palmer PSST",
     "isDST": false,
     "cities": "Santiago, Palmer"
   },
@@ -142,7 +142,7 @@
       "America/Santa_Isabel"
     ],
     "label": "Pacific Standard Time (Mexico)",
-    "keywords": "Pacific Standard Time (Mexico) Santa Isabel",
+    "keywords": "Pacific Standard Time (Mexico) Santa Isabel PST",
     "isDST": true,
     "cities": "Santa Isabel"
   },
@@ -156,7 +156,7 @@
       "Atlantic/Bermuda"
     ],
     "label": "Atlantic Time (Canada)",
-    "keywords": "Atlantic Standard Time Glace Bay Goose_Bay Halifax Moncton Thule Bermuda",
+    "keywords": "Atlantic Standard Time Glace Bay Goose_Bay Halifax Moncton Thule Bermuda AT",
     "isDST": true,
     "cities": "Glace Bay, Goose Bay, Halifax, Moncton, Thule, Bermuda"
   },
@@ -165,7 +165,7 @@
       "America/Sao_Paulo"
     ],
     "label": "East South America Standard Time",
-    "keywords": "E. South America Standard Time Sao Paulo",
+    "keywords": "E. South America Standard Time Sao Paulo ESAST EAST",
     "isDST": false,
     "cities": "Sao Paulo"
   },
@@ -175,7 +175,7 @@
       "Etc/GMT"
     ],
     "label": "Coordinated Universal Time",
-    "keywords": "UTC Danmarkshavn GMT",
+    "keywords": "UTC Danmarkshavn GMT CUT",
     "isDST": false,
     "cities": "Danmarkshavn"
   },
@@ -184,7 +184,7 @@
       "America/Bahia"
     ],
     "label": "Bahia Standard Time",
-    "keywords": "Bahia Standard Time Bahia",
+    "keywords": "Bahia Standard Time Bahia BST",
     "isDST": false,
     "cities": "Bahia, Salvado"
   },
@@ -203,7 +203,7 @@
       "Etc/GMT+3"
     ],
     "label": "South American Eastern Standard Time",
-    "keywords": "SA Eastern Standard Time Araguaina Belem Cayenne Fortaleza Maceio Paramaribo Recife Santarem Rothera Stanley GMT+3",
+    "keywords": "SA Eastern Standard Time Araguaina Belem Cayenne Fortaleza Maceio Paramaribo Recife Santarem Rothera Stanley GMT+3 SAEST SAET",
     "isDST": false,
     "cities": "Araguaina, Belem, Cayenne, Fortaleza, Maceio, Paramaribo, Recife, Santarem, Rothera, Stanley"
   },
@@ -241,7 +241,7 @@
       "Etc/GMT+4"
     ],
     "label": "South American Western Standard Time",
-    "keywords": "SA Western Standard Time Anguilla Antigua Aruba Barbados Blanc-Sablon Boa Vista Curacao Dominica Grand_Turk Grenada Guadeloupe Guyana Kralendijk La_Paz Lower_Princes Manaus Marigot Martinique Montserrat Port_of_Spain Porto_Velho Puerto_Rico Santo_Domingo St_Barthelemy St_Kitts St_Lucia St_Thomas St_Vincent Tortola GMT+4",
+    "keywords": "SA Western Standard Time Anguilla Antigua Aruba Barbados Blanc-Sablon Boa Vista Curacao Dominica Grand_Turk Grenada Guadeloupe Guyana Kralendijk La_Paz Lower_Princes Manaus Marigot Martinique Montserrat Port_of_Spain Porto_Velho Puerto_Rico Santo_Domingo St_Barthelemy St_Kitts St_Lucia St_Thomas St_Vincent Tortola GMT+4 SAWST SAWT",
     "isDST": false,
     "cities": "Anguilla, Antigua, Aruba, Barbados, Blanc-Sablon, Boa Vista, Curacao, Dominica, Grand_Turk, Grenada, Guadeloupe, Guyana, Kralendijk, La Paz, Lower_Princes, Manaus, Marigot, Martinique, Montserrat, Port_of_Spain, Porto_Velho, Puerto_Rico, Santo_Domingo, St_Barthelemy, St_Kitts, St_Lucia, St_Thomas, St_Vincent, Tortola, Georgetown, La Paz, San Juan"
   },
@@ -252,7 +252,7 @@
       "America/Indianapolis"
     ],
     "label": "US Eastern Standard Time",
-    "keywords": "US Eastern Standard Time Marengo Vevay Indianapolis",
+    "keywords": "US Eastern Standard Time Marengo Vevay Indianapolis UEST UET",
     "isDST": false,
     "cities": "Marengo, Vevay, Indianapolis"
   }
