@@ -8,7 +8,7 @@
     ],
     "label": "Pacific Standard Time",
     "keywords": "Pacific Standard Time Los Angeles Tijuana Vancouver PST8PDT PST",
-    "isDST": true,
+    "isDst": true,
     "cities": "Los Angeles, Tijuana, Vancouver"
   },
   {
@@ -23,7 +23,7 @@
     ],
     "label": "Mountain Time",
     "keywords": "US Mountain Standard Time Creston Dawson Dawson Creek Hermosillo Phoenix Whitehorse GMT+7 MT MST",
-    "isDST": false,
+    "isDst": false,
     "cities": "Creston, Dawson, Dawson Creek, Hermosillo, Phoenix, Whitehorse"
   },
   {
@@ -39,7 +39,7 @@
     ],
     "label": "Mountain Time",
     "keywords": "Mountain Time Boise Cambridge_Bay Denver Edmonton Inuvik Ojinaga Yellowknife MST7MDT MT MST MDT",
-    "isDST": true,
+    "isDst": true,
     "cities": "Boise, Cambridge Bay, Denver, Edmonton, Inuvik, Ojinaga, Yellowknife"
   },
   {
@@ -60,7 +60,7 @@
     ],
     "label": "Central Time",
     "keywords": "Central Standard Time Chicago Knox Tell City Matamoros Menominee Beulah Center New_Salem Rainy_River Rankin_Inlet Resolute Winnipeg CST6CDT CT CDT",
-    "isDST": true,
+    "isDst": true,
     "cities": "Chicago, Knox, Tell City, Matamoros, Menominee, Beulah, Center, New Salem, Rainy River, Rankin Inlet, Resolute, Winnipeg"
   },
   {
@@ -84,7 +84,7 @@
     ],
     "label": "Eastern Time",
     "keywords": "Eastern Standard Time Miami Detroit Havana Petersburg Vincennes Winamac Iqaluit Monticello Louisville Montreal Nassau New York Nipigon Pangnirtung Port-au-Prince Thunder_Bay Toronto EST ET",
-    "isDST": true,
+    "isDst": true,
     "cities": "Detroit, Havana, Louisville, Miami, Monticello, Montreal, Nassau, New York, Petersburg, Thunder Bay, Toronto, Vincennes, Winamac, Iqaluit, Nipigon, Pangnirtung, Port-au-Prince"
   },
   {
@@ -97,7 +97,7 @@
     ],
     "label": "Alaskan Time",
     "keywords": "Alaskan Standard Time Anchorage Juneau Nome Sitka Yakutat AT",
-    "isDST": true,
+    "isDst": true,
     "cities": "Anchorage, Juneau, Nome, Sitka, Yakutat"
   },
   {
@@ -106,7 +106,7 @@
     ],
     "label": "Newfoundland Time",
     "keywords": "Newfoundland Standard Time St Johns NT",
-    "isDST": true,
+    "isDst": true,
     "cities": "St Johns"
   },
   {
@@ -119,7 +119,7 @@
     ],
     "label": "Hawaiian Time",
     "keywords": "Hawaiian Standard Time GMT+10 Honolulu Johnston Rarotonga Tahiti HT",
-    "isDST": false,
+    "isDst": false,
     "cities": "Honolulu, Johnston, Rarotonga, Tahiti"
   }
 ]

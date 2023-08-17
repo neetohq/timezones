@@ -8,7 +8,7 @@
     ],
     "label": "Coordinated Universal Time (UTC -11)",
     "keywords": "UTC-11 GMT+11 Midway Niue Pago Pago CUT",
-    "isDST": false,
+    "isDst": false,
     "cities": "Midway, Pago Pago"
   },
   {
@@ -17,7 +17,7 @@
     ],
     "label": "Samoa Standard Time",
     "keywords": "Samoa Standard Time Apia SST",
-    "isDST": false,
+    "isDst": false,
     "cities": "Apia"
   },
   {
@@ -27,7 +27,7 @@
     ],
     "label": "New Zealand Standard Time",
     "keywords": "New Zealand Standard Time Wellington McMurdo Auckland NST",
-    "isDST": false,
+    "isDst": false,
     "cities": "Auckland, Wellington, McMurdo"
   },
   {
@@ -36,7 +36,7 @@
     ],
     "label": "Fiji Standard Time",
     "keywords": "Fiji Standard Time Fiji FST",
-    "isDST": false,
+    "isDst": false,
     "cities": "Fiji"
   },
   {
@@ -52,7 +52,7 @@
     ],
     "label": "Coordinated Universal Time (UtC +12)",
     "keywords": "UTC+12 GMT-12 Funafuti Kwajalein Majuro Nauru Tarawa Wake Wallis CUT",
-    "isDST": false,
+    "isDst": false,
     "cities": "Funafuti, Kwajalein, Majuro, Nauru, Tarawa, Wake, Wallis"
   },
   {
@@ -66,7 +66,7 @@
     ],
     "label": "West Pacific Standard Time",
     "keywords": "West Pacific Standard Time DumontDUrville GMT-10 Guam Port Moresby Saipan Truk WPST",
-    "isDST": false,
+    "isDst": false,
     "cities": "DumontDUrville, Guam, Port Moresby, Saipan, Truk"
   },
   {
@@ -81,7 +81,7 @@
     ],
     "label": "Central Pacific Standard Time",
     "keywords": "Central Pacific Standard Time Macquarie GMT-11 Efate Guadalcanal Kosrae Noumea Ponape CPST",
-    "isDST": false,
+    "isDst": false,
     "cities": "Macquarie, Efate, Guadalcanal, Kosrae, Noumea, Ponape"
   },
   {
@@ -93,7 +93,7 @@
     ],
     "label": "Tonga Standard Time",
     "keywords": "Tonga Standard Time GMT-13 Enderbury Fakaofo Tongatapu TST",
-    "isDST": false,
+    "isDst": false,
     "cities": "Enderbury, Fakaofo, Tongatapu"
   },
   {
@@ -102,7 +102,7 @@
     ],
     "label": "International Date Line West",
     "keywords": "Dateline Standard Time GMT+12 IDLW",
-    "isDST": false,
+    "isDst": false,
     "cities": ""
   }
 ]

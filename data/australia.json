@@ -6,7 +6,7 @@
     ],
     "label": "West Australia Standard Time",
     "keywords": "W. Australia Standard Time Casey Perth WAST",
-    "isDST": false,
+    "isDst": false,
     "cities": "Casey, Perth"
   },
   {
@@ -16,7 +16,7 @@
     ],
     "label": "Central Australian Standard Time",
     "keywords": "Cen. Australia Standard Time Adelaide Broken Hill CAST",
-    "isDST": false,
+    "isDst": false,
     "cities": "Adelaide, Broken Hill"
   },
   {
@@ -25,7 +25,7 @@
     ],
     "label": "Australian Central Standard Time",
     "keywords": "AUS Central Standard Time Darwin ACST",
-    "isDST": false,
+    "isDst": false,
     "cities": "Darwin"
   },
   {
@@ -35,7 +35,7 @@
     ],
     "label": "East Australian Standard Time",
     "keywords": "East Australian Australia Standard Time Brisbane Lindeman EAST",
-    "isDST": false,
+    "isDst": false,
     "cities": "Brisbane, Lindeman"
   },
   {
@@ -45,7 +45,7 @@
     ],
     "label": "Australian Eastern Standard Time",
     "keywords": "AUS Eastern Standard Time Melbourne Sydney AEST",
-    "isDST": false,
+    "isDst": false,
     "cities": "Melbourne, Sydney, Canberra"
   },
   {
@@ -55,7 +55,7 @@
     ],
     "label": "Tasmania Standard Time",
     "keywords": "Tasmania Standard Time Currie Hobart TST",
-    "isDST": false,
+    "isDst": false,
     "cities": "Currie, Hobart"
   }
 ]
