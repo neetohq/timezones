@@ -8,7 +8,7 @@ import {
 import { filterTimezones } from "./Search/utils";
 
 function Options({
-  elementId, searchInput, selectedValue, setSelectedValue, setIsOverlayVisible, position,
+  elementId, searchInput, selectedValue, setSelectedValue, setIsOverlayVisible,
 }) {
   const handleSelect = (e) => {
     const targetValue = e?.target?.value
@@ -42,7 +42,6 @@ function Options({
             filterTimezones(searchInput),
             selectedValue,
             handleSelect,
-            position,
           )
         }
       </div>

@@ -43,7 +43,6 @@ export const createGroupedOptionButton = (
   group,
   selectedValue,
   handleSelect,
-  position,
 ) => (
   <div>
     {group.map((groupItem, groupIndex) => {
@@ -61,7 +60,6 @@ export const createGroupedOptionButton = (
               }`}
               key={index}
               timezone={timezone}
-              toolTipPosition={position}
             />
           ))}
         </div>

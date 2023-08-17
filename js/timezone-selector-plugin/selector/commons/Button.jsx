@@ -6,7 +6,6 @@ function Button({
   hideCitiesTooltip = false,
   id = "",
   key = "",
-  toolTipPosition = "bottom",
   timezone,
   onClick,
 }) {
@@ -44,19 +43,16 @@ function Button({
         {hideCitiesTooltip
           ? (label) : (
             <span
-              data-tooltip={cities}
-              data-tooltip-position={toolTipPosition}
               value={value}
+              title={cities}
             >
               {label}
             </span>
           )}
-
         {isDST && (
           <span
-            data-tooltip="Daylight saving time applicable"
-            data-tooltip-position={toolTipPosition}
             value={value}
+            title="Daylight saving time applicable"
           >
             &#127774;
           </span>

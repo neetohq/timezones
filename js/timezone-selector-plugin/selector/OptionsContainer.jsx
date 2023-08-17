@@ -5,7 +5,7 @@ import Search from "./Search";
 import Options from "./Options";
 
 function OptionsContainer({
-  className, selectedValue, setSelectedValue, setIsOverlayVisible, elementId, position,
+  className, selectedValue, setSelectedValue, setIsOverlayVisible, elementId,
 }) {
   const [searchInput, setSearchInput] = useState("");
 
@@ -15,7 +15,7 @@ function OptionsContainer({
     >
       <Search {...{ elementId, searchInput, setSearchInput }} />
       <Options {...{
-        elementId, searchInput, selectedValue, setSelectedValue, setIsOverlayVisible, position,
+        elementId, searchInput, selectedValue, setSelectedValue, setIsOverlayVisible,
       }}
       />
     </div>
