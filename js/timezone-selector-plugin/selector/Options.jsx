@@ -8,7 +8,7 @@ import {
 import { filterTimezones } from "./Search/utils";
 
 function Options({
-  searchInput, selectedValue, setSelectedValue, setIsOverlayVisible,
+  elementId, searchInput, selectedValue, setSelectedValue, setIsOverlayVisible,
 }) {
   const handleSelect = (e) => {
     const targetValue = e?.target?.value
@@ -25,8 +25,17 @@ function Options({
     selectedElement.scrollIntoView({ behavior: "auto", block: "center" });
   }, []);
 
+  useEffect(() => {
+    if (searchInput === "") return;
+
+    const overflowContainer = document.getElementById(`${elementId}-ntsp-overflow-container`);
+    if (overflowContainer) {
+      overflowContainer.scrollTop = 0;
+    }
+  }, [searchInput]);
+
   return (
-    <div className="overflow-y-scroll h-80">
+    <div className="overflow-y-scroll h-80" id={`${elementId}-ntsp-overflow-container`}>
       <div className="flex flex-col">
         {createGroupedOptionButton(filterTimezones(searchInput), selectedValue, handleSelect)}
       </div>

@@ -15,7 +15,7 @@ function OptionsContainer({
     >
       <Search {...{ elementId, searchInput, setSearchInput }} />
       <Options {...{
-        searchInput, selectedValue, setSelectedValue, setIsOverlayVisible,
+        elementId, searchInput, selectedValue, setSelectedValue, setIsOverlayVisible,
       }}
       />
     </div>
