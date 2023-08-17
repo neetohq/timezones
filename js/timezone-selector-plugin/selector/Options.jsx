@@ -28,14 +28,14 @@ function Options({
   useEffect(() => {
     if (searchInput === "") return;
 
-    const overflowContainer = document.getElementById(`${elementId}-overflow-container`);
+    const overflowContainer = document.getElementById(`${elementId}-ntsp-overflow-container`);
     if (overflowContainer) {
       overflowContainer.scrollTop = 0;
     }
   }, [searchInput]);
 
   return (
-    <div className="overflow-y-scroll h-80" id={`${elementId}-overflow-container`}>
+    <div className="overflow-y-scroll h-80" id={`${elementId}-ntsp-overflow-container`}>
       <div className="flex flex-col">
         {createGroupedOptionButton(filterTimezones(searchInput), selectedValue, handleSelect)}
       </div>
