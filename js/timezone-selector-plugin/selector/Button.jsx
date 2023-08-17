@@ -8,7 +8,6 @@ function Button({
   isOverlayVisible,
   setIsOverlayVisible,
   elementId,
-  position,
 }) {
   const handleClick = () => {
     setIsOverlayVisible(
