@@ -10,7 +10,7 @@ function Button({
   onClick,
 }) {
   const {
-    label, keywords: value, isDST, cities,
+    label, keywords: value, isDst, cities,
   } = timezone;
 
   const getCurrentTimeInTimezone = (timeZone) => {
@@ -49,7 +49,7 @@ function Button({
               {label}
             </span>
           )}
-        {isDST && (
+        {isDst && (
           <span
             value={value}
             title="Daylight saving time applicable"

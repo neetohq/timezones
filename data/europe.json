@@ -10,8 +10,8 @@
       "Europe/Tirane"
     ],
     "label": "Central Europe Standard Time",
-    "keywords": "Central Europe Standard Time Belgrade Bratislava Budapest Ljubljana Podgorica Prague Tirane",
-    "isDST": true,
+    "keywords": "Central Europe Standard Time Belgrade Bratislava Budapest Ljubljana Podgorica Prague Tirane CEST",
+    "isDst": true,
     "cities": "Belgrade, Bratislava, Budapest, Ljubljana, Podgorica, Prague, Tirane"
   },
   {
@@ -22,8 +22,8 @@
       "Europe/Zagreb"
     ],
     "label": "Central European Standard Time",
-    "keywords": "Central European Standard Time Sarajevo Skopje Warsaw Zagreb",
-    "isDST": true,
+    "keywords": "Central European Standard Time Sarajevo Skopje Warsaw Zagreb CEDT Spain France Italy Germany",
+    "isDst": true,
     "cities": "Sarajevo, Skopje, Warsaw, Zagreb"
   },
   {
@@ -34,8 +34,8 @@
       "Europe/Jersey"
     ],
     "label": "GMT Standard Time",
-    "keywords": "GMT Standard Time Isle of_Man Guernsey Jersey London Edinburgh",
-    "isDST": true,
+    "keywords": "GMT Standard Time Isle of_Man Guernsey Jersey London Edinburgh GST England",
+    "isDst": true,
     "cities": "London, Edinburgh, Isle of Man, Guernsey, Jersey"
   },
   {
@@ -47,8 +47,8 @@
       "Europe/Lisbon"
     ],
     "label": "GMT Standard Time",
-    "keywords": "GMT Standard Time Canary Faeroe Madeira Dublin Lisbon",
-    "isDST": true,
+    "keywords": "GMT Standard Time Canary Faeroe Madeira Dublin Lisbon GST",
+    "isDst": true,
     "cities": "Canary, Faeroe, Madeira, Dublin, Lisbon"
   },
   {
@@ -72,8 +72,8 @@
       "Europe/Zurich"
     ],
     "label": "West Europe Standard Time",
-    "keywords": "W. Europe Standard Time Longyearbyen Amsterdam Andorra Berlin Bern Busingen Gibraltar Luxembourg Malta Monaco Oslo Rome San Marino Stockholm Vaduz Vatican Vienna Zurich",
-    "isDST": true,
+    "keywords": "W. Europe Standard Time Longyearbyen Amsterdam Andorra Berlin Bern Busingen Gibraltar Luxembourg Malta Monaco Oslo Rome San Marino Stockholm Vaduz Vatican Vienna Zurich WEST",
+    "isDst": true,
     "cities": "Longyearbyen, Amsterdam, Andorra, Berlin, Bern, Busingen, Gibraltar, Luxembourg, Malta, Monaco, Oslo, Rome, San Marino, Stockholm, Vaduz, Vatican, Vienna, Zurich"
   },
   {
@@ -85,8 +85,8 @@
       "Europe/Paris"
     ],
     "label": "Romance Standard Time",
-    "keywords": "Romance Standard Time Ceuta Brussels Copenhagen Madrid Paris",
-    "isDST": true,
+    "keywords": "Romance Standard Time Ceuta Brussels Copenhagen Madrid Paris RST",
+    "isDst": true,
     "cities": "Brussels, Copenhagen, Madrid, Paris, Ceuta"
   },
   {
@@ -107,17 +107,17 @@
       "Europe/Zaporozhye"
     ],
     "label": "East Europe Standard Time",
-    "keywords": "East E. Europe Standard Time Nicosia Athens Bucharest Chisinau Helsinki Kiev Mariehamn Nicosia Riga Sofia Tallinn Uzhgorod Vilnius Zaporozhye",
-    "isDST": true,
+    "keywords": "East E. Europe Standard Time Nicosia Athens Bucharest Chisinau Helsinki Kiev Mariehamn Nicosia Riga Sofia Tallinn Uzhgorod Vilnius Zaporozhye EEST",
+    "isDst": true,
     "cities": "Nicosia, Athens, Bucharest, Chisinau, Helsinki, Kiev, Mariehamn, Nicosia, Riga, Sofia, Tallinn, Uzhgorod, Vilnius, Zaporozhye"
   },
   {
     "utc": [
       "Europe/Istanbul"
     ],
-    "label": "Istanbul",
-    "keywords": "Turkey Standard Time Istanbul",
-    "isDST": false,
+    "label": "Turkey Standard Time",
+    "keywords": "Turkey Standard Time Istanbul TST",
+    "isDst": false,
     "cities": "Istanbul"
   },
   {
@@ -125,8 +125,8 @@
       "Europe/Kaliningrad"
     ],
     "label": "Kaliningrad Standard Time",
-    "keywords": "Kaliningrad Standard Time Kaliningrad",
-    "isDST": false,
+    "keywords": "Kaliningrad Standard Time Kaliningrad KST",
+    "isDst": false,
     "cities": "Kaliningrad"
   },
   {
@@ -138,8 +138,8 @@
       "Europe/Minsk"
     ],
     "label": "Moscow Standard Time",
-    "keywords": "Moscow Standard Time Kirov Moscow Simferopol Volgograd Minsk",
-    "isDST": false,
+    "keywords": "Moscow Standard Time Kirov Moscow Simferopol Volgograd Minsk MST",
+    "isDst": false,
     "cities": "Moscow, St. Petersburg, Volgograd, Minsk, Kirov"
   },
   {
@@ -149,8 +149,8 @@
       "Europe/Ulyanovsk"
     ],
     "label": "Samara Time",
-    "keywords": "Samara Time Astrakhan Samara Ulyanovsk",
-    "isDST": false,
+    "keywords": "Samara Time Astrakhan Samara Ulyanovsk ST",
+    "isDst": false,
     "cities": "Samara, Ulyanovsk, Saratov"
   }
 ]
