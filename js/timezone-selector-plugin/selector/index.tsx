@@ -47,7 +47,7 @@ function Selector({
           <OptionsContainer
             className={`absolute ${top ? "bottom-16" : "top-16"}`}
             {...{
-              elementId, selectedValue, setSelectedValue, setIsOverlayVisible,
+              elementId, selectedValue, setSelectedValue, setIsOverlayVisible, position,
             }}
           />
         )}

@@ -8,6 +8,7 @@ function Button({
   isOverlayVisible,
   setIsOverlayVisible,
   elementId,
+  position,
 }) {
   const handleClick = () => {
     setIsOverlayVisible(
@@ -32,7 +33,7 @@ function Button({
         customClass="px-4 ntsp-button-border"
         timezone={selectedValue}
         hideCitiesTooltip
-        toolTipPosition="right"
+        toolTipPosition={position}
       >
         <span className="flex items-center shrink-0">
           <svg
