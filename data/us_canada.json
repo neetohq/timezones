@@ -7,9 +7,9 @@
       "PST8PDT"
     ],
     "label": "Pacific Standard Time",
-    "keywords": "Pacific Standard Time Los Angeles Tijuana Vancouver PST8PDT PST",
+    "keywords": "Pacific Standard Time PST8PDT PST California Las Vegas Los Angeles Nevada Palm Springs San Diego San Francisco Tijuana Vancouver Washington",
     "isDst": true,
-    "cities": "Los Angeles, Tijuana, Vancouver"
+    "cities": "California, Las Vegas, Los Angeles, Nevada, Palm Springs, San Diego, San Francisco, Tijuana, Vancouver, Washington"
   },
   {
     "utc": [
@@ -22,7 +22,7 @@
       "Etc/GMT+7"
     ],
     "label": "Mountain Time",
-    "keywords": "US Mountain Standard Time Creston Dawson Dawson Creek Hermosillo Phoenix Whitehorse GMT+7 MT MST",
+    "keywords": "US Mountain Standard Time GMT+7 MT MST Creston Dawson Creek Hermosillo Phoenix Whitehorse",
     "isDst": false,
     "cities": "Creston, Dawson, Dawson Creek, Hermosillo, Phoenix, Whitehorse"
   },
@@ -38,7 +38,7 @@
       "MST7MDT"
     ],
     "label": "Mountain Time",
-    "keywords": "Mountain Time Boise Cambridge_Bay Denver Edmonton Inuvik Ojinaga Yellowknife MST7MDT MT MST MDT",
+    "keywords": "Mountain Time MST7MDT MT MST MDT Boise Cambridge_Bay Denver Edmonton Inuvik Ojinaga Yellowknife",
     "isDst": true,
     "cities": "Boise, Cambridge Bay, Denver, Edmonton, Inuvik, Ojinaga, Yellowknife"
   },
@@ -59,9 +59,9 @@
       "CST6CDT"
     ],
     "label": "Central Time",
-    "keywords": "Central Standard Time Chicago Knox Tell City Matamoros Menominee Beulah Center New_Salem Rainy_River Rankin_Inlet Resolute Winnipeg CST6CDT CT CDT",
+    "keywords": "Central Standard Time CST6CDT CT CDT Austin Beulah Center Chicago Illinois Knox Matamoros Menominee Nashville New Salem Rainy River Rankin Inlet Resolute San Antonio Tell City Tennessee Texas Winnipeg",
     "isDst": true,
-    "cities": "Chicago, Knox, Tell City, Matamoros, Menominee, Beulah, Center, New Salem, Rainy River, Rankin Inlet, Resolute, Winnipeg"
+    "cities": "Austin, Beulah, Center, Chicago, Knox, Matamoros, Menominee, Nashville, New Salem, Rainy River, Rankin Inlet, Resolute, San Antonio, Tell City, Tennessee, Texas, Winnipeg"
   },
   {
     "utc": [
@@ -83,9 +83,9 @@
       "America/Toronto"
     ],
     "label": "Eastern Time",
-    "keywords": "Eastern Standard Time Miami Detroit Havana Petersburg Vincennes Winamac Iqaluit Monticello Louisville Montreal Nassau New York Nipigon Pangnirtung Port-au-Prince Thunder_Bay Toronto EST ET",
+    "keywords": "Eastern Standard Time EST ET Boston Massachusetts Charleston South Carolina Detroit Florida Havana Iqaluit Louisville Miami Monticello Montreal Nassau New York Nipigon Orlando Pangnirtung Port-au-Prince Petersburg Saint Augustine Thunder Bay Toronto Vincennes Washington D.C Winamac",
     "isDst": true,
-    "cities": "Detroit, Havana, Louisville, Miami, Monticello, Montreal, Nassau, New York, Petersburg, Thunder Bay, Toronto, Vincennes, Winamac, Iqaluit, Nipigon, Pangnirtung, Port-au-Prince"
+    "cities": "Boston, Charleston, Detroit, Florida, Havana, Iqaluit, Louisville, Miami, Monticello, Montreal, Nassau, New York, Nipigon, Orlando, Pangnirtung, Port-au-Prince, Petersburg, Saint Augustine, Thunder Bay, Toronto, Vincennes, Washington D.C, Winamac"
   },
   {
     "utc": [
@@ -96,7 +96,7 @@
       "America/Yakutat"
     ],
     "label": "Alaskan Time",
-    "keywords": "Alaskan Standard Time Anchorage Juneau Nome Sitka Yakutat AT",
+    "keywords": "Alaskan Standard Time AT Anchorage Juneau Nome Sitka Yakutat",
     "isDst": true,
     "cities": "Anchorage, Juneau, Nome, Sitka, Yakutat"
   },
@@ -105,7 +105,7 @@
       "America/St_Johns"
     ],
     "label": "Newfoundland Time",
-    "keywords": "Newfoundland Standard Time St Johns NT",
+    "keywords": "Newfoundland Standard Time NT St Johns",
     "isDst": true,
     "cities": "St Johns"
   },
@@ -118,8 +118,8 @@
       "Pacific/Tahiti"
     ],
     "label": "Hawaiian Time",
-    "keywords": "Hawaiian Standard Time GMT+10 Honolulu Johnston Rarotonga Tahiti HT",
+    "keywords": "Hawaiian Standard Time T GMT+10 Honolulu Johnston Lahaina Rarotonga Tahiti",
     "isDst": false,
-    "cities": "Honolulu, Johnston, Rarotonga, Tahiti"
+    "cities": "Honolulu, Johnston, Lahaina, Rarotonga, Tahiti"
   }
 ]
