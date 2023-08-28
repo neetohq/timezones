@@ -43,6 +43,7 @@ export const createGroupedOptionButton = (
   group,
   selectedValue,
   handleSelect,
+  is24H,
 ) => (
   <div>
     {group.map((groupItem, groupIndex) => {
@@ -60,6 +61,7 @@ export const createGroupedOptionButton = (
               }`}
               key={index}
               timezone={timezone}
+              is24H={is24H}
             />
           ))}
         </div>
