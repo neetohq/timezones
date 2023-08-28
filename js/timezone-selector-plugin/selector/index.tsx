@@ -4,6 +4,7 @@ import { useEffect, useState } from "preact/hooks";
 import Button from "./Button";
 import OptionsContainer from "./OptionsContainer";
 import { DEFAULT_VALUE } from "./utils";
+import { getFromLocalStorage } from "./commons/utils";
 
 function Selector({
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -11,6 +12,7 @@ function Selector({
 }) {
   const [selectedValue, setSelectedValue] = useState(DEFAULT_VALUE);
   const [isOverlayVisible, setIsOverlayVisible] = useState(false);
+  const [is24H, setIs24H] = useState(getFromLocalStorage("ntsp-24-hr-time-format") || false);
 
   const top = position === "top";
 
@@ -40,14 +42,14 @@ function Selector({
         className={`flex flex-col relative ${className}`}
       >
         <Button {...{
-          isOverlayVisible, setIsOverlayVisible, selectedValue, elementId,
+          isOverlayVisible, setIsOverlayVisible, selectedValue, elementId, is24H,
         }}
         />
         {isOverlayVisible === true && (
           <OptionsContainer
             className={`absolute ${top ? "bottom-16" : "top-16"}`}
             {...{
-              elementId, selectedValue, setSelectedValue, setIsOverlayVisible,
+              elementId, selectedValue, setSelectedValue, setIsOverlayVisible, is24H, setIs24H,
             }}
           />
         )}

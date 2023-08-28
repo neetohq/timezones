@@ -8,7 +8,7 @@ import {
 import { filterTimezones } from "./Search/utils";
 
 function Options({
-  elementId, searchInput, selectedValue, setSelectedValue, setIsOverlayVisible,
+  elementId, is24H, searchInput, selectedValue, setSelectedValue, setIsOverlayVisible,
 }) {
   const handleSelect = (e) => {
     const targetValue = e?.target?.value
@@ -35,13 +35,14 @@ function Options({
   }, [searchInput]);
 
   return (
-    <div className="mt-6 overflow-y-scroll h-80" id={`${elementId}-ntsp-overflow-container`}>
+    <div className="pt-2 overflow-y-scroll h-80" id={`${elementId}-ntsp-overflow-container`}>
       <div className="flex flex-col">
         {
           createGroupedOptionButton(
             filterTimezones(searchInput),
             selectedValue,
             handleSelect,
+            is24H,
           )
         }
       </div>

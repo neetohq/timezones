@@ -8,6 +8,7 @@ function Button({
   key = "",
   timezone,
   onClick,
+  is24H,
 }) {
   const {
     label, keywords: value, isDst, cities,
@@ -18,7 +19,7 @@ function Button({
 
     const options = {
       timeZone,
-      hour12: true,
+      hour12: !is24H,
       hour: "numeric",
       minute: "numeric",
     };
