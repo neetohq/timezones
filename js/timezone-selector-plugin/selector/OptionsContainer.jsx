@@ -4,13 +4,12 @@ import { useState } from "preact/hooks";
 import Search from "./Search";
 import Options from "./Options";
 import Switch from "./commons/Switch";
-import { getFromLocalStorage, setToLocalStorage } from "./commons/utils";
+import { setToLocalStorage } from "./commons/utils";
 
 function OptionsContainer({
-  className, selectedValue, setSelectedValue, setIsOverlayVisible, elementId,
+  className, is24H, elementId, selectedValue, setSelectedValue, setIsOverlayVisible, setIs24H,
 }) {
   const [searchInput, setSearchInput] = useState("");
-  const [is24H, setIs24H] = useState(getFromLocalStorage("ntsp-24-hr-time-format") || false);
 
   const handleTimeFormatChange = (value) => {
     setToLocalStorage("ntsp-24-hr-time-format", value);

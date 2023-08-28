@@ -6,8 +6,9 @@ import CommonButton from "./commons/Button";
 function Button({
   selectedValue,
   isOverlayVisible,
-  setIsOverlayVisible,
   elementId,
+  is24H,
+  setIsOverlayVisible,
 }) {
   const handleClick = () => {
     setIsOverlayVisible(
@@ -32,6 +33,7 @@ function Button({
         customClass="px-4 ntsp-button-border"
         timezone={selectedValue}
         hideCitiesTooltip
+        is24H={is24H}
       >
         <span className="flex items-center shrink-0">
           <svg
