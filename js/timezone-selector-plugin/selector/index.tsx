@@ -7,8 +7,13 @@ import { DEFAULT_VALUE } from "./utils";
 import { getFromLocalStorage } from "./commons/utils";
 
 function Selector({
+  className = "",
+  elementId = "timezone-selector",
+  position = "bottom",
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  className = "", position = "bottom", onChange = (selectedValue) => { }, elementId = "timezone-selector",
+  onChange = (selectedValue) => { },
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  onHourFormatChange = (hourFormat) => { },
 }) {
   const [selectedValue, setSelectedValue] = useState(DEFAULT_VALUE);
   const [isOverlayVisible, setIsOverlayVisible] = useState(false);
@@ -35,6 +40,11 @@ function Selector({
   useEffect(() => {
     onChange(selectedValue);
   }, [selectedValue]);
+
+  useEffect(() => {
+    const hourFormat = is24H ? "24H" : "12H";
+    onHourFormatChange(hourFormat);
+  }, [is24H]);
 
   return (
     <div className="ntsp" id={elementId}>

@@ -30,6 +30,7 @@ You can pass options as the second parameter to configure the timezone selector 
 2. className: Custom classes that can be added to the component.
 3. onChange: Function to be called when the timezone selector changes.
 4. position: Position in which the selector should open in. Available options: `top`, `bottom`. Default position is `bottom`.
+5. onHourFormatChange: Function to be called when the time format changes.
 
 ```js
 import { NeetoTimezoneSelector } from "@neetohq/timezones";
