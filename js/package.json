@@ -1,11 +1,16 @@
 {
   "name": "@neetohq/timezones",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "license": "MIT",
-  "main": "dist/index.es.js",
   "exports": {
-    ".": "./dist/index.es.js",
-    "./react": "./dist/react.es.js"
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    },
+    "./react": {
+      "import": "./dist/react.es.js",
+      "require": "./dist/react.cjs.js"
+    }
   },
   "type": "module",
   "files": [
