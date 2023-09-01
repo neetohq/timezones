@@ -19,7 +19,7 @@ export default defineConfig({
         index: path.resolve(__dirname, "./index.tsx"),
         react: path.resolve(__dirname, "./react/index.jsx"),
       },
-      formats: ["es"],
+      formats: ["es", "cjs"],
       name: "NeetoTimezoneSelector",
       /*
       TODO implement different named outputs:
