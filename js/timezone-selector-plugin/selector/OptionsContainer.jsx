@@ -23,7 +23,7 @@ function OptionsContainer({
       <Search {...{ elementId, searchInput, setSearchInput }} />
       <div className="flex items-center justify-between w-full pb-2 pr-4 mb-1 shadow-sm gap-x-4">
         <span />
-        <Switch defaultValue={is24H} labelRight="24h" labelLeft="AM/PM" onChange={handleTimeFormatChange} />
+        <Switch defaultValue={is24H} labelRight="24H" labelLeft="AM/PM" onChange={handleTimeFormatChange} />
       </div>
       <Options {...{
         elementId, searchInput, selectedValue, setSelectedValue, setIsOverlayVisible, is24H,

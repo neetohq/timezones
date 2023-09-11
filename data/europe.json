@@ -22,7 +22,7 @@
     ],
     "label": "Western European Time",
     "keywords": "WET Western European Time Canary Faeroe Madeira Dublin Lisbon",
-    "isDst": true,  
+    "isDst": true,
     "cities": "Canary, Faeroe, Madeira, Dublin, Lisbon"
   },
   {
