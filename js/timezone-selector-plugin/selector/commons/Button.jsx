@@ -34,32 +34,32 @@ function Button({
 
   return (
     <button
-      {... {
-        id, key, onClick, value,
+      {...{
+        id,
+        key,
+        onClick,
+        value,
       }}
       className={`flex items-center gap-2 py-2 text-md ${customClass}`}
       type="submit"
     >
-      <span className="min-w-0 text-left break-words grow">
-        {hideCitiesTooltip
-          ? (label) : (
-            <span
-              value={value}
-              title={cities}
-            >
-              {label}
-            </span>
-          )}
+      <div className="min-w-0 text-left break-words grow flex space-x-1">
+        {hideCitiesTooltip ? (
+          label
+        ) : (
+          <span value={value} title={cities}>
+            {label}
+          </span>
+        )}
         {isDst && (
-          <span
-            value={value}
-            title="Daylight saving time applicable"
-          >
+          <span value={value} title="Daylight savings time applicable">
             &#127774;
           </span>
         )}
+      </div>
+      <span className="flex items-center shrink-0">
+        {getCurrentTimeInTimezone(timezone.utc[0])}
       </span>
-      <span className="flex items-center shrink-0">{getCurrentTimeInTimezone(timezone.utc[0])}</span>
       {children}
     </button>
   );
