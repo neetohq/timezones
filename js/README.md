@@ -46,29 +46,30 @@ new NeetoTimezoneSelector(document.getElementById("elementId"), {
 ```
 
 ### ianaTimezoneToHumanReadble
+
 ```js
 import { ianaTimezoneToHumanReadable } from "@neetohq/timezones";
 
 ianaTimezoneToHumanReadable("Asia/Calcutta") // => Indian Standard Time
 
 ianaTimezoneToHumanReadable("America/New_York") // => Eastern Standard Time
+
+ianaTimezoneToHumanReadable("Europe/Berlin") // => Central Standard Time
 ```
 
 ## Development
 
 ### Clone the repo
-```
+
+```bash
 git clone git@github.com:neetohq/neeto-timezones.git
 cd neeto-timezones/js
+pnpm install
+pnpm dev
 ```
 
-### Install the dependencies
-```bash
-pnpm i
-```
+### Publishing to npm
 
-### Run
-Run the package using pnpm
-```bash
-pnpm run dev
-```
+1. Bump `package.json` version
+2. Commit and push
+3. `pnpm build && pnpm publish`
