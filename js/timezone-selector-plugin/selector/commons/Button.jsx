@@ -41,7 +41,7 @@ function Button({
         value,
       }}
       className={`flex items-center gap-2 py-2 text-md ${customClass}`}
-      type="submit"
+      type="button"
     >
       <div className="min-w-0 text-left break-words grow flex space-x-1">
         {hideCitiesTooltip ? (
