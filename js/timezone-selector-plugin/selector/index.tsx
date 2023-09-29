@@ -9,7 +9,7 @@ import { getFromLocalStorage } from "./commons/utils";
 function Selector({
   className = "",
   elementId = "timezone-selector",
-  initialValue = "",
+  initialValue,
   position = "bottom",
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   onChange = (selectedValue) => { },
