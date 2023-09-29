@@ -3,19 +3,22 @@ import { useEffect, useState } from "preact/hooks";
 
 import Button from "./Button";
 import OptionsContainer from "./OptionsContainer";
-import { DEFAULT_VALUE } from "./utils";
+import { DEFAULT_VALUE, getTimezoneObject } from "./utils";
 import { getFromLocalStorage } from "./commons/utils";
 
 function Selector({
   className = "",
   elementId = "timezone-selector",
+  initialValue = "",
   position = "bottom",
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   onChange = (selectedValue) => { },
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   onHourFormatChange = (hourFormat) => { },
 }) {
-  const [selectedValue, setSelectedValue] = useState(DEFAULT_VALUE);
+  const [selectedValue, setSelectedValue] = useState(
+    getTimezoneObject(initialValue) || DEFAULT_VALUE
+  );
   const [isOverlayVisible, setIsOverlayVisible] = useState(false);
   const [is24H, setIs24H] = useState(getFromLocalStorage("ntsp-24-hr-time-format") || false);
 

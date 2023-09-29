@@ -29,10 +29,13 @@ export const allTimezones = groupedOptions.reduce(
   [],
 );
 
+export const getTimezoneObject = (ianaTimezone) => ianaTimezone
+  && allTimezones.find((timezone) => timezone.utc.includes(ianaTimezone));
+
 const findBrowserTimezone = () => {
   const browserTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-  return allTimezones.find((timezone) => timezone.utc.includes(browserTimezone));
+  return getTimezoneObject(browserTimezone);
 };
 
 export const DEFAULT_VALUE = findBrowserTimezone() || allTimezones[0];
